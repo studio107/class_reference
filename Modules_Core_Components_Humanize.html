@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Modules\Core\Components\Humanize</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Modules\Core\Components\Humanize</td>
+    </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="getNumEnding">
+  <td><a href="/Modules_Core_Components_Humanize#getNumEnding-detail">getNumEnding()</a></td>
+  <td>Функция возвращает окончание для множественного числа слова на основании числа и массива окончаний</td>
+  <td>Modules\Core\Components\Humanize</td>
+</tr>
+<tr id="humanizeDate">
+  <td><a href="/Modules_Core_Components_Humanize#humanizeDate-detail">humanizeDate()</a></td>
+  <td></td>
+  <td>Modules\Core\Components\Humanize</td>
+</tr>
+<tr id="humanizeDateTime">
+  <td><a href="/Modules_Core_Components_Humanize#humanizeDateTime-detail">humanizeDateTime()</a></td>
+  <td></td>
+  <td>Modules\Core\Components\Humanize</td>
+</tr>
+<tr id="humanizeTime">
+  <td><a href="/Modules_Core_Components_Humanize#humanizeTime-detail">humanizeTime()</a></td>
+  <td></td>
+  <td>Modules\Core\Components\Humanize</td>
+</tr>
+<tr id="numToStr">
+  <td><a href="/Modules_Core_Components_Humanize#numToStr-detail">numToStr()</a></td>
+  <td>Рубли из строки в число</td>
+  <td>Modules\Core\Components\Humanize</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="getNumEnding-detail">
+getNumEnding()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static String <b>getNumEnding</b>($number $number, $endingArray $endingArray)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$number</td>
+  <td class="paramTypeCol">$number</td>
+  <td class="paramDescCol">Integer Число на основе которого нужно сформировать окончание</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$endingArray</td>
+  <td class="paramTypeCol">$endingArray</td>
+  <td class="paramDescCol">Array Массив слов или окончаний для чисел (1, 4, 5),
+        например array('яблоко', 'яблока', 'яблок')</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">String</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#30" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#30</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getNumEnding</span><span style="color: #007700">(</span><span style="color: #0000BB">$number</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$endingArray</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$number&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$number&nbsp;</span><span style="color: #007700">%&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$number&nbsp;</span><span style="color: #007700">&gt;=&nbsp;</span><span style="color: #0000BB">11&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$number&nbsp;</span><span style="color: #007700">&lt;=&nbsp;</span><span style="color: #0000BB">19</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$endingArray</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$number&nbsp;</span><span style="color: #007700">%&nbsp;</span><span style="color: #0000BB">10</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$i</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$endingArray</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">];&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$endingArray</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">];&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$endingArray</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$ending</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Функция возвращает окончание для множественного числа слова на основании числа и массива окончаний</p>
+
+
+<div class="detailHeader" id="humanizeDate-detail">
+humanizeDate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>humanizeDate</b>($date, $dateFormat='d.m.Y')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$date</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$dateFormat</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#94" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#94</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">humanizeDate</span><span style="color: #007700">(</span><span style="color: #0000BB">DateTime&nbsp;$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dateFormat&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'d.m.Y'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$now&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">DateTime</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$now</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setTime</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$clonedDate&nbsp;</span><span style="color: #007700">=&nbsp;clone&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$clonedDate</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setTime</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$diff&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$now</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">diff</span><span style="color: #007700">(</span><span style="color: #0000BB">$clonedDate</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">days&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'Today'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}elseif(</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">days&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'Yesterday'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">format</span><span style="color: #007700">(</span><span style="color: #0000BB">$dateFormat</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="humanizeDateTime-detail">
+humanizeDateTime()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>humanizeDateTime</b>($dateRaw, $dateFormat='d.m.Y', $timeFormat='H:i', $delimiter=', ')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dateRaw</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$dateFormat</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$timeFormat</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$delimiter</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#137" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#137</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">humanizeDateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$dateRaw</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dateFormat&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'d.m.Y'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeFormat&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'H:i'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$delimiter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">',&nbsp;'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$date&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">DateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$dateRaw</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$now&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">DateTime</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$diff&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">diff</span><span style="color: #007700">(</span><span style="color: #0000BB">$now</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$humanizeDate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">humanizeDate</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dateFormat</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$showDate</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$humanizeTime</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">humanizeTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$diff</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeFormat</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$humanized&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$showDate</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$humanized</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$humanizeDate</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$humanized</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$humanizeTime</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #0000BB">$delimiter</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$humanized</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="humanizeTime-detail">
+humanizeTime()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>humanizeTime</b>($diff, $date, $timeFormat='H:i')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$diff</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$date</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$timeFormat</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#111" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#111</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">humanizeTime</span><span style="color: #007700">(</span><span style="color: #0000BB">DateInterval&nbsp;$diff</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">DateTime&nbsp;$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeFormat&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'H:i'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">days&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">h&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">i&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">31</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$minutes&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$diff</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">i</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$minutes&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'minutes1'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'minutes4'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'minutes5'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ending&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getNumEnding</span><span style="color: #007700">(</span><span style="color: #0000BB">$minutes</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$ending</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'{minutes}&nbsp;{ending}&nbsp;ago'</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{minutes}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$minutes</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{ending}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$ending<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">)];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">CoreModule</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'Just&nbsp;now'</span><span style="color: #007700">,&nbsp;[],&nbsp;</span><span style="color: #DD0000">'time'</span><span style="color: #007700">)];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">true</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">format</span><span style="color: #007700">(</span><span style="color: #0000BB">$timeFormat</span><span style="color: #007700">)];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="numToStr-detail">
+numToStr()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>numToStr</b>($num $num)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$num</td>
+  <td class="paramTypeCol">$num</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#55" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Core/Components/Humanize.php#55</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">function&nbsp;</span><span style="color: #0000BB">numToStr</span><span style="color: #007700">(</span><span style="color: #0000BB">$num</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$nul</span><span style="color: #007700">=</span><span style="color: #DD0000">'ноль'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ten</span><span style="color: #007700">=array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #DD0000">'один'</span><span style="color: #007700">,</span><span style="color: #DD0000">'два'</span><span style="color: #007700">,</span><span style="color: #DD0000">'три'</span><span style="color: #007700">,</span><span style="color: #DD0000">'четыре'</span><span style="color: #007700">,</span><span style="color: #DD0000">'пять'</span><span style="color: #007700">,</span><span style="color: #DD0000">'шесть'</span><span style="color: #007700">,</span><span style="color: #DD0000">'семь'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'восемь'</span><span style="color: #007700">,</span><span style="color: #DD0000">'девять'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #DD0000">'одна'</span><span style="color: #007700">,</span><span style="color: #DD0000">'две'</span><span style="color: #007700">,</span><span style="color: #DD0000">'три'</span><span style="color: #007700">,</span><span style="color: #DD0000">'четыре'</span><span style="color: #007700">,</span><span style="color: #DD0000">'пять'</span><span style="color: #007700">,</span><span style="color: #DD0000">'шесть'</span><span style="color: #007700">,</span><span style="color: #DD0000">'семь'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'восемь'</span><span style="color: #007700">,</span><span style="color: #DD0000">'девять'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$a20</span><span style="color: #007700">=array(</span><span style="color: #DD0000">'десять'</span><span style="color: #007700">,</span><span style="color: #DD0000">'одиннадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'двенадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'тринадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'четырнадцать'&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'пятнадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'шестнадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'семнадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'восемнадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'девятнадцать'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tens</span><span style="color: #007700">=array(</span><span style="color: #0000BB">2</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'двадцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'тридцать'</span><span style="color: #007700">,</span><span style="color: #DD0000">'сорок'</span><span style="color: #007700">,</span><span style="color: #DD0000">'пятьдесят'</span><span style="color: #007700">,</span><span style="color: #DD0000">'шестьдесят'</span><span style="color: #007700">,</span><span style="color: #DD0000">'семьдесят'&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'восемьдесят'</span><span style="color: #007700">,</span><span style="color: #DD0000">'девяносто'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hundred</span><span style="color: #007700">=array(</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #DD0000">'сто'</span><span style="color: #007700">,</span><span style="color: #DD0000">'двести'</span><span style="color: #007700">,</span><span style="color: #DD0000">'триста'</span><span style="color: #007700">,</span><span style="color: #DD0000">'четыреста'</span><span style="color: #007700">,</span><span style="color: #DD0000">'пятьсот'</span><span style="color: #007700">,</span><span style="color: #DD0000">'шестьсот'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'семьсот'</span><span style="color: #007700">,</span><span style="color: #DD0000">'восемьсот'</span><span style="color: #007700">,</span><span style="color: #DD0000">'девятьсот'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$unit</span><span style="color: #007700">=array(&nbsp;</span><span style="color: #FF8000">//&nbsp;Units<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">array(</span><span style="color: #DD0000">'копейка'&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'копейки'&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'копеек'</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'рубль'&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'рубля'&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'рублей'&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'тысяча'&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'тысячи'&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'тысяч'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">,</span><span style="color: #0000BB">1</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'миллион'&nbsp;</span><span style="color: #007700">,</span><span style="color: #DD0000">'миллиона'</span><span style="color: #007700">,</span><span style="color: #DD0000">'миллионов'&nbsp;</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'миллиард'</span><span style="color: #007700">,</span><span style="color: #DD0000">'милиарда'</span><span style="color: #007700">,</span><span style="color: #DD0000">'миллиардов'</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">list(</span><span style="color: #0000BB">$rub</span><span style="color: #007700">,</span><span style="color: #0000BB">$kop</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'.'</span><span style="color: #007700">,</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span><span style="color: #DD0000">"%015.2f"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">floatval</span><span style="color: #007700">(</span><span style="color: #0000BB">$num</span><span style="color: #007700">)));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">intval</span><span style="color: #007700">(</span><span style="color: #0000BB">$rub</span><span style="color: #007700">)&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span style="color: #0000BB">str_split</span><span style="color: #007700">(</span><span style="color: #0000BB">$rub</span><span style="color: #007700">,</span><span style="color: #0000BB">3</span><span style="color: #007700">)&nbsp;as&nbsp;</span><span style="color: #0000BB">$uk</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$v</span><span style="color: #007700">)&nbsp;{&nbsp;</span><span style="color: #FF8000">//&nbsp;by&nbsp;3&nbsp;symbols<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">intval</span><span style="color: #007700">(</span><span style="color: #0000BB">$v</span><span style="color: #007700">))&nbsp;continue;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$uk&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">sizeof</span><span style="color: #007700">(</span><span style="color: #0000BB">$unit</span><span style="color: #007700">)-</span><span style="color: #0000BB">$uk</span><span style="color: #007700">-</span><span style="color: #0000BB">1</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//&nbsp;unit&nbsp;key<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$gender&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">$uk</span><span style="color: #007700">][</span><span style="color: #0000BB">3</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$i1</span><span style="color: #007700">,</span><span style="color: #0000BB">$i2</span><span style="color: #007700">,</span><span style="color: #0000BB">$i3</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">array_map</span><span style="color: #007700">(</span><span style="color: #DD0000">'intval'</span><span style="color: #007700">,</span><span style="color: #0000BB">str_split</span><span style="color: #007700">(</span><span style="color: #0000BB">$v</span><span style="color: #007700">,</span><span style="color: #0000BB">1</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;mega-logic<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$hundred</span><span style="color: #007700">[</span><span style="color: #0000BB">$i1</span><span style="color: #007700">];&nbsp;</span><span style="color: #FF8000">#&nbsp;1xx-9xx<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$i2</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">1</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]=&nbsp;</span><span style="color: #0000BB">$tens</span><span style="color: #007700">[</span><span style="color: #0000BB">$i2</span><span style="color: #007700">].</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$ten</span><span style="color: #007700">[</span><span style="color: #0000BB">$gender</span><span style="color: #007700">][</span><span style="color: #0000BB">$i3</span><span style="color: #007700">];&nbsp;</span><span style="color: #FF8000">#&nbsp;20-99<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">else&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]=&nbsp;</span><span style="color: #0000BB">$i2</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$a20</span><span style="color: #007700">[</span><span style="color: #0000BB">$i3</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$ten</span><span style="color: #007700">[</span><span style="color: #0000BB">$gender</span><span style="color: #007700">][</span><span style="color: #0000BB">$i3</span><span style="color: #007700">];&nbsp;</span><span style="color: #FF8000">#&nbsp;10-19&nbsp;|&nbsp;1-9<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;units&nbsp;without&nbsp;rub&nbsp;&amp;&nbsp;kop<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$uk</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">1</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getNumEnding</span><span style="color: #007700">(</span><span style="color: #0000BB">$v</span><span style="color: #007700">,[</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">$uk</span><span style="color: #007700">][</span><span style="color: #0000BB">0</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">$uk</span><span style="color: #007700">][</span><span style="color: #0000BB">1</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">$uk</span><span style="color: #007700">][</span><span style="color: #0000BB">2</span><span style="color: #007700">]]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;</span><span style="color: #FF8000">//foreach<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$nul</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getNumEnding</span><span style="color: #007700">(</span><span style="color: #0000BB">intval</span><span style="color: #007700">(</span><span style="color: #0000BB">$rub</span><span style="color: #007700">),&nbsp;[</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">0</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">1</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">2</span><span style="color: #007700">]]);&nbsp;</span><span style="color: #FF8000">//&nbsp;rub<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$kop</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getNumEnding</span><span style="color: #007700">(</span><span style="color: #0000BB">$kop</span><span style="color: #007700">,&nbsp;[</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">][</span><span style="color: #0000BB">0</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">][</span><span style="color: #0000BB">1</span><span style="color: #007700">],</span><span style="color: #0000BB">$unit</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">][</span><span style="color: #0000BB">2</span><span style="color: #007700">]]);&nbsp;</span><span style="color: #FF8000">//&nbsp;kop<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'/&nbsp;{2,}/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">join</span><span style="color: #007700">(</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">,</span><span style="color: #0000BB">$out</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Рубли из строки в число</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

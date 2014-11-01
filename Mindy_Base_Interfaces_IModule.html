@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Base\Interfaces\IModule</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>interface Mindy\Base\Interfaces\IModule</td>
+    </tr>
+                <tr>
+            <th>Subclasses</th>
+            <td><a href="/Mindy_Base_BaseModule.html">Mindy\Base\BaseModule</a>, <a href="/Mindy_Base_Module.html">Mindy\Base\Module</a>, <a href="/Modules_Admin_AdminModule.html">Modules\Admin\AdminModule</a>, <a href="/Modules_Api_ApiModule.html">Modules\Api\ApiModule</a>, <a href="/Modules_Comments_CommentsModule.html">Modules\Comments\CommentsModule</a>, <a href="/Modules_Core_CoreModule.html">Modules\Core\CoreModule</a>, <a href="/Modules_Doc_DocModule.html">Modules\Doc\DocModule</a>, <a href="/Modules_Files_FilesModule.html">Modules\Files\FilesModule</a>, <a href="/Modules_Forum_ForumModule.html">Modules\Forum\ForumModule</a>, <a href="/Modules_Mail_MailModule.html">Modules\Mail\MailModule</a>, <a href="/Modules_Menu_MenuModule.html">Modules\Menu\MenuModule</a>, <a href="/Modules_Meta_MetaModule.html">Modules\Meta\MetaModule</a>, <a href="/Modules_Pages_PagesModule.html">Modules\Pages\PagesModule</a>, <a href="/Modules_Promo_PromoModule.html">Modules\Promo\PromoModule</a>, <a href="/Modules_Redirect_RedirectModule.html">Modules\Redirect\RedirectModule</a>, <a href="/Modules_Sitemap_SitemapModule.html">Modules\Sitemap\SitemapModule</a>, <a href="/Modules_Sites_SitesModule.html">Modules\Sites\SitesModule</a>, <a href="/Modules_Translate_TranslateModule.html">Modules\Translate\TranslateModule</a>, <a href="/Modules_User_UserModule.html">Modules\User\UserModule</a>, <a href="/Modules_Wiki_WikiModule.html">Modules\Wiki\WikiModule</a></td>
+        </tr>
+                    <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php" class='sourceLink'>framework/Interfaces/IModule.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="downgrade">
+  <td><a href="/Mindy_Base_Interfaces_IModule#downgrade-detail">downgrade()</a></td>
+  <td>Downgrade module to old version. Delete tables from database if need.</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+<tr id="getMailTemplates">
+  <td><a href="/Mindy_Base_Interfaces_IModule#getMailTemplates-detail">getMailTemplates()</a></td>
+  <td>Return array of mail templates and his variables</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+<tr id="getMenu">
+  <td><a href="/Mindy_Base_Interfaces_IModule#getMenu-detail">getMenu()</a></td>
+  <td>Return array for MMenu {$see: MMenu} widget</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+<tr id="install">
+  <td><a href="/Mindy_Base_Interfaces_IModule#install-detail">install()</a></td>
+  <td>Install module</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+<tr id="uninstall">
+  <td><a href="/Mindy_Base_Interfaces_IModule#uninstall-detail">uninstall()</a></td>
+  <td>Uninstall module. Delete tables from database.</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+<tr id="upgrade">
+  <td><a href="/Mindy_Base_Interfaces_IModule#upgrade-detail">upgrade()</a></td>
+  <td>Upgrade module to new version. Run migrations, update sql.</td>
+  <td>Mindy\Base\Interfaces\IModule</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="downgrade-detail">
+downgrade()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public void <b>downgrade</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#54" class='sourceLink'>framework/Interfaces/IModule.php#54</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">downgrade</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Downgrade module to old version. Delete tables from database if need.</p>
+
+
+<div class="detailHeader" id="getMailTemplates-detail">
+getMailTemplates()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public array <b>getMailTemplates</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#30" class='sourceLink'>framework/Interfaces/IModule.php#30</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getMailTemplates</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Return array of mail templates and his variables</p>
+
+
+<div class="detailHeader" id="getMenu-detail">
+getMenu()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public array <b>getMenu</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#24" class='sourceLink'>framework/Interfaces/IModule.php#24</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getMenu</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Return array for MMenu {$see: MMenu} widget</p>
+
+
+<div class="detailHeader" id="install-detail">
+install()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public void <b>install</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#36" class='sourceLink'>framework/Interfaces/IModule.php#36</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">install</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Install module</p>
+
+
+<div class="detailHeader" id="uninstall-detail">
+uninstall()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public void <b>uninstall</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#42" class='sourceLink'>framework/Interfaces/IModule.php#42</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">uninstall</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Uninstall module. Delete tables from database.</p>
+
+
+<div class="detailHeader" id="upgrade-detail">
+upgrade()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public void <b>upgrade</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Interfaces/IModule.php#48" class='sourceLink'>framework/Interfaces/IModule.php#48</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">upgrade</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p>Upgrade module to new version. Run migrations, update sql.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

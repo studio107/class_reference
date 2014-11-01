@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Modules\Mail\Components\DbMailer</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Modules\Mail\Components\DbMailer &raquo;
+Mindy\Mail\Mailer</td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>Mindy\Mail\MailerInterface</td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="checker">
+  <td><a href="/Modules_Mail_Components_DbMailer#checker-detail">checker</a></td>
+  <td>bool</td>
+  <td>enable reading email checker</td>
+  <td>Modules\Mail\Components\DbMailer</td>
+</tr>
+<tr class="inherited" id="defaultFrom">
+  <td>defaultFrom</td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="fileTransportCallback">
+  <td>fileTransportCallback</td>
+  <td>callable</td>
+  <td>a PHP callback that will be called by [[send()]] when [[useFileTransport]] is true.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="fileTransportPath">
+  <td>fileTransportPath</td>
+  <td>string</td>
+  <td>the directory where the email messages are saved when [[useFileTransport]] is true.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="messageClass">
+  <td>messageClass</td>
+  <td>string</td>
+  <td>message default class name.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="messageConfig">
+  <td>messageConfig</td>
+  <td>array</td>
+  <td>the configuration that should be applied to any newly created
+email message instance by [[createMessage()]] or [[compose()]].</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="out">
+  <td>out</td>
+  <td>\Mindy\Mail\Message[]</td>
+  <td>Outcoming messages</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="useFileTransport">
+  <td>useFileTransport</td>
+  <td>boolean</td>
+  <td>whether to save email messages as files under [[fileTransportPath]] instead of sending them
+to the actual recipients.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td>__call()</td>
+  <td>Calls the named method which is not a class method.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td>__callInternal()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td>__construct()</td>
+  <td>Constructor.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__get">
+  <td>__get()</td>
+  <td>Returns the value of an object property.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td>__getInternal()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td>__isset()</td>
+  <td>Checks if the named property is set (not null).</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td>__issetInternal()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__set">
+  <td>__set()</td>
+  <td>Sets value of an object property.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td>__setInternal()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td>__unset()</td>
+  <td>Sets an object property to null.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td>__unsetInternal()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td>canGetProperty()</td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td>canSetProperty()</td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="className">
+  <td>className()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td>classNameShort()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="compose">
+  <td>compose()</td>
+  <td>Creates a new message instance and optionally composes its body content via view rendering.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr id="fromCode">
+  <td><a href="/Modules_Mail_Components_DbMailer#fromCode-detail">fromCode()</a></td>
+  <td></td>
+  <td>Modules\Mail\Components\DbMailer</td>
+</tr>
+<tr class="inherited" id="generateMessageFileName">
+  <td>generateMessageFileName()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr id="getDomain">
+  <td><a href="/Modules_Mail_Components_DbMailer#getDomain-detail">getDomain()</a></td>
+  <td></td>
+  <td>Modules\Mail\Components\DbMailer</td>
+</tr>
+<tr class="inherited" id="getLogger">
+  <td>getLogger()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="getSwiftMailer">
+  <td>getSwiftMailer()</td>
+  <td>Returns Swift mailer instance or array configuration.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="getTransport">
+  <td>getTransport()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td>hasMethod()</td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td>hasProperty()</td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="init">
+  <td>init()</td>
+  <td>Initializes the object.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td>renderInternal()</td>
+  <td>Renders a view file.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="renderStatic">
+  <td>renderStatic()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="renderString">
+  <td>renderString()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="renderTemplate">
+  <td>renderTemplate()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="send">
+  <td>send()</td>
+  <td>Sends the given email message.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="sendMultiple">
+  <td>sendMultiple()</td>
+  <td>Sends multiple messages at once.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="setTransport">
+  <td>setTransport()</td>
+  <td>Sets </td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td>configure()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="createMessage">
+  <td>createMessage()</td>
+  <td>Creates a new message instance.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="createSwiftMailer">
+  <td>createSwiftMailer()</td>
+  <td>Creates Swift mailer instance.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="createSwiftObject">
+  <td>createSwiftObject()</td>
+  <td>Creates Swift library object, from given array configuration.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="createTransport">
+  <td>createTransport()</td>
+  <td>Creates email transport instance by its array configuration.</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr id="loadTemplateModel">
+  <td><a href="/Modules_Mail_Components_DbMailer#loadTemplateModel-detail">loadTemplateModel()</a></td>
+  <td></td>
+  <td>Modules\Mail\Components\DbMailer</td>
+</tr>
+<tr class="inherited" id="mergeData">
+  <td>mergeData()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="saveMessage">
+  <td>saveMessage()</td>
+  <td>Saves the message as a file under [[fileTransportPath]].</td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+<tr class="inherited" id="sendMessage">
+  <td>sendMessage()</td>
+  <td></td>
+  <td>Mindy\Mail\Mailer</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="checker-detail">
+checker<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public bool <b>$checker</b>;</div>
+
+<p>enable reading email checker</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="fromCode-detail">
+fromCode()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>fromCode</b>($code, $receiver, $data=array (
+), $attachments=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$code</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$receiver</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$attachments</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#20" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#20</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">fromCode</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$receiver</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;</span><span style="color: #0000BB">$attachments&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$uniq&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">uniqid</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$template&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">loadTemplateModel</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderString</span><span style="color: #007700">(</span><span style="color: #0000BB">$template</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderString</span><span style="color: #007700">(</span><span style="color: #0000BB">$template</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">template</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">checker</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">urlManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">reverse</span><span style="color: #007700">(</span><span style="color: #DD0000">'mail.checker'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$template</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pk</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$absUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">http</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">absoluteUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"&lt;img&nbsp;width='1'&nbsp;height='1'&nbsp;src='</span><span style="color: #007700">{</span><span style="color: #0000BB">$absUrl</span><span style="color: #007700">}</span><span style="color: #DD0000">'&gt;"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$msg&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">compose</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'text'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"mail/message.txt"</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'html'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"mail/message.html"</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],&nbsp;</span><span style="color: #0000BB">array_merge</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'content'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'logoPath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getModule</span><span style="color: #007700">(</span><span style="color: #DD0000">'Mail'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">logoPath</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'subject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$subject<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$receiver</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setFrom</span><span style="color: #007700">(</span><span style="color: #0000BB">ParamsHelper</span><span style="color: #007700">::</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #DD0000">'core.core.email_owner'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$subject</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!empty(</span><span style="color: #0000BB">$attachments</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$attachments</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$attachments&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #0000BB">$attachments</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$attachments&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">attach</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">send</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Mail</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'receiver'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$receiver</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">key</span><span style="color: #007700">(</span><span style="color: #0000BB">$receiver</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$receiver</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'subject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$subject</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'message'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'unique_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$uniq</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">$subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getDomain-detail">
+getDomain()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string|null <b>getDomain</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string|null</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#69" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#69</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDomain</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">domain</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">domain</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(</span><span style="color: #0000BB">Console</span><span style="color: #007700">::</span><span style="color: #0000BB">isCli</span><span style="color: #007700">()&nbsp;===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">http</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHostInfo</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="loadTemplateModel-detail">
+loadTemplateModel()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected bool|\Mindy\Orm\Orm|null <b>loadTemplateModel</b>($code $code)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$code</td>
+  <td class="paramTypeCol">$code</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool|\Mindy\Orm\Orm|null</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#85" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Mail/Components/DbMailer.php#85</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">loadTemplateModel</span><span style="color: #007700">(</span><span style="color: #0000BB">$code</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$maildb&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">MailTemplate</span><span style="color: #007700">::</span><span style="color: #0000BB">objects</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([</span><span style="color: #DD0000">'code'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$code</span><span style="color: #007700">])-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$maildb&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">YII_DEBUG</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">HttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">500</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"Mail&nbsp;template&nbsp;with&nbsp;code&nbsp;</span><span style="color: #0000BB">$code</span><span style="color: #DD0000">&nbsp;do&nbsp;not&nbsp;exists"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$maildb</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

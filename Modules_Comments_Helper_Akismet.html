@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Akismet</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#akismet">akismet</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Modules\Comments\Helper\Akismet</td>
+    </tr>
+                        <tr>
+            <th>Version</th>
+            <td>0.5</td>
+        </tr>
+            <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Alex Potsides</td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    The Akismet PHP5 Class
+This class takes the functionality from the Akismet WordPress plugin written by <a href="http://photomatt.net/">Matt Mullenweg</a> and allows it to be integrated into any PHP5 application or website.
+The original plugin is <a href="http://akismet.com/download/">available on the Akismet website</a>.
+<br/><br/>
+<code>
+$akismet = new Akismet('http://www.example.com/blog/', 'aoeu1aoue');
+$akismet->setCommentAuthor($name);
+$akismet->setCommentAuthorEmail($email);
+$akismet->setCommentAuthorURL($url);
+$akismet->setCommentContent($comment);
+$akismet->setPermalink('http://www.example.com/blog/alex/someurl/');
+<br/><br/>
+if($akismet->isCommentSpam())
+  // store the comment but mark it as spam (in case of a mis-diagnosis)
+else
+  // store the comment normally
+</code>
+<br/><br/>
+Optionally you may wish to check if your WordPress API key is valid as in the example below.
+<br/><br/>
+<code>
+$akismet = new Akismet('http://www.example.com/blog/', 'aoeu1aoue');
+<br/><br/>
+if($akismet->isKeyValid()) {
+  // api key is okay
+} else {
+  // api key is invalid
+}
+</code></div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="/Modules_Comments_Helper_Akismet#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="isCommentSpam">
+  <td><a href="/Modules_Comments_Helper_Akismet#isCommentSpam-detail">isCommentSpam()</a></td>
+  <td>Tests for spam.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="isKeyValid">
+  <td><a href="/Modules_Comments_Helper_Akismet#isKeyValid-detail">isKeyValid()</a></td>
+  <td>Makes a request to the Akismet service to see if the API key passed to the constructor is valid.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setAPIPort">
+  <td><a href="/Modules_Comments_Helper_Akismet#setAPIPort-detail">setAPIPort()</a></td>
+  <td>Defaults to 80</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setAkismetServer">
+  <td><a href="/Modules_Comments_Helper_Akismet#setAkismetServer-detail">setAkismetServer()</a></td>
+  <td>Defaults to rest.akismet.com</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setAkismetVersion">
+  <td><a href="/Modules_Comments_Helper_Akismet#setAkismetVersion-detail">setAkismetVersion()</a></td>
+  <td>Defaults to '1.1'</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentAuthor">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentAuthor-detail">setCommentAuthor()</a></td>
+  <td>The name that the author submitted with the comment.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentAuthorEmail">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentAuthorEmail-detail">setCommentAuthorEmail()</a></td>
+  <td>The email address that the author submitted with the comment.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentAuthorURL">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentAuthorURL-detail">setCommentAuthorURL()</a></td>
+  <td>The URL that the author submitted with the comment.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentContent">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentContent-detail">setCommentContent()</a></td>
+  <td>The comment's body text.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentType">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentType-detail">setCommentType()</a></td>
+  <td>The type of comment being submitted.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setCommentUserAgent">
+  <td><a href="/Modules_Comments_Helper_Akismet#setCommentUserAgent-detail">setCommentUserAgent()</a></td>
+  <td>Lets you override the user agent used to submit the comment.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setPermalink">
+  <td><a href="/Modules_Comments_Helper_Akismet#setPermalink-detail">setPermalink()</a></td>
+  <td>A permanent URL referencing the blog post the comment was submitted to.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setReferrer">
+  <td><a href="/Modules_Comments_Helper_Akismet#setReferrer-detail">setReferrer()</a></td>
+  <td>To override the referring page when submitting spam/ham later on</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setRequestFactory">
+  <td><a href="/Modules_Comments_Helper_Akismet#setRequestFactory-detail">setRequestFactory()</a></td>
+  <td>Used by unit tests to mock transport layer</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="setUserIP">
+  <td><a href="/Modules_Comments_Helper_Akismet#setUserIP-detail">setUserIP()</a></td>
+  <td>To override the user IP address when submitting spam/ham later on</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="submitHam">
+  <td><a href="/Modules_Comments_Helper_Akismet#submitHam-detail">submitHam()</a></td>
+  <td>Submit ham that is incorrectly tagged as spam.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+<tr id="submitSpam">
+  <td><a href="/Modules_Comments_Helper_Akismet#submitSpam-detail">submitSpam()</a></td>
+  <td>Submit spam that is incorrectly tagged as ham.</td>
+  <td>Modules\Comments\Helper\Akismet</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>(string $blogURL, string $wordPressAPIKey)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$blogURL</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">The URL of your blog.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$wordPressAPIKey</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">WordPress API key.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#98" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#98</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$blogURL</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$wordPressAPIKey</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">blogURL&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$blogURL</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">wordPressAPIKey&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$wordPressAPIKey</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Set&nbsp;some&nbsp;default&nbsp;values<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">apiPort&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">80</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetServer&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'rest.akismet.com'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'1.1'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestFactory&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">SocketWriteReadFactory</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Start&nbsp;to&nbsp;populate&nbsp;the&nbsp;comment&nbsp;data<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'blog'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$blogURL</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'HTTP_USER_AGENT'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_agent'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'HTTP_USER_AGENT'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'HTTP_REFERER'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'referrer'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'HTTP_REFERER'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;This&nbsp;is&nbsp;necessary&nbsp;if&nbsp;the&nbsp;server&nbsp;PHP5&nbsp;is&nbsp;running&nbsp;on&nbsp;has&nbsp;been&nbsp;set&nbsp;up&nbsp;to&nbsp;run&nbsp;PHP4&nbsp;and<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;PHP5&nbsp;concurently&nbsp;and&nbsp;is&nbsp;actually&nbsp;running&nbsp;through&nbsp;a&nbsp;separate&nbsp;proxy&nbsp;al&nbsp;a&nbsp;these&nbsp;instructions:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;http://www.schlitt.info/applications/blog/archives/83_How_to_run_PHP4_and_PHP_5_parallel.html<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;and&nbsp;http://wiki.coggeshall.org/37.html<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Otherwise&nbsp;the&nbsp;user_ip&nbsp;appears&nbsp;as&nbsp;the&nbsp;IP&nbsp;address&nbsp;of&nbsp;the&nbsp;PHP4&nbsp;server&nbsp;passing&nbsp;the&nbsp;requests&nbsp;to&nbsp;the<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;PHP5&nbsp;one...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'REMOTE_ADDR'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'REMOTE_ADDR'</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">'SERVER_ADDR'</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_ip'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'REMOTE_ADDR'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_ip'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">'HTTP_X_FORWARDED_FOR'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="isCommentSpam-detail">
+isCommentSpam()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public bool <b>isCommentSpam</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol">True if the comment is spam, false if not</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#198" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#198</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isCommentSpam</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getQueryString</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">wordPressAPIKey&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.rest.akismet.com'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/comment-check'</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$response</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;==&nbsp;</span><span style="color: #DD0000">'invalid'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isKeyValid</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;Wordpress&nbsp;API&nbsp;key&nbsp;passed&nbsp;to&nbsp;the&nbsp;Akismet&nbsp;constructor&nbsp;is&nbsp;invalid.&nbsp;&nbsp;Please&nbsp;obtain&nbsp;a&nbsp;valid&nbsp;one&nbsp;from&nbsp;http://wordpress.com/api-keys/'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</span><span style="color: #0000BB">$response</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;==&nbsp;</span><span style="color: #DD0000">'true'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Tests for spam.
+<br/><br/>
+Uses the web service provided by <a href="http://www.akismet.com">Akismet</a> to see whether or not the submitted comment is spam.  Returns a boolean value.</p>
+
+
+<div class="detailHeader" id="isKeyValid-detail">
+isKeyValid()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public bool <b>isKeyValid</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol">True is if the key is valid, false if not.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#142" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#142</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isKeyValid</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Check&nbsp;to&nbsp;see&nbsp;if&nbsp;the&nbsp;key&nbsp;is&nbsp;valid<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">'key='&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">wordPressAPIKey&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&amp;blog='&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">blogURL</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetServer</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/verify-key'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;==&nbsp;</span><span style="color: #DD0000">'valid'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Makes a request to the Akismet service to see if the API key passed to the constructor is valid.
+<br/><br/>
+Use this method if you suspect your API key is invalid.</p>
+
+
+<div class="detailHeader" id="setAPIPort-detail">
+setAPIPort()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setAPIPort</b>($apiPort)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$apiPort</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#316" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#316</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setAPIPort</span><span style="color: #007700">(</span><span style="color: #0000BB">$apiPort</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">apiPort&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$apiPort</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Defaults to 80</p>
+
+
+<div class="detailHeader" id="setAkismetServer-detail">
+setAkismetServer()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setAkismetServer</b>($akismetServer)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$akismetServer</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#324" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#324</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setAkismetServer</span><span style="color: #007700">(</span><span style="color: #0000BB">$akismetServer</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetServer&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$akismetServer</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Defaults to rest.akismet.com</p>
+
+
+<div class="detailHeader" id="setAkismetVersion-detail">
+setAkismetVersion()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setAkismetVersion</b>(string $akismetVersion)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$akismetVersion</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#334" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#334</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setAkismetVersion</span><span style="color: #007700">(</span><span style="color: #0000BB">$akismetVersion</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$akismetVersion</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Defaults to '1.1'</p>
+
+
+<div class="detailHeader" id="setCommentAuthor-detail">
+setCommentAuthor()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentAuthor</b>($commentAuthor)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$commentAuthor</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#272" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#272</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentAuthor</span><span style="color: #007700">(</span><span style="color: #0000BB">$commentAuthor</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'comment_author'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$commentAuthor</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>The name that the author submitted with the comment.</p>
+
+
+<div class="detailHeader" id="setCommentAuthorEmail-detail">
+setCommentAuthorEmail()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentAuthorEmail</b>($authorEmail)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$authorEmail</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#282" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#282</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentAuthorEmail</span><span style="color: #007700">(</span><span style="color: #0000BB">$authorEmail</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'comment_author_email'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$authorEmail</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>The email address that the author submitted with the comment.
+<br/><br/>
+The address is assumed to be valid.</p>
+
+
+<div class="detailHeader" id="setCommentAuthorURL-detail">
+setCommentAuthorURL()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentAuthorURL</b>($authorURL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$authorURL</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#290" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#290</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentAuthorURL</span><span style="color: #007700">(</span><span style="color: #0000BB">$authorURL</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'comment_author_url'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$authorURL</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>The URL that the author submitted with the comment.</p>
+
+
+<div class="detailHeader" id="setCommentContent-detail">
+setCommentContent()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentContent</b>($commentBody)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$commentBody</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#298" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#298</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentContent</span><span style="color: #007700">(</span><span style="color: #0000BB">$commentBody</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'comment_content'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$commentBody</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>The comment's body text.</p>
+
+
+<div class="detailHeader" id="setCommentType-detail">
+setCommentType()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentType</b>($commentType)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$commentType</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#264" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#264</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentType</span><span style="color: #007700">(</span><span style="color: #0000BB">$commentType</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'comment_type'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$commentType</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>The type of comment being submitted.
+<br/><br/>
+May be blank, comment, trackback, pingback, or a made up value like "registration" or "wiki".</p>
+
+
+<div class="detailHeader" id="setCommentUserAgent-detail">
+setCommentUserAgent()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setCommentUserAgent</b>($userAgent)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$userAgent</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#308" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#308</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCommentUserAgent</span><span style="color: #007700">(</span><span style="color: #0000BB">$userAgent</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_agent'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$userAgent</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Lets you override the user agent used to submit the comment.
+you may wish to do this when submitting ham/spam.
+Defaults to $_SERVER['HTTP_USER_AGENT']</p>
+
+
+<div class="detailHeader" id="setPermalink-detail">
+setPermalink()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setPermalink</b>(string $permalink)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$permalink</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">The URL.  Optional.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#254" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#254</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setPermalink</span><span style="color: #007700">(</span><span style="color: #0000BB">$permalink</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'permalink'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$permalink</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>A permanent URL referencing the blog post the comment was submitted to.</p>
+
+
+<div class="detailHeader" id="setReferrer-detail">
+setReferrer()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setReferrer</b>(string $referrer)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$referrer</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">The referring page.  Optional.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#244" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#244</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setReferrer</span><span style="color: #007700">(</span><span style="color: #0000BB">$referrer</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'referrer'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$referrer</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>To override the referring page when submitting spam/ham later on</p>
+
+
+<div class="detailHeader" id="setRequestFactory-detail">
+setRequestFactory()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setRequestFactory</b>(AkismetRequestFactory $requestFactory)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$requestFactory</td>
+  <td class="paramTypeCol">AkismetRequestFactory</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#344" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#344</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setRequestFactory</span><span style="color: #007700">(</span><span style="color: #0000BB">$requestFactory</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestFactory&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$requestFactory</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Used by unit tests to mock transport layer</p>
+
+
+<div class="detailHeader" id="setUserIP-detail">
+setUserIP()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setUserIP</b>(string $userip)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$userip</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">An IP address.  Optional.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#234" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#234</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setUserIP</span><span style="color: #007700">(</span><span style="color: #0000BB">$userip</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">comment</span><span style="color: #007700">[</span><span style="color: #DD0000">'user_ip'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$userip</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>To override the user IP address when submitting spam/ham later on</p>
+
+
+<div class="detailHeader" id="submitHam-detail">
+submitHam()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>submitHam</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#224" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#224</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">submitHam</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getQueryString</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">wordPressAPIKey&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetServer</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/submit-ham'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Submit ham that is incorrectly tagged as spam.
+<br/><br/>
+Using this function will make you a good citizen as it helps Akismet to learn from its mistakes.  This will improve the service for everybody.</p>
+
+
+<div class="detailHeader" id="submitSpam-detail">
+submitSpam()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>submitSpam</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#214" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/Modules/Comments/Helper/Akisment.php#214</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">submitSpam</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getQueryString</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">wordPressAPIKey&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetServer</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">akismetVersion&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/submit-spam'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Submit spam that is incorrectly tagged as ham.
+<br/><br/>
+Using this function will make you a good citizen as it helps Akismet to learn from its mistakes.  This will improve the service for everybody.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>
