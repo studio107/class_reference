@@ -1,0 +1,2265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Query\Sqlite\QueryBuilder</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Query\Sqlite\QueryBuilder &raquo;
+<a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    QueryBuilder is the query builder for SQLite databases.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="dateTimeFormat">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#dateTimeFormat-detail">dateTimeFormat</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="db">
+  <td><a href="/Mindy_Query_QueryBuilder#db-detail">db</a></td>
+  <td>Connection</td>
+  <td>the database connection.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="separator">
+  <td><a href="/Mindy_Query_QueryBuilder#separator-detail">separator</a></td>
+  <td>string</td>
+  <td>the separator between different fragments of a SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="typeMap">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#typeMap-detail">typeMap</a></td>
+  <td>array</td>
+  <td>mapping from abstract column types (keys) to physical column types (values).</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Query_QueryBuilder#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Query_QueryBuilder#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Query_QueryBuilder#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Query_QueryBuilder#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Query_QueryBuilder#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Query_QueryBuilder#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="addColumn">
+  <td><a href="/Mindy_Query_QueryBuilder#addColumn-detail">addColumn()</a></td>
+  <td>Builds a SQL statement for adding a new DB column.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="addForeignKey">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#addForeignKey-detail">addForeignKey()</a></td>
+  <td>Builds a SQL statement for adding a foreign key constraint to an existing table.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="addPrimaryKey">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#addPrimaryKey-detail">addPrimaryKey()</a></td>
+  <td>Builds a SQL statement for adding a primary key constraint to an existing table.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="alterColumn">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#alterColumn-detail">alterColumn()</a></td>
+  <td>Builds a SQL statement for changing the definition of a column.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="batchInsert">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#batchInsert-detail">batchInsert()</a></td>
+  <td>Generates a batch INSERT SQL statement.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="build">
+  <td><a href="/Mindy_Query_QueryBuilder#build-detail">build()</a></td>
+  <td>Generates a SELECT SQL statement from a [[Query]] object.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildAndCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildAndCondition-detail">buildAndCondition()</a></td>
+  <td>Connects two or more SQL expressions with the `AND` or `OR` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildBetweenCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildBetweenCondition-detail">buildBetweenCondition()</a></td>
+  <td>Creates an SQL expressions with the `BETWEEN` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildColumns">
+  <td><a href="/Mindy_Query_QueryBuilder#buildColumns-detail">buildColumns()</a></td>
+  <td>Processes columns and properly quote them if necessary.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildCondition-detail">buildCondition()</a></td>
+  <td>Parses the condition specification and generates the corresponding SQL expression.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildContains">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildContains-detail">buildContains()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildDateTimeCondition">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildDateTimeCondition-detail">buildDateTimeCondition()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildDay">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildDay-detail">buildDay()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildEndswith">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildEndswith-detail">buildEndswith()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildExact">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildExact-detail">buildExact()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildFrom">
+  <td><a href="/Mindy_Query_QueryBuilder#buildFrom-detail">buildFrom()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildGroupBy">
+  <td><a href="/Mindy_Query_QueryBuilder#buildGroupBy-detail">buildGroupBy()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildGt">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildGt-detail">buildGt()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildGte">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildGte-detail">buildGte()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildHashCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildHashCondition-detail">buildHashCondition()</a></td>
+  <td>Creates a condition based on column-value pairs.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildHaving">
+  <td><a href="/Mindy_Query_QueryBuilder#buildHaving-detail">buildHaving()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildHour">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildHour-detail">buildHour()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildIStartswith">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIStartswith-detail">buildIStartswith()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildIcontains">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIcontains-detail">buildIcontains()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildIendswith">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIendswith-detail">buildIendswith()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildIn">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIn-detail">buildIn()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildInCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildInCondition-detail">buildInCondition()</a></td>
+  <td>Creates an SQL expressions with the `IN` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildIregex">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIregex-detail">buildIregex()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildIsnull">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildIsnull-detail">buildIsnull()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildJoin">
+  <td><a href="/Mindy_Query_QueryBuilder#buildJoin-detail">buildJoin()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildLikeCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildLikeCondition-detail">buildLikeCondition()</a></td>
+  <td>Creates an SQL expressions with the `LIKE` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildLimit">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildLimit-detail">buildLimit()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildLt">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildLt-detail">buildLt()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildLte">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildLte-detail">buildLte()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildMinute">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildMinute-detail">buildMinute()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildMonth">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildMonth-detail">buildMonth()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildNotCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildNotCondition-detail">buildNotCondition()</a></td>
+  <td>Inverts an SQL expressions with `NOT` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildOrderBy">
+  <td><a href="/Mindy_Query_QueryBuilder#buildOrderBy-detail">buildOrderBy()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildRange">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildRange-detail">buildRange()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildRegex">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildRegex-detail">buildRegex()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildSearch">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildSearch-detail">buildSearch()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="buildSecond">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildSecond-detail">buildSecond()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildSelect">
+  <td><a href="/Mindy_Query_QueryBuilder#buildSelect-detail">buildSelect()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildStartswith">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildStartswith-detail">buildStartswith()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildUnion">
+  <td><a href="/Mindy_Query_QueryBuilder#buildUnion-detail">buildUnion()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildWeek_day">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildWeek_day-detail">buildWeek_day()</a></td>
+  <td>Django compatible format: 1 (Sunday) to 7 (Saturday).</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildWhere">
+  <td><a href="/Mindy_Query_QueryBuilder#buildWhere-detail">buildWhere()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildYear">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#buildYear-detail">buildYear()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="checkIntegrity">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#checkIntegrity-detail">checkIntegrity()</a></td>
+  <td>Enables or disables integrity check.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Query_QueryBuilder#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Query_QueryBuilder#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="convertToBoolean">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#convertToBoolean-detail">convertToBoolean()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="convertToDateTime">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#convertToDateTime-detail">convertToDateTime()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="createIndex">
+  <td><a href="/Mindy_Query_QueryBuilder#createIndex-detail">createIndex()</a></td>
+  <td>Builds a SQL statement for creating a new index.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="createTable">
+  <td><a href="/Mindy_Query_QueryBuilder#createTable-detail">createTable()</a></td>
+  <td>Builds a SQL statement for creating a new DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Query_QueryBuilder#delete-detail">delete()</a></td>
+  <td>Creates a DELETE SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="dropColumn">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#dropColumn-detail">dropColumn()</a></td>
+  <td>Builds a SQL statement for dropping a DB column.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="dropForeignKey">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#dropForeignKey-detail">dropForeignKey()</a></td>
+  <td>Builds a SQL statement for dropping a foreign key constraint.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="dropIndex">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#dropIndex-detail">dropIndex()</a></td>
+  <td>Builds a SQL statement for dropping an index.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="dropPrimaryKey">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#dropPrimaryKey-detail">dropPrimaryKey()</a></td>
+  <td>Builds a SQL statement for removing a primary key constraint to an existing table.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="dropTable">
+  <td><a href="/Mindy_Query_QueryBuilder#dropTable-detail">dropTable()</a></td>
+  <td>Builds a SQL statement for dropping a DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="getColumnType">
+  <td><a href="/Mindy_Query_QueryBuilder#getColumnType-detail">getColumnType()</a></td>
+  <td>Converts an abstract column type into a physical column type.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="getRandomOrder">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#getRandomOrder-detail">getRandomOrder()</a></td>
+  <td></td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Query_QueryBuilder#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Query_QueryBuilder#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="insert">
+  <td><a href="/Mindy_Query_QueryBuilder#insert-detail">insert()</a></td>
+  <td>Creates an INSERT SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="makeParamKey">
+  <td><a href="/Mindy_Query_QueryBuilder#makeParamKey-detail">makeParamKey()</a></td>
+  <td>Makes key for param</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="renameColumn">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#renameColumn-detail">renameColumn()</a></td>
+  <td>Builds a SQL statement for renaming a column.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="renameTable">
+  <td><a href="/Mindy_Query_QueryBuilder#renameTable-detail">renameTable()</a></td>
+  <td>Builds a SQL statement for renaming a DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="resetSequence">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#resetSequence-detail">resetSequence()</a></td>
+  <td>Creates a SQL statement for resetting the sequence value of a table's primary key.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr id="truncateTable">
+  <td><a href="/Mindy_Query_Sqlite_QueryBuilder#truncateTable-detail">truncateTable()</a></td>
+  <td>Builds a SQL statement for truncating a DB table.</td>
+  <td>Mindy\Query\Sqlite\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="update">
+  <td><a href="/Mindy_Query_QueryBuilder#update-detail">update()</a></td>
+  <td>Creates an UPDATE SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="buildCompositeInCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildCompositeInCondition-detail">buildCompositeInCondition()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Query_QueryBuilder#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="dateTimeFormat-detail">
+dateTimeFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$dateTimeFormat</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="typeMap-detail">
+typeMap<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$typeMap</b>;</div>
+
+<p>mapping from abstract column types (keys) to physical column types (values).</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="addForeignKey-detail">
+addForeignKey()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>addForeignKey</b>(string $name, string $table, string|array $columns, string $refTable, string|array $refColumns, string $delete=NULL, string $update=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the foreign key constraint.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table that the foreign key constraint will be added to.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$columns</td>
+  <td class="paramTypeCol">string|array</td>
+  <td class="paramDescCol">the name of the column to that the constraint will be added on.
+If there are multiple columns, separate them with commas or use an array to represent them.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$refTable</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table that the foreign key references to.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$refColumns</td>
+  <td class="paramTypeCol">string|array</td>
+  <td class="paramDescCol">the name of the column that the foreign key references to.
+If there are multiple columns, separate them with commas or use an array to represent them.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$delete</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the ON DELETE option. Most DBMS support these options: RESTRICT, CASCADE, NO ACTION, SET DEFAULT, SET NULL</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$update</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the ON UPDATE option. Most DBMS support these options: RESTRICT, CASCADE, NO ACTION, SET DEFAULT, SET NULL</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for adding a foreign key constraint to an existing table.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#201" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#201</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">addForeignKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$refTable</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$refColumns</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$delete&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$update&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for adding a foreign key constraint to an existing table.
+The method will properly quote the table and column names.</p>
+
+
+<div class="detailHeader" id="addPrimaryKey-detail">
+addPrimaryKey()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>addPrimaryKey</b>(string $name, string $table, string|array $columns)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the primary key constraint.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table that the primary key constraint will be added to.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$columns</td>
+  <td class="paramTypeCol">string|array</td>
+  <td class="paramDescCol">comma separated string or array of columns that the primary key will consist of.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for adding a primary key constraint to an existing table.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#242" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#242</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">addPrimaryKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for adding a primary key constraint to an existing table.</p>
+
+
+<div class="detailHeader" id="alterColumn-detail">
+alterColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>alterColumn</b>(string $table, string $column, string $type)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table whose column is to be changed. The table name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$column</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the column to be changed. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$type</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the new column type. The [[getColumnType()]] method will be invoked to convert abstract
+column type (if any) into the physical one. Anything that is not recognized as abstract type will be kept
+in the generated SQL. For example, 'string' will be turned into 'varchar(255)', while 'string not null'
+will become 'varchar(255) not null'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for changing the definition of a column.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#229" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#229</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">alterColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$column</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for changing the definition of a column.</p>
+
+
+<div class="detailHeader" id="batchInsert-detail">
+batchInsert()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>batchInsert</b>(string $table, array $columns, array $rows)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table that new rows will be inserted into.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$columns</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the column names</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$rows</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the rows to be batch inserted into the table</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the batch INSERT SQL statement</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#65" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#65</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">batchInsert</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$rows</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$tableSchema&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableSchema</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$columnSchemas&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$tableSchema</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">columns</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$columnSchemas&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$columns&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$values&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$vs&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$row&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;isset(</span><span style="color: #0000BB">$columnSchemas</span><span style="color: #007700">[</span><span style="color: #0000BB">$columns</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$columnSchemas</span><span style="color: #007700">[</span><span style="color: #0000BB">$columns</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]]-&gt;</span><span style="color: #0000BB">typecast</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$vs</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$values</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">',&nbsp;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$vs</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">'INSERT&nbsp;INTO&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;('&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">',&nbsp;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">')&nbsp;SELECT&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">'&nbsp;UNION&nbsp;ALL&nbsp;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$values</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Generates a batch INSERT SQL statement.
+For example,
+<br/><br/>
+~~~
+$connection->createCommand()->batchInsert('tbl_user', ['name', 'age'], [
+    ['Tom', 30],
+    ['Jane', 20],
+    ['Linda', 25],
+])->execute();
+~~~
+<br/><br/>
+Note that the values in each row must match the corresponding column names.</p>
+
+
+<div class="detailHeader" id="buildContains-detail">
+buildContains()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildContains</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#112" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#112</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildContains</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'like'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildDateTimeCondition-detail">
+buildDateTimeCondition()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildDateTimeCondition</b>($field $field, $value $value, $extract $extract)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$extract</td>
+  <td class="paramTypeCol">$extract</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#301" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#301</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$extract</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(string)</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$extract&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #DD0000">'%w'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;==&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"0"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"strftime('"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$extract&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"',&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">")&nbsp;=&nbsp;:"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildDay-detail">
+buildDay()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildDay</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#270" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#270</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildDay</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%d"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildEndswith-detail">
+buildEndswith()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildEndswith</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#48" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#48</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildEndswith</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'like'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'%'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildExact-detail">
+buildExact()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildExact</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#122" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#122</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildExact</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #0000BB">$field&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildGt-detail">
+buildGt()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildGt</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#172" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#172</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildGt</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;&gt;&nbsp;:'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildGte-detail">
+buildGte()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildGte</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#160" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#160</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildGte</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;&gt;=&nbsp;:'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildHour-detail">
+buildHour()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildHour</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#248" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#248</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildHour</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%H"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIStartswith-detail">
+buildIStartswith()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIStartswith</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#58" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#58</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIStartswith</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'ilike'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'%'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIcontains-detail">
+buildIcontains()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIcontains</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#68" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#68</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIcontains</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'ilike'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIendswith-detail">
+buildIendswith()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIendswith</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#38" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#38</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIendswith</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'ilike'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'%'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIn-detail">
+buildIn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIn</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#146" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#146</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIn</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_object</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">instanceof&nbsp;\</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">\</span><span style="color: #0000BB">Orm</span><span style="color: #007700">\</span><span style="color: #0000BB">QuerySet&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">instanceof&nbsp;\</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">\</span><span style="color: #0000BB">Orm</span><span style="color: #007700">\</span><span style="color: #0000BB">Manager</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;IN&nbsp;('&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">allSql</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">')'</span><span style="color: #007700">],&nbsp;[]];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'in'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">],&nbsp;[]];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIregex-detail">
+buildIregex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIregex</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#185" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#185</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIregex</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(string)</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"&nbsp;REGEXP&nbsp;:"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"/"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"/i"</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildIsnull-detail">
+buildIsnull()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildIsnull</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#132" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#132</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildIsnull</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #0000BB">$field&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">],&nbsp;[]];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'not'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #0000BB">$field&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">]],&nbsp;[]];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildLimit-detail">
+buildLimit()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>buildLimit</b>($limit, $offset)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$limit</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$offset</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#262" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#262</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildLimit</span><span style="color: #007700">(</span><span style="color: #0000BB">$limit</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$offset</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;limit&nbsp;is&nbsp;not&nbsp;optional&nbsp;in&nbsp;SQLite<br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;http://www.sqlite.org/syntaxdiagrams.html#select-stmt<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$limit&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$limit&nbsp;</span><span style="color: #007700">&gt;=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'LIMIT&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$limit</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$offset&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">'&nbsp;OFFSET&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$offset</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$offset&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'LIMIT&nbsp;9223372036854775807&nbsp;OFFSET&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$offset</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//&nbsp;2^63-1<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$sql</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildLt-detail">
+buildLt()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildLt</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#100" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#100</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildLt</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;&lt;&nbsp;:'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildLte-detail">
+buildLte()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildLte</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#88" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#88</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildLte</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'&nbsp;&lt;=&nbsp;:'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildMinute-detail">
+buildMinute()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildMinute</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#238" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#238</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildMinute</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%M"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildMonth-detail">
+buildMonth()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildMonth</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#280" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#280</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildMonth</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%m"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildRange-detail">
+buildRange()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildRange</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#27" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#27</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildRange</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$start</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$end</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'between'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$start</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$end</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildRegex-detail">
+buildRegex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildRegex</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#202" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#202</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildRegex</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(string)</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeParamKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'and'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"&nbsp;REGEXP&nbsp;:"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName</span><span style="color: #007700">],&nbsp;[</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramName&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"/"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"/"</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildSearch-detail">
+buildSearch()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildSearch</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#218" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#218</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildSearch</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'Not&nbsp;implemented'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildSecond-detail">
+buildSecond()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildSecond</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#228" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#228</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildSecond</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%S"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildStartswith-detail">
+buildStartswith()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildStartswith</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#78" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#78</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildStartswith</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[[</span><span style="color: #DD0000">'like'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'%'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">],&nbsp;[]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="buildWeek_day-detail">
+buildWeek_day()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildWeek_day</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#260" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#260</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildWeek_day</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'%w'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Django compatible format: 1 (Sunday) to 7 (Saturday).
+Sqlite format %w day of week 0-6 with Sunday==0</p>
+
+
+<div class="detailHeader" id="buildYear-detail">
+buildYear()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>buildYear</b>($field $field, $value $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">$field</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#290" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#290</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildYear</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildDateTimeCondition</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"%Y"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="checkIntegrity-detail">
+checkIntegrity()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>checkIntegrity</b>(boolean $check=true, string $schema='', string $table='')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$check</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to turn on or off the integrity check.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$schema</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the schema of the tables. Meaningless for SQLite.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table name. Meaningless for SQLite.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for checking integrity</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#135" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#135</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">checkIntegrity</span><span style="color: #007700">(</span><span style="color: #0000BB">$check&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$schema&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Enables or disables integrity check.</p>
+
+
+<div class="detailHeader" id="convertToBoolean-detail">
+convertToBoolean()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convertToBoolean</b>($value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#329" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#329</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convertToBoolean</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(bool)&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="convertToDateTime-detail">
+convertToDateTime()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convertToDateTime</b>($value=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#316" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#316</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convertToDateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Query\Mysql\QueryBuilder&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dateTimeFormat</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif(</span><span style="color: #0000BB">is_numeric</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dateTimeFormat</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dateTimeFormat</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="dropColumn-detail">
+dropColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>dropColumn</b>(string $table, string $column)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table whose column is to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$column</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the column to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for dropping a DB column.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#168" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#168</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">dropColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$column</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for dropping a DB column.</p>
+
+
+<div class="detailHeader" id="dropForeignKey-detail">
+dropForeignKey()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>dropForeignKey</b>(string $name, string $table)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the foreign key constraint to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table whose foreign is to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for dropping a foreign key constraint.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#213" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#213</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">dropForeignKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for dropping a foreign key constraint.</p>
+
+
+<div class="detailHeader" id="dropIndex-detail">
+dropIndex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>dropIndex</b>(string $name, string $table)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the index to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table whose index is to be dropped. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for dropping an index.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#156" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#156</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">dropIndex</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">'DROP&nbsp;INDEX&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for dropping an index.</p>
+
+
+<div class="detailHeader" id="dropPrimaryKey-detail">
+dropPrimaryKey()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>dropPrimaryKey</b>(string $name, string $table)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the primary key constraint to be removed.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table that the primary key constraint will be removed from.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for removing a primary key constraint from an existing table.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#254" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#254</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">dropPrimaryKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for removing a primary key constraint to an existing table.</p>
+
+
+<div class="detailHeader" id="getRandomOrder-detail">
+getRandomOrder()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getRandomOrder</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#334" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/Lookup.php#334</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRandomOrder</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">'RANDOM()'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renameColumn-detail">
+renameColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>renameColumn</b>(string $table, string $oldName, string $newName)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table whose column is to be renamed. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$oldName</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the old name of the column. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$newName</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the new name of the column. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for renaming a DB column.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#181" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#181</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renameColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$oldName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$newName</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">NotSupportedException</span><span style="color: #007700">(</span><span style="color: #0000BB">__METHOD__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;is&nbsp;not&nbsp;supported&nbsp;by&nbsp;SQLite.'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for renaming a column.</p>
+
+
+<div class="detailHeader" id="resetSequence-detail">
+resetSequence()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>resetSequence</b>(string $tableName, mixed $value=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$tableName</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the table whose primary key sequence will be reset</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value for the primary key of the next new row inserted. If this is not set,
+the next new row's primary key will have a value 1.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for resetting sequence</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#103" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#103</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">resetSequence</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableSchema</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sequenceName&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">reset</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">primaryKey</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tableName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"SELECT&nbsp;MAX('</span><span style="color: #0000BB">$key</span><span style="color: #DD0000">')&nbsp;FROM&nbsp;</span><span style="color: #0000BB">$tableName</span><span style="color: #DD0000">"</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(int)</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;it's&nbsp;possible&nbsp;sqlite_sequence&nbsp;does&nbsp;not&nbsp;exist<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"UPDATE&nbsp;sqlite_sequence&nbsp;SET&nbsp;seq='</span><span style="color: #0000BB">$value</span><span style="color: #DD0000">'&nbsp;WHERE&nbsp;name='</span><span style="color: #007700">{</span><span style="color: #0000BB">$table</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">}</span><span style="color: #DD0000">'"</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidParamException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Table&nbsp;not&nbsp;found:&nbsp;</span><span style="color: #0000BB">$tableName</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidParamException</span><span style="color: #007700">(</span><span style="color: #DD0000">"There&nbsp;is&nbsp;not&nbsp;sequence&nbsp;associated&nbsp;with&nbsp;table&nbsp;'</span><span style="color: #0000BB">$tableName</span><span style="color: #DD0000">'.'"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Creates a SQL statement for resetting the sequence value of a table's primary key.
+The sequence will be reset such that the primary key of the next new row inserted
+will have the specified value or 1.</p>
+
+
+<div class="detailHeader" id="truncateTable-detail">
+truncateTable()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>truncateTable</b>(string $table)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$table</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the table to be truncated. The name will be properly quoted by the method.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for truncating a DB table.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#145" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Sqlite/QueryBuilder.php#145</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">truncateTable</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"DELETE&nbsp;FROM&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Builds a SQL statement for truncating a DB table.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

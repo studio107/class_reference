@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Base\AttributeCollection</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#system.collections">system.collections</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Base\AttributeCollection &raquo;
+<a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a> &raquo;
+ArrayObject</td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>IteratorAggregate, Traversable, ArrayAccess, Serializable, Countable</td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>1.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    CAttributeCollection implements a collection for storing attribute names and values.
+<br/><br/>
+Besides all functionalities provided by CMap, CAttributeCollection
+allows you to get and set attribute values like getting and setting
+properties. For example, the following usages are all valid for a
+CAttributeCollection object:
+<pre>
+$collection-&gt;text='text'; // same as:  $collection-&gt;add('text','text');
+echo $collection-&gt;text;   // same as:  echo $collection-&gt;itemAt('text');
+</pre>
+<br/><br/>
+The case sensitivity of attribute names can be toggled by setting the
+<a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> property of the collection.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="caseSensitive">
+  <td><a href="/Mindy_Base_AttributeCollection#caseSensitive-detail">caseSensitive</a></td>
+  <td>boolean</td>
+  <td>whether the keys are case-sensitive.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="data">
+  <td><a href="/Mindy_Helper_Collection#data-detail">data</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="flags">
+  <td><a href="/Mindy_Helper_Collection#flags-detail">flags</a></td>
+  <td>int</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="iteratorClass">
+  <td><a href="/Mindy_Helper_Collection#iteratorClass-detail">iteratorClass</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Helper_Collection#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="__get">
+  <td><a href="/Mindy_Base_AttributeCollection#__get-detail">__get()</a></td>
+  <td>Returns a property value or an event handler list by property or event name.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr id="__isset">
+  <td><a href="/Mindy_Base_AttributeCollection#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr id="__set">
+  <td><a href="/Mindy_Base_AttributeCollection#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr id="__unset">
+  <td><a href="/Mindy_Base_AttributeCollection#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr id="add">
+  <td><a href="/Mindy_Base_AttributeCollection#add-detail">add()</a></td>
+  <td>Adds an item into the map.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="all">
+  <td><a href="/Mindy_Helper_Collection#all-detail">all()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="append">
+  <td>append()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="asort">
+  <td>asort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr id="canGetProperty">
+  <td><a href="/Mindy_Base_AttributeCollection#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr id="canSetProperty">
+  <td><a href="/Mindy_Base_AttributeCollection#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Helper_Collection#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Helper_Collection#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="clear">
+  <td><a href="/Mindy_Helper_Collection#clear-detail">clear()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="contains">
+  <td><a href="/Mindy_Base_AttributeCollection#contains-detail">contains()</a></td>
+  <td>Returns whether the specified is in the map.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="count">
+  <td>count()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="exchangeArray">
+  <td>exchangeArray()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr id="get">
+  <td><a href="/Mindy_Base_AttributeCollection#get-detail">get()</a></td>
+  <td>Returns the item with the specified key.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="getArrayCopy">
+  <td>getArrayCopy()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getFlags">
+  <td>getFlags()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getIterator">
+  <td>getIterator()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getIteratorClass">
+  <td>getIteratorClass()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="has">
+  <td><a href="/Mindy_Helper_Collection#has-detail">has()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="hasProperty">
+  <td><a href="/Mindy_Base_AttributeCollection#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Helper_Collection#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="itemAt">
+  <td><a href="/Mindy_Base_AttributeCollection#itemAt-detail">itemAt()</a></td>
+  <td>Returns the item with the specified key.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="ksort">
+  <td>ksort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="mergeArray">
+  <td><a href="/Mindy_Helper_Collection#mergeArray-detail">mergeArray()</a></td>
+  <td>Merges two or more arrays into one recursively.</td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="mergeWith">
+  <td><a href="/Mindy_Base_AttributeCollection#mergeWith-detail">mergeWith()</a></td>
+  <td>Merges iterable data into the map.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="natcasesort">
+  <td>natcasesort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="natsort">
+  <td>natsort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td>offsetExists()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td>offsetGet()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td>offsetSet()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td>offsetUnset()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr id="remove">
+  <td><a href="/Mindy_Base_AttributeCollection#remove-detail">remove()</a></td>
+  <td>Removes an item from the map by its key.</td>
+  <td>Mindy\Base\AttributeCollection</td>
+</tr>
+<tr class="inherited" id="serialize">
+  <td>serialize()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="setFlags">
+  <td>setFlags()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="setIteratorClass">
+  <td>setIteratorClass()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="toJson">
+  <td><a href="/Mindy_Helper_Collection#toJson-detail">toJson()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="uasort">
+  <td>uasort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="uksort">
+  <td>uksort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="unserialize">
+  <td>unserialize()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Helper_Collection#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="caseSensitive-detail">
+caseSensitive<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$caseSensitive</b>;</div>
+
+<p>whether the keys are case-sensitive. Defaults to false.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__get-detail">
+__get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__get</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value or the event handler list</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#64" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#64</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">itemAt</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a property value or an event handler list by property or event name.
+This method overrides the parent implementation by returning
+a key value if the key exists in the collection.</p>
+
+
+<div class="detailHeader" id="__isset-detail">
+__isset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>__isset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property value is null</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#92" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#92</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__isset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">itemAt</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__isset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks if a property value is null.
+This method overrides the parent implementation by checking
+if the key exists in the collection and contains a non-null value.</p>
+
+
+<div class="detailHeader" id="__set-detail">
+__set()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__set</b>(string $name, mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value or event handler</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#80" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#80</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__set</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets value of a component property.
+This method overrides the parent implementation by adding a new key value
+to the collection.</p>
+
+
+<div class="detailHeader" id="__unset-detail">
+__unset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#106" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#106</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets a component property to be null.
+This method overrides the parent implementation by clearing
+the specified key value.</p>
+
+
+<div class="detailHeader" id="add-detail">
+add()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>add</b>(mixed $key, mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">key</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#140" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#140</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Adds an item into the map.
+This overrides the parent implementation by converting the key to lower case first if <a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> is false.</p>
+
+
+<div class="detailHeader" id="canGetProperty-detail">
+canGetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canGetProperty</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be read</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#195" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#195</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines whether a property can be read.
+This method overrides parent implementation by returning true
+if the collection contains the named key.</p>
+
+
+<div class="detailHeader" id="canSetProperty-detail">
+canSetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canSetProperty</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#207" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#207</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines whether a property can be set.
+This method overrides parent implementation by always returning true
+because you can always add a new value to the collection.</p>
+
+
+<div class="detailHeader" id="contains-detail">
+contains()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>contains</b>(mixed $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the key</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the map contains an item with the specified key</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#168" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#168</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns whether the specified is in the map.
+This overrides the parent implementation by converting the key to lower case first if <a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> is false.</p>
+
+
+<div class="detailHeader" id="get-detail">
+get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>get</b>(mixed $key, null $default=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the key</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$default</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the element at the offset, null if no element is found at the offset</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#129" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#129</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$default</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$default</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the item with the specified key.
+This overrides the parent implementation by converting the key to lower case first if <a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> is false.</p>
+
+
+<div class="detailHeader" id="hasProperty-detail">
+hasProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasProperty</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#183" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#183</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contains</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">hasProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines whether a property is defined.
+This method overrides parent implementation by returning true
+if the collection contains the named key.</p>
+
+
+<div class="detailHeader" id="itemAt-detail">
+itemAt()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>itemAt</b>(mixed $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the key</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the element at the offset, null if no element is found at the offset</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#117" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#117</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">itemAt</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">itemAt</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">itemAt</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the item with the specified key.
+This overrides the parent implementation by converting the key to lower case first if <a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> is false.</p>
+
+
+<div class="detailHeader" id="mergeWith-detail">
+mergeWith()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>mergeWith</b>(mixed $data, boolean $recursive=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the data to be merged with, must be an array or object implementing Traversable</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$recursive</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the merging should be recursive.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#229" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#229</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">mergeWith</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$recursive&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Traversable</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$d&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$d</span><span style="color: #007700">[</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)]&nbsp;=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">mergeWith</span><span style="color: #007700">(</span><span style="color: #0000BB">$d</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$recursive</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">mergeWith</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$recursive</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Merges iterable data into the map.
+<br/><br/>
+Existing elements in the map will be overwritten if their keys are the same as those in the source.
+If the merge is recursive, the following algorithm is performed:
+<ul>
+<li>the map data is saved as $a, and the source data is saved as $b;</li>
+<li>if $a and $b both have an array indexed at the same string key, the arrays will be merged using this algorithm;</li>
+<li>any integer-indexed elements in $b will be appended to $a and reindexed accordingly;</li>
+<li>any string-indexed elements in $b will overwrite elements in $a with the same index;</li>
+</ul></p>
+
+
+<div class="detailHeader" id="remove-detail">
+remove()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>remove</b>(mixed $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the key of the item to be removed</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the removed value, null if no such key exists.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#154" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AttributeCollection.php#154</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">caseSensitive</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Removes an item from the map by its key.
+This overrides the parent implementation by converting the key to lower case first if <a href="/Mindy_Base_AttributeCollection#caseSensitive">caseSensitive</a> is false.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,1638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Di\Container</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Di\Container</td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    Container implements a [dependency injection](http://en.wikipedia.org/wiki/Dependency_injection) container.
+<br/><br/>
+A dependency injection (DI) container is an object that knows how to instantiate and configure objects and
+all their dependent objects. For more information about DI, please refer to
+[Martin Fowler's article](http://martinfowler.com/articles/injection.html).
+<br/><br/>
+Container supports constructor injection as well as property injection.
+<br/><br/>
+To use Container, you first need to set up the class dependencies by calling [[set()]].
+You then call [[get()]] to create a new class object. Container will automatically instantiate
+dependent objects, inject them into the object being created, configure and finally return the newly created object.
+<br/><br/>
+By default, [[\Mindy::$container]] refers to a Container instance which is used by [[\Mindy::createObject()]]
+to create new object instances. You may use this method to replace the `new` operator
+when creating a new object, which gives you the benefit of automatic dependency resolution and default
+property configuration.
+<br/><br/>
+Below is an example of using Container:
+<br/><br/>
+```php
+namespace app\models;
+<br/><br/>
+use yii\base\Object;
+use yii\db\Connection;
+use yii\di\Container;
+<br/><br/>
+interface UserFinderInterface
+{
+    function findUser();
+}
+<br/><br/>
+class UserFinder extends Object implements UserFinderInterface
+{
+    public $db;
+<br/><br/>
+    public function __construct(Connection $db, $config = [])
+    {
+        $this->db = $db;
+        parent::__construct($config);
+    }
+<br/><br/>
+    public function findUser()
+    {
+    }
+}
+<br/><br/>
+class UserLister extends Object
+{
+    public $finder;
+<br/><br/>
+    public function __construct(UserFinderInterface $finder, $config = [])
+    {
+        $this->finder = $finder;
+        parent::__construct($config);
+    }
+}
+<br/><br/>
+$container = new Container;
+$container->set('yii\db\Connection', [
+    'dsn' => '...',
+]);
+$container->set('app\models\UserFinderInterface', [
+    'class' => 'app\models\UserFinder',
+]);
+$container->set('userLister', 'app\models\UserLister');
+<br/><br/>
+$lister = $container->get('userLister');
+<br/><br/>
+// which is equivalent to:
+<br/><br/>
+$db = new \yii\db\Connection(['dsn' => '...']);
+$finder = new UserFinder($db);
+$lister = new UserLister($finder);
+```</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="definitions">
+  <td><a href="/Mindy_Di_Container#definitions-detail">definitions</a></td>
+  <td>array</td>
+  <td>The list of the object definitions or the loaded shared objects (type or ID =></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__call">
+  <td><a href="/Mindy_Di_Container#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__callInternal">
+  <td><a href="/Mindy_Di_Container#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Di_Container#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__get">
+  <td><a href="/Mindy_Di_Container#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__getInternal">
+  <td><a href="/Mindy_Di_Container#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__isset">
+  <td><a href="/Mindy_Di_Container#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__issetInternal">
+  <td><a href="/Mindy_Di_Container#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__set">
+  <td><a href="/Mindy_Di_Container#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__setInternal">
+  <td><a href="/Mindy_Di_Container#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__unset">
+  <td><a href="/Mindy_Di_Container#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="__unsetInternal">
+  <td><a href="/Mindy_Di_Container#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="canGetProperty">
+  <td><a href="/Mindy_Di_Container#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="canSetProperty">
+  <td><a href="/Mindy_Di_Container#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="className">
+  <td><a href="/Mindy_Di_Container#className-detail">className()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="classNameShort">
+  <td><a href="/Mindy_Di_Container#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="clear">
+  <td><a href="/Mindy_Di_Container#clear-detail">clear()</a></td>
+  <td>Removes the definition for the specified name.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="get">
+  <td><a href="/Mindy_Di_Container#get-detail">get()</a></td>
+  <td>Returns an instance of the requested class.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="getDefinitions">
+  <td><a href="/Mindy_Di_Container#getDefinitions-detail">getDefinitions()</a></td>
+  <td>Returns the list of the object definitions or the loaded shared objects.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="has">
+  <td><a href="/Mindy_Di_Container#has-detail">has()</a></td>
+  <td>Returns a value indicating whether the container has the definition of the specified name.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="hasMethod">
+  <td><a href="/Mindy_Di_Container#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="hasProperty">
+  <td><a href="/Mindy_Di_Container#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="hasSingleton">
+  <td><a href="/Mindy_Di_Container#hasSingleton-detail">hasSingleton()</a></td>
+  <td>Returns a value indicating whether the given name corresponds to a registered singleton.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Di_Container#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="set">
+  <td><a href="/Mindy_Di_Container#set-detail">set()</a></td>
+  <td>Registers a class definition with this container.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="setSingleton">
+  <td><a href="/Mindy_Di_Container#setSingleton-detail">setSingleton()</a></td>
+  <td>Registers a class definition with this container and marks the class as a singleton class.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="build">
+  <td><a href="/Mindy_Di_Container#build-detail">build()</a></td>
+  <td>Creates an instance of the specified class.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="configure">
+  <td><a href="/Mindy_Di_Container#configure-detail">configure()</a></td>
+  <td></td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="getDependencies">
+  <td><a href="/Mindy_Di_Container#getDependencies-detail">getDependencies()</a></td>
+  <td>Returns the dependencies of the specified class.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="mergeParams">
+  <td><a href="/Mindy_Di_Container#mergeParams-detail">mergeParams()</a></td>
+  <td>Merges the user-specified constructor parameters with the ones registered via [[set()]].</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="normalizeDefinition">
+  <td><a href="/Mindy_Di_Container#normalizeDefinition-detail">normalizeDefinition()</a></td>
+  <td>Normalizes the class definition.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+<tr id="resolveDependencies">
+  <td><a href="/Mindy_Di_Container#resolveDependencies-detail">resolveDependencies()</a></td>
+  <td>Resolves dependencies by replacing them with the actual object instances.</td>
+  <td>Mindy\Di\Container</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="definitions-detail">
+definitions<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+array <b>definitions</b>;</div>
+
+<p>The list of the object definitions or the loaded shared objects (type or ID =></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__call-detail">
+__call()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__call</b>(string $name, array $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the method name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">method parameters</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the method return value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__call</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Calls the named method which is not a class method.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when an unknown method is being invoked.</p>
+
+
+<div class="detailHeader" id="__callInternal-detail">
+__callInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__callInternal</b>($name, $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownMethodException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unknown&nbsp;method:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"::</span><span style="color: #0000BB">$name</span><span style="color: #DD0000">()"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>(array $config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">name-value pairs that will be used to initialize the object properties</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#54" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#54</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Constructor.
+The default implementation does two things:
+<br/><br/>
+- Initializes the object with the given configuration `$config`.
+- Call [[init()]].
+<br/><br/>
+If this method is overridden in a child class, it is recommended that
+<br/><br/>
+- the last parameter of the constructor is a configuration array, like `$config` here.
+- call the parent implementation at the end of the constructor.</p>
+
+
+<div class="detailHeader" id="__get-detail">
+__get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__get</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__getinternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$value = $object->property;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#__set">__set()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__getInternal-detail">
+__getInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__getInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__getInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;write-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__isset-detail">
+__isset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>__isset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the named property is set (not null).</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__isset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks if the named property is set (not null).
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `isset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, false will be returned.</p>
+
+
+<div class="detailHeader" id="__issetInternal-detail">
+__issetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__issetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">()&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__set-detail">
+__set()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__set</b>(string $name, mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__set</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$object->property = $value;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#__get">__get()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__setInternal-detail">
+__setInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__setInternal</b>($name, $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__unset-detail">
+__unset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets an object property to null.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `unset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, this method will do nothing.
+If the property is read-only, it will throw an exception.</p>
+
+
+<div class="detailHeader" id="__unsetInternal-detail">
+__unsetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unsetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unsetting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="build-detail">
+build()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected object <b>build</b>(string $class, array $params, array $config)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the class name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">constructor parameters</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">configurations to be applied to the new instance</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">object</td>
+  <td class="paramDescCol">the newly created instance of the specified class</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#349" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#349</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">build</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**&nbsp;@var&nbsp;ReflectionClass&nbsp;$reflection&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">list&nbsp;(</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$index&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$param</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">[</span><span style="color: #0000BB">$index</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$param</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!empty(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$class&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Accessors&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$class&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Configurator</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;set&nbsp;$config&nbsp;as&nbsp;the&nbsp;last&nbsp;parameter&nbsp;(existing&nbsp;one&nbsp;will&nbsp;be&nbsp;overwritten)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">[</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">)&nbsp;-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resolveDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">newInstanceArgs</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resolveDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">newInstanceArgs</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Creates an instance of the specified class.
+This method will resolve dependencies of the specified class, instantiate them, and inject
+them into the new instance of the specified class.</p>
+
+
+<div class="detailHeader" id="canGetProperty-detail">
+canGetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canGetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be read</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be read.
+A property is readable if:
+<br/><br/>
+- the class has a getter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="canSetProperty-detail">
+canSetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canSetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be written</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be set.
+A property is writable if:
+<br/><br/>
+- the class has a setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#canGetProperty">canGetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="className-detail">
+className()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>className</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the fully qualified name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">className</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">get_called_class</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="classNameShort-detail">
+classNameShort()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>classNameShort</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the short name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">classNameShort</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$reflect&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$reflect</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getShortName</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="clear-detail">
+clear()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>clear</b>(string $class)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#297" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#297</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">clear</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;unset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Removes the definition for the specified name.</p>
+
+
+<div class="detailHeader" id="configure-detail">
+configure()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>configure</b>($config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!empty(</span><span style="color: #0000BB">$config</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Creator</span><span style="color: #007700">::</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="get-detail">
+get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public object <b>get</b>(string $class, array $params=array (
+), array $config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the class name or an alias name (e.g. `foo`) that was previously registered via [[set()]]
+or [[setSingleton()]].</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of constructor parameter values. The parameters should be provided in the order
+they appear in the constructor declaration. If you want to skip some parameters, you should index the remaining
+ones with the integers that represent their positions in the constructor parameter list.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of name-value pairs that will be used to initialize the object properties.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">object</td>
+  <td class="paramDescCol">an instance of the requested class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#139" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#139</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;singleton<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(!isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">build</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$definition&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_callable</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resolveDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">mergeParams</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">call_user_func</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$concrete&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">[</span><span style="color: #DD0000">'class'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unset(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">[</span><span style="color: #DD0000">'class'</span><span style="color: #007700">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_merge</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">mergeParams</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$concrete&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">$class</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">build</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$concrete</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">is_object</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Unexpected&nbsp;object&nbsp;definition&nbsp;type:&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">gettype</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;singleton<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns an instance of the requested class.
+<br/><br/>
+You may provide constructor parameters (`$params`) and object configurations (`$config`)
+that will be used during the creation of the instance.
+<br/><br/>
+Note that if the class is declared to be singleton by calling [[setSingleton()]],
+the same instance of the class will be returned each time this method is called.
+In this case, the constructor parameters and object configurations will be used
+only if the class is instantiated the first time.</p>
+
+
+<div class="detailHeader" id="getDefinitions-detail">
+getDefinitions()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getDefinitions</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the list of the object definitions or the loaded shared objects (type or ID => definition or instance).</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#335" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#335</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDefinitions</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the list of the object definitions or the loaded shared objects.</p>
+
+
+<div class="detailHeader" id="getDependencies-detail">
+getDependencies()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>getDependencies</b>(string $class)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the dependencies of the specified class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#399" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#399</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_reflections</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_reflections</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_dependencies</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$reflection&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$constructor&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getConstructor</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$constructor&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$constructor</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getParameters</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$param</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$param</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isDefaultValueAvailable</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$param</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getDefaultValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$c&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$param</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getClass</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">Instance</span><span style="color: #007700">::</span><span style="color: #0000BB">of</span><span style="color: #007700">(</span><span style="color: #0000BB">$c&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$c</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_reflections</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_dependencies</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the dependencies of the specified class.</p>
+
+
+<div class="detailHeader" id="has-detail">
+has()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>has</b>(string $class)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the container has the definition of the specified name..</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#276" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#276</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">has</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether the container has the definition of the specified name.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#set">set()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="hasMethod-detail">
+hasMethod()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasMethod</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasMethod</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a method is defined.
+<br/><br/>
+The default implementation is a call to php function `method_exists()`.
+You may override this method when you implemented the php magic method `__call()`.</p>
+
+
+<div class="detailHeader" id="hasProperty-detail">
+hasProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property is defined.
+A property is defined if:
+<br/><br/>
+- the class has a getter or setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#canGetProperty">canGetProperty()</a></li>
+	<li><a href="/Mindy_Di_Container#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="hasSingleton-detail">
+hasSingleton()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasSingleton</b>(string $class, boolean $checkInstance=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkInstance</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to check if the singleton has been instantiated.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the given name corresponds to a registered singleton. If `$checkInstance` is true,
+the method should return a value indicating whether the singleton has been instantiated.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#288" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#288</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasSingleton</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkInstance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$checkInstance&nbsp;</span><span style="color: #007700">?&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">])&nbsp;:&nbsp;</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether the given name corresponds to a registered singleton.</p>
+
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#72" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#72</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initializes the object.
+This method is invoked at the end of the constructor after the object is initialized with the
+given configuration.</p>
+
+
+<div class="detailHeader" id="mergeParams-detail">
+mergeParams()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>mergeParams</b>(string $class, array $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the constructor parameters</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the merged parameters</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#379" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#379</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">mergeParams</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(empty(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_params</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(empty(</span><span style="color: #0000BB">$params</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_params</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ps&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_params</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$index&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ps</span><span style="color: #007700">[</span><span style="color: #0000BB">$index</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$ps</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Merges the user-specified constructor parameters with the ones registered via [[set()]].</p>
+
+
+<div class="detailHeader" id="normalizeDefinition-detail">
+normalizeDefinition()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>normalizeDefinition</b>(string $class, string|array|callable $definition)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$definition</td>
+  <td class="paramTypeCol">string|array|callable</td>
+  <td class="paramDescCol">the class definition</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the normalized class definition</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#309" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#309</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">normalizeDefinition</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(empty(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$class</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">is_callable</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">is_object</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!isset(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">[</span><span style="color: #DD0000">'class'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'\\'</span><span style="color: #007700">)&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">[</span><span style="color: #DD0000">'class'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$class</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"A&nbsp;class&nbsp;definition&nbsp;requires&nbsp;a&nbsp;\"class\"&nbsp;member."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Unsupported&nbsp;definition&nbsp;type&nbsp;for&nbsp;\"</span><span style="color: #0000BB">$class</span><span style="color: #DD0000">\":&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">gettype</span><span style="color: #007700">(</span><span style="color: #0000BB">$definition</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Normalizes the class definition.</p>
+
+
+<div class="detailHeader" id="resolveDependencies-detail">
+resolveDependencies()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>resolveDependencies</b>(array $dependencies, ReflectionClass $reflection=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dependencies</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the dependencies</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$reflection</td>
+  <td class="paramTypeCol">ReflectionClass</td>
+  <td class="paramDescCol">the class reflection associated with the dependencies</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the resolved dependencies</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#433" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#433</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">resolveDependencies</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$reflection&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$dependencies&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$index&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$dependency&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Instance</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">[</span><span style="color: #0000BB">$index</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$reflection&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getConstructor</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getParameters</span><span style="color: #007700">()[</span><span style="color: #0000BB">$index</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$class&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Missing&nbsp;required&nbsp;parameter&nbsp;\"</span><span style="color: #0000BB">$name</span><span style="color: #DD0000">\"&nbsp;when&nbsp;instantiating&nbsp;\"</span><span style="color: #0000BB">$class</span><span style="color: #DD0000">\"."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$dependencies</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Resolves dependencies by replacing them with the actual object instances.</p>
+
+
+<div class="detailHeader" id="set-detail">
+set()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static <b>set</b>(string $class, mixed $definition=array (
+), array $params=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$definition</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the definition associated with `$class`. It can be one of the followings:
+<br/><br/>
+- a PHP callable: The callable will be executed when [[get()]] is invoked. The signature of the callable
+  should be `function ($container, $params, $config)`, where `$params` stands for the list of constructor
+  parameters, `$config` the object configuration, and `$container` the container object. The return value
+  of the callable will be returned by [[get()]] as the object instance requested.
+- a configuration array: the array contains name-value pairs that will be used to initialize the property
+  values of the newly created object when [[get()]] is called. The `class` element stands for the
+  the class of the object to be created. If `class` is not specified, `$class` will be used as the class name.
+- a string: a class name, an interface name or an alias name.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the list of constructor parameters. The parameters will be passed to the class
+constructor when [[get()]] is called.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">static</td>
+  <td class="paramDescCol">the container itself</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#241" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#241</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$definition&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;array&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">normalizeDefinition</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_params</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;unset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Registers a class definition with this container.
+<br/><br/>
+For example,
+<br/><br/>
+```php
+// register a class name as is. This can be skipped.
+$container->set('yii\db\Connection');
+<br/><br/>
+// register an interface
+// When a class depends on the interface, the corresponding class
+// will be instantiated as the dependent object
+$container->set('yii\mail\MailInterface', 'yii\swiftmailer\Mailer');
+<br/><br/>
+// register an alias name. You can use $container->get('foo')
+// to create an instance of Connection
+$container->set('foo', 'yii\db\Connection');
+<br/><br/>
+// register a class with configuration. The configuration
+// will be applied when the class is instantiated by get()
+$container->set('yii\db\Connection', [
+    'dsn' => 'mysql:host=127.0.0.1;dbname=demo',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8',
+]);
+<br/><br/>
+// register an alias name with class configuration
+// In this case, a "class" element is required to specify the class
+$container->set('db', [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=demo',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8',
+]);
+<br/><br/>
+// register a PHP callable
+// The callable will be executed when $container->get('db') is called
+$container->set('db', function ($container, $params, $config) {
+    return new \yii\db\Connection($config);
+});
+```
+<br/><br/>
+If a class definition with the same name already exists, it will be overwritten with the new one.
+You may use [[has()]] to check if a class definition already exists.</p>
+
+
+<div class="detailHeader" id="setSingleton-detail">
+setSingleton()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static <b>setSingleton</b>(string $class, mixed $definition=array (
+), array $params=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$class</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">class name, interface name or alias name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$definition</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the definition associated with `$class`. See [[set()]] for more details.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the list of constructor parameters. The parameters will be passed to the class
+constructor when [[get()]] is called.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">static</td>
+  <td class="paramDescCol">the container itself</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#262" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Container.php#262</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setSingleton</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$definition&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;array&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_definitions</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">normalizeDefinition</span><span style="color: #007700">(</span><span style="color: #0000BB">$class</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$definition</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_params</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_singletons</span><span style="color: #007700">[</span><span style="color: #0000BB">$class</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Registers a class definition with this container and marks the class as a singleton class.
+<br/><br/>
+This method is similar to [[set()]] except that classes registered via this method will only have one
+instance. Each time [[get()]] is called, the same instance of the specified class will be returned.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Di_Container#set">set()</a></li>
+</ul>
+</div>
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Validation\Interfaces\IValidateObject</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>interface Mindy\Validation\Interfaces\IValidateObject</td>
+    </tr>
+                <tr>
+            <th>Subclasses</th>
+            <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a>, <a href="/Mindy_Form_Form.html">Mindy\Form\Form</a>, <a href="/Mindy_Form_ModelForm.html">Mindy\Form\ModelForm</a></td>
+        </tr>
+                    <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="getField">
+  <td><a href="/Mindy_Validation_Interfaces_IValidateObject#getField-detail">getField()</a></td>
+  <td>Returns field instance</td>
+  <td>Mindy\Validation\Interfaces\IValidateObject</td>
+</tr>
+<tr id="getFieldsInit">
+  <td><a href="/Mindy_Validation_Interfaces_IValidateObject#getFieldsInit-detail">getFieldsInit()</a></td>
+  <td>Returns the initialized fields for validation</td>
+  <td>Mindy\Validation\Interfaces\IValidateObject</td>
+</tr>
+<tr id="hasField">
+  <td><a href="/Mindy_Validation_Interfaces_IValidateObject#hasField-detail">hasField()</a></td>
+  <td>Determines check the field isset</td>
+  <td>Mindy\Validation\Interfaces\IValidateObject</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="getField-detail">
+getField()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public object <b>getField</b>($attribute $attribute)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$attribute</td>
+  <td class="paramTypeCol">$attribute</td>
+  <td class="paramDescCol">string</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">object</td>
+  <td class="paramDescCol">field instance</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#35" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#35</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getField</span><span style="color: #007700">(</span><span style="color: #0000BB">$attribute</span><span style="color: #007700">);</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getFieldsInit-detail">
+getFieldsInit()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public mixed <b>getFieldsInit</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the initialized fields for validation</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#23" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#23</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">();</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="hasField-detail">
+hasField()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+abstract public bool <b>hasField</b>($attribute $attribute)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$attribute</td>
+  <td class="paramTypeCol">$attribute</td>
+  <td class="paramDescCol">string</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol">check the field isset</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#29" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Interfaces/IValidateObject.php#29</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasField</span><span style="color: #007700">(</span><span style="color: #0000BB">$attribute</span><span style="color: #007700">);</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

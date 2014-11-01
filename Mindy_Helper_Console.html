@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Helper\Console</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Helper\Console</td>
+    </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="color">
+  <td><a href="/Mindy_Helper_Console#color-detail">color()</a></td>
+  <td>Returns colored string</td>
+  <td>Mindy\Helper\Console</td>
+</tr>
+<tr id="confirm">
+  <td><a href="/Mindy_Helper_Console#confirm-detail">confirm()</a></td>
+  <td>Asks user to confirm by typing y or n.</td>
+  <td>Mindy\Helper\Console</td>
+</tr>
+<tr id="isCli">
+  <td><a href="/Mindy_Helper_Console#isCli-detail">isCli()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Console</td>
+</tr>
+<tr id="prompt">
+  <td><a href="/Mindy_Helper_Console#prompt-detail">prompt()</a></td>
+  <td>Reads input via the readline PHP extension if that's available, or fgets() if readline is not installed.</td>
+  <td>Mindy\Helper\Console</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="color-detail">
+color()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>color</b>($string $string, null $foregroundColor=NULL, null $backgroundColor=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$string</td>
+  <td class="paramTypeCol">$string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$foregroundColor</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$backgroundColor</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">colored string</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#61" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#61</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">color</span><span style="color: #007700">(</span><span style="color: #0000BB">$string</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foregroundColor&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$backgroundColor&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$coloredString&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">""</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Check&nbsp;if&nbsp;given&nbsp;foreground&nbsp;color&nbsp;found<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$foregroundColor</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$coloredString&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"\033["&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$foregroundColor&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"m"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$backgroundColor</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$coloredString&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"\033["&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$backgroundColor&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"m"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$coloredString&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$string&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\033[0m"</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns colored string</p>
+
+
+<div class="detailHeader" id="confirm-detail">
+confirm()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean <b>confirm</b>(string $message, boolean $default=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$message</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">to echo out before waiting for user input</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$default</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">this value is returned if no selection is made. This parameter has been available since version 1.1.11.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether user confirmed</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#83" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#83</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">confirm</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&nbsp;(yes|no)&nbsp;['&nbsp;</span><span style="color: #007700">.&nbsp;(</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #DD0000">'yes'&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #DD0000">'no'</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">']:'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">fgets</span><span style="color: #007700">(</span><span style="color: #0000BB">STDIN</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;empty(</span><span style="color: #0000BB">$input</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">:&nbsp;!</span><span style="color: #0000BB">strncasecmp</span><span style="color: #007700">(</span><span style="color: #0000BB">$input</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'y'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Asks user to confirm by typing y or n.</p>
+
+
+<div class="detailHeader" id="isCli-detail">
+isCli()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static bool <b>isCli</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#49" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#49</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">isCli</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">php_sapi_name</span><span style="color: #007700">()&nbsp;===&nbsp;</span><span style="color: #DD0000">'cli'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="prompt-detail">
+prompt()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static mixed <b>prompt</b>(string $message, string $default=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$message</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">to echo out before waiting for user input</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$default</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the default string to be returned when user does not write anything.
+Defaults to null, means that default string is disabled. This parameter is available since version 1.1.11.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">line read as a string, or false if input has been closed</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#101" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Console.php#101</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">prompt</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"&nbsp;[</span><span style="color: #0000BB">$default</span><span style="color: #DD0000">]&nbsp;"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">extension_loaded</span><span style="color: #007700">(</span><span style="color: #DD0000">'readline'</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">readline</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">readline_add_history</span><span style="color: #007700">(</span><span style="color: #0000BB">$input</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">fgets</span><span style="color: #007700">(</span><span style="color: #0000BB">STDIN</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">$input</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">''&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">$default&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Reads input via the readline PHP extension if that's available, or fgets() if readline is not installed.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

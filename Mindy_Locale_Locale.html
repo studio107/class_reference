@@ -1,0 +1,2443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Locale\Locale</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#system.i18n">system.i18n</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Locale\Locale</td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>1.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    Locale represents the data relevant to a locale.
+<br/><br/>
+The data includes the number formatting information and date formatting information.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="aMName">
+  <td><a href="/Mindy_Locale_Locale#aMName-detail">aMName</a></td>
+  <td>string</td>
+  <td>The AM name.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="currencyFormat">
+  <td><a href="/Mindy_Locale_Locale#currencyFormat-detail">currencyFormat</a></td>
+  <td>string</td>
+  <td>The currency format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="dataPath">
+  <td><a href="/Mindy_Locale_Locale#dataPath-detail">dataPath</a></td>
+  <td>string</td>
+  <td>the directory that contains the locale data.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="dateFormat">
+  <td><a href="/Mindy_Locale_Locale#dateFormat-detail">dateFormat</a></td>
+  <td>string</td>
+  <td>Date format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="dateFormatter">
+  <td><a href="/Mindy_Locale_Locale#dateFormatter-detail">dateFormatter</a></td>
+  <td>DateFormatter</td>
+  <td>The date formatter for this locale.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="dateTimeFormat">
+  <td><a href="/Mindy_Locale_Locale#dateTimeFormat-detail">dateTimeFormat</a></td>
+  <td>string</td>
+  <td>Datetime format, i.e., the order of date and time.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="decimalFormat">
+  <td><a href="/Mindy_Locale_Locale#decimalFormat-detail">decimalFormat</a></td>
+  <td>string</td>
+  <td>The decimal format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="id">
+  <td><a href="/Mindy_Locale_Locale#id-detail">id</a></td>
+  <td>string</td>
+  <td>The locale ID (in canonical form).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="monthNames">
+  <td><a href="/Mindy_Locale_Locale#monthNames-detail">monthNames</a></td>
+  <td>array</td>
+  <td>Month names indexed by month values (1-12).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="numberFormatter">
+  <td><a href="/Mindy_Locale_Locale#numberFormatter-detail">numberFormatter</a></td>
+  <td>NumberFormatter</td>
+  <td>The number formatter for this locale.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="orientation">
+  <td><a href="/Mindy_Locale_Locale#orientation-detail">orientation</a></td>
+  <td>string</td>
+  <td>The character orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="pMName">
+  <td><a href="/Mindy_Locale_Locale#pMName-detail">pMName</a></td>
+  <td>string</td>
+  <td>The PM name.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="percentFormat">
+  <td><a href="/Mindy_Locale_Locale#percentFormat-detail">percentFormat</a></td>
+  <td>string</td>
+  <td>The percent format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="pluralRules">
+  <td><a href="/Mindy_Locale_Locale#pluralRules-detail">pluralRules</a></td>
+  <td>array</td>
+  <td>Plural forms expressions.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="scientificFormat">
+  <td><a href="/Mindy_Locale_Locale#scientificFormat-detail">scientificFormat</a></td>
+  <td>string</td>
+  <td>The scientific format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="timeFormat">
+  <td><a href="/Mindy_Locale_Locale#timeFormat-detail">timeFormat</a></td>
+  <td>string</td>
+  <td>Date format.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="weekDayNames">
+  <td><a href="/Mindy_Locale_Locale#weekDayNames-detail">weekDayNames</a></td>
+  <td>array</td>
+  <td>The weekday names indexed by weekday values (0-6, 0 means Sunday, 1 Monday, etc.).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__call">
+  <td><a href="/Mindy_Locale_Locale#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__callInternal">
+  <td><a href="/Mindy_Locale_Locale#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Locale_Locale#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__get">
+  <td><a href="/Mindy_Locale_Locale#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__getInternal">
+  <td><a href="/Mindy_Locale_Locale#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__isset">
+  <td><a href="/Mindy_Locale_Locale#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__issetInternal">
+  <td><a href="/Mindy_Locale_Locale#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__set">
+  <td><a href="/Mindy_Locale_Locale#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__setInternal">
+  <td><a href="/Mindy_Locale_Locale#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__unset">
+  <td><a href="/Mindy_Locale_Locale#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="__unsetInternal">
+  <td><a href="/Mindy_Locale_Locale#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="canGetProperty">
+  <td><a href="/Mindy_Locale_Locale#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="canSetProperty">
+  <td><a href="/Mindy_Locale_Locale#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="className">
+  <td><a href="/Mindy_Locale_Locale#className-detail">className()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="classNameShort">
+  <td><a href="/Mindy_Locale_Locale#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getAMName">
+  <td><a href="/Mindy_Locale_Locale#getAMName-detail">getAMName()</a></td>
+  <td>Returns the AM name</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getCanonicalID">
+  <td><a href="/Mindy_Locale_Locale#getCanonicalID-detail">getCanonicalID()</a></td>
+  <td>Converts a locale ID to its canonical form.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getCurrencyFormat">
+  <td><a href="/Mindy_Locale_Locale#getCurrencyFormat-detail">getCurrencyFormat()</a></td>
+  <td>Returns the currency format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getCurrencySymbol">
+  <td><a href="/Mindy_Locale_Locale#getCurrencySymbol-detail">getCurrencySymbol()</a></td>
+  <td>Returns the localized currency symbol. Null if the symbol does not exist.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getDateFormat">
+  <td><a href="/Mindy_Locale_Locale#getDateFormat-detail">getDateFormat()</a></td>
+  <td>Returns date format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getDateFormatter">
+  <td><a href="/Mindy_Locale_Locale#getDateFormatter-detail">getDateFormatter()</a></td>
+  <td>Returns the date formatter for this locale</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getDateTimeFormat">
+  <td><a href="/Mindy_Locale_Locale#getDateTimeFormat-detail">getDateTimeFormat()</a></td>
+  <td>Returns datetime format, i.e., the order of date and time.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getDecimalFormat">
+  <td><a href="/Mindy_Locale_Locale#getDecimalFormat-detail">getDecimalFormat()</a></td>
+  <td>Returns the decimal format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getEraName">
+  <td><a href="/Mindy_Locale_Locale#getEraName-detail">getEraName()</a></td>
+  <td>Returns the era name</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getId">
+  <td><a href="/Mindy_Locale_Locale#getId-detail">getId()</a></td>
+  <td>Returns the locale ID (in canonical form)</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getInstance">
+  <td><a href="/Mindy_Locale_Locale#getInstance-detail">getInstance()</a></td>
+  <td>Returns the instance of the specified locale.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getLanguage">
+  <td><a href="/Mindy_Locale_Locale#getLanguage-detail">getLanguage()</a></td>
+  <td>Returns the local display name for the language. Null if the language code does not exist.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getLanguageID">
+  <td><a href="/Mindy_Locale_Locale#getLanguageID-detail">getLanguageID()</a></td>
+  <td>Converts a locale ID to a language ID.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getLocaleDisplayName">
+  <td><a href="/Mindy_Locale_Locale#getLocaleDisplayName-detail">getLocaleDisplayName()</a></td>
+  <td>Gets a localized name from i18n data file (one of framework/i18n/data/ files).</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getLocaleIDs">
+  <td><a href="/Mindy_Locale_Locale#getLocaleIDs-detail">getLocaleIDs()</a></td>
+  <td>Returns IDs of the locales which the framework can recognize</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getMonthName">
+  <td><a href="/Mindy_Locale_Locale#getMonthName-detail">getMonthName()</a></td>
+  <td>Returns the month name</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getMonthNames">
+  <td><a href="/Mindy_Locale_Locale#getMonthNames-detail">getMonthNames()</a></td>
+  <td>Returns the month names in the specified width.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getNumberFormatter">
+  <td><a href="/Mindy_Locale_Locale#getNumberFormatter-detail">getNumberFormatter()</a></td>
+  <td>Returns the number formatter for this locale</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getNumberSymbol">
+  <td><a href="/Mindy_Locale_Locale#getNumberSymbol-detail">getNumberSymbol()</a></td>
+  <td>Returns symbol</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getOrientation">
+  <td><a href="/Mindy_Locale_Locale#getOrientation-detail">getOrientation()</a></td>
+  <td>Returns the character orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left)</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getPMName">
+  <td><a href="/Mindy_Locale_Locale#getPMName-detail">getPMName()</a></td>
+  <td>Returns the PM name</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getPercentFormat">
+  <td><a href="/Mindy_Locale_Locale#getPercentFormat-detail">getPercentFormat()</a></td>
+  <td>Returns the percent format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getPluralRules">
+  <td><a href="/Mindy_Locale_Locale#getPluralRules-detail">getPluralRules()</a></td>
+  <td>Returns plural forms expressions</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getScientificFormat">
+  <td><a href="/Mindy_Locale_Locale#getScientificFormat-detail">getScientificFormat()</a></td>
+  <td>Returns the scientific format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getScript">
+  <td><a href="/Mindy_Locale_Locale#getScript-detail">getScript()</a></td>
+  <td>Returns the local display name for the script. Null if the script code does not exist.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getScriptID">
+  <td><a href="/Mindy_Locale_Locale#getScriptID-detail">getScriptID()</a></td>
+  <td>Converts a locale ID to a script ID.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getTerritory">
+  <td><a href="/Mindy_Locale_Locale#getTerritory-detail">getTerritory()</a></td>
+  <td>Returns the local display name for the territory. Null if the territory code does not exist.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getTerritoryID">
+  <td><a href="/Mindy_Locale_Locale#getTerritoryID-detail">getTerritoryID()</a></td>
+  <td>Converts a locale ID to a territory ID.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getTimeFormat">
+  <td><a href="/Mindy_Locale_Locale#getTimeFormat-detail">getTimeFormat()</a></td>
+  <td>Returns date format</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getWeekDayName">
+  <td><a href="/Mindy_Locale_Locale#getWeekDayName-detail">getWeekDayName()</a></td>
+  <td>Returns the weekday name</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="getWeekDayNames">
+  <td><a href="/Mindy_Locale_Locale#getWeekDayNames-detail">getWeekDayNames()</a></td>
+  <td>Returns the week day names in the specified width.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="hasMethod">
+  <td><a href="/Mindy_Locale_Locale#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="hasProperty">
+  <td><a href="/Mindy_Locale_Locale#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Locale_Locale#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="configure">
+  <td><a href="/Mindy_Locale_Locale#configure-detail">configure()</a></td>
+  <td></td>
+  <td>Mindy\Locale\Locale</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="aMName-detail">
+aMName<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>aMName</b>;</div>
+
+<p>The AM name.</p>
+
+
+<div class="detailHeader" id="currencyFormat-detail">
+currencyFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>currencyFormat</b>;</div>
+
+<p>The currency format.</p>
+
+
+<div class="detailHeader" id="dataPath-detail">
+dataPath<span class="detailHeaderTag">
+property
+ (available since v1.1.0)
+</span>
+</div>
+
+<div class="signature">
+public static string <b>$dataPath</b>;</div>
+
+<p>the directory that contains the locale data. If this property is not set,
+the locale data will be loaded from 'framework/i18n/data'.</p>
+
+
+<div class="detailHeader" id="dateFormat-detail">
+dateFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>dateFormat</b>;</div>
+
+<p>Date format.</p>
+
+
+<div class="detailHeader" id="dateFormatter-detail">
+dateFormatter<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+DateFormatter <b>dateFormatter</b>;</div>
+
+<p>The date formatter for this locale.</p>
+
+
+<div class="detailHeader" id="dateTimeFormat-detail">
+dateTimeFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>dateTimeFormat</b>;</div>
+
+<p>Datetime format, i.e., the order of date and time.</p>
+
+
+<div class="detailHeader" id="decimalFormat-detail">
+decimalFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>decimalFormat</b>;</div>
+
+<p>The decimal format.</p>
+
+
+<div class="detailHeader" id="id-detail">
+id<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>id</b>;</div>
+
+<p>The locale ID (in canonical form).</p>
+
+
+<div class="detailHeader" id="monthNames-detail">
+monthNames<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+array <b>monthNames</b>;</div>
+
+<p>Month names indexed by month values (1-12).</p>
+
+
+<div class="detailHeader" id="numberFormatter-detail">
+numberFormatter<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+NumberFormatter <b>numberFormatter</b>;</div>
+
+<p>The number formatter for this locale.</p>
+
+
+<div class="detailHeader" id="orientation-detail">
+orientation<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>orientation</b>;</div>
+
+<p>The character orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left).</p>
+
+
+<div class="detailHeader" id="pMName-detail">
+pMName<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>pMName</b>;</div>
+
+<p>The PM name.</p>
+
+
+<div class="detailHeader" id="percentFormat-detail">
+percentFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>percentFormat</b>;</div>
+
+<p>The percent format.</p>
+
+
+<div class="detailHeader" id="pluralRules-detail">
+pluralRules<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+array <b>pluralRules</b>;</div>
+
+<p>Plural forms expressions.</p>
+
+
+<div class="detailHeader" id="scientificFormat-detail">
+scientificFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>scientificFormat</b>;</div>
+
+<p>The scientific format.</p>
+
+
+<div class="detailHeader" id="timeFormat-detail">
+timeFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+string <b>timeFormat</b>;</div>
+
+<p>Date format.</p>
+
+
+<div class="detailHeader" id="weekDayNames-detail">
+weekDayNames<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+array <b>weekDayNames</b>;</div>
+
+<p>The weekday names indexed by weekday values (0-6, 0 means Sunday, 1 Monday, etc.).</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__call-detail">
+__call()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__call</b>(string $name, array $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the method name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">method parameters</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the method return value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__call</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Calls the named method which is not a class method.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when an unknown method is being invoked.</p>
+
+
+<div class="detailHeader" id="__callInternal-detail">
+__callInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__callInternal</b>($name, $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownMethodException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unknown&nbsp;method:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"::</span><span style="color: #0000BB">$name</span><span style="color: #DD0000">()"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID (e.g. en_US)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#97" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#97</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__FILE__</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'Data'&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$dataPath</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dataFile&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_id&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.php'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_file</span><span style="color: #007700">(</span><span style="color: #0000BB">$dataFile</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data&nbsp;</span><span style="color: #007700">=&nbsp;require(</span><span style="color: #0000BB">$dataFile</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unrecognized&nbsp;locale&nbsp;"{locale}".'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'{locale}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">]));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Constructor.
+Since the constructor is protected, please use <a href="/Mindy_Locale_Locale#getInstance">getInstance</a>
+to obtain an instance of the specified locale.</p>
+
+
+<div class="detailHeader" id="__get-detail">
+__get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__get</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__getinternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$value = $object->property;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_Locale#__set">__set()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__getInternal-detail">
+__getInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__getInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__getInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;write-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__isset-detail">
+__isset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>__isset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the named property is set (not null).</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__isset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks if the named property is set (not null).
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `isset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, false will be returned.</p>
+
+
+<div class="detailHeader" id="__issetInternal-detail">
+__issetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__issetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">()&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__set-detail">
+__set()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__set</b>(string $name, mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__set</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$object->property = $value;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_Locale#__get">__get()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__setInternal-detail">
+__setInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__setInternal</b>($name, $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__unset-detail">
+__unset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets an object property to null.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `unset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, this method will do nothing.
+If the property is read-only, it will throw an exception.</p>
+
+
+<div class="detailHeader" id="__unsetInternal-detail">
+__unsetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unsetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unsetting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="canGetProperty-detail">
+canGetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canGetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be read</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be read.
+A property is readable if:
+<br/><br/>
+- the class has a getter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_Locale#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="canSetProperty-detail">
+canSetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canSetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be written</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be set.
+A property is writable if:
+<br/><br/>
+- the class has a setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_Locale#canGetProperty">canGetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="className-detail">
+className()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>className</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the fully qualified name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">className</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">get_called_class</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="classNameShort-detail">
+classNameShort()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>classNameShort</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the short name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">classNameShort</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$reflect&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$reflect</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getShortName</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="configure-detail">
+configure()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>configure</b>($config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!empty(</span><span style="color: #0000BB">$config</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Creator</span><span style="color: #007700">::</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getAMName-detail">
+getAMName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getAMName</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the AM name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#274" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#274</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getAMName</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'amName'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getCanonicalID-detail">
+getCanonicalID()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>getCanonicalID</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID to be converted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID in canonical form</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#115" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#115</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'-'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts a locale ID to its canonical form.
+In canonical form, a locale ID consists of only underscores and lower-case letters.</p>
+
+
+<div class="detailHeader" id="getCurrencyFormat-detail">
+getCurrencyFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getCurrencyFormat</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the currency format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#179" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#179</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getCurrencyFormat</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'currencyFormat'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getCurrencySymbol-detail">
+getCurrencySymbol()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getCurrencySymbol</b>(string $currency)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$currency</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">3-letter ISO 4217 code. For example, the code "USD" represents the US Dollar and "EUR" represents the Euro currency.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the localized currency symbol. Null if the symbol does not exist.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#154" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#154</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getCurrencySymbol</span><span style="color: #007700">(</span><span style="color: #0000BB">$currency</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'currencySymbols'</span><span style="color: #007700">][</span><span style="color: #0000BB">$currency</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'currencySymbols'</span><span style="color: #007700">][</span><span style="color: #0000BB">$currency</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getDateFormat-detail">
+getDateFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getDateFormat</b>(string $width='medium')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">date format width. It can be 'full', 'long', 'medium' or 'short'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">date format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#291" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#291</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDateFormat</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'medium'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'dateFormats'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getDateFormatter-detail">
+getDateFormatter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public DateFormatter <b>getDateFormatter</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">DateFormatter</td>
+  <td class="paramDescCol">the date formatter for this locale</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#142" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#142</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDateFormatter</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_dateFormatter&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_dateFormatter&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">DateFormatter</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_dateFormatter</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getDateTimeFormat-detail">
+getDateTimeFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getDateTimeFormat</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">datetime format, i.e., the order of date and time.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#308" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#308</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDateTimeFormat</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'dateTimeFormat'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getDecimalFormat-detail">
+getDecimalFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getDecimalFormat</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the decimal format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#171" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#171</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDecimalFormat</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'decimalFormat'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getEraName-detail">
+getEraName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getEraName</b>(integer $era, string $width='wide')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$era</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">era (0,1)</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">era name width.  It can be 'wide', 'abbreviated' or 'narrow'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the era name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#266" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#266</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getEraName</span><span style="color: #007700">(</span><span style="color: #0000BB">$era</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'wide'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'eraNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$era</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getId-detail">
+getId()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getId</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID (in canonical form)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#123" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#123</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_id</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getInstance-detail">
+getInstance()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static Locale <b>getInstance</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID (e.g. en_US)</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Locale</td>
+  <td class="paramDescCol">the locale instance</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#58" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#58</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;</span><span style="color: #0000BB">$locales&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$locales</span><span style="color: #007700">[</span><span style="color: #0000BB">$id</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$locales</span><span style="color: #007700">[</span><span style="color: #0000BB">$id</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$locales</span><span style="color: #007700">[</span><span style="color: #0000BB">$id</span><span style="color: #007700">]&nbsp;=&nbsp;new&nbsp;</span><span style="color: #0000BB">Locale</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the instance of the specified locale.
+Since the constructor of Locale is protected, you can only use
+this method to obtain an instance of the specified locale.</p>
+
+
+<div class="detailHeader" id="getLanguage-detail">
+getLanguage()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getLanguage</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Unicode language identifier from IETF BCP 47. For example, the code "en_US" represents U.S. English and "en_GB" represents British English.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the local display name for the language. Null if the language code does not exist.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#431" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#431</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLanguage</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocaleDisplayName</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLanguageID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">),&nbsp;</span><span style="color: #DD0000">'languages'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getLanguageID-detail">
+getLanguageID()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getLanguageID</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID to be converted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the language ID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#337" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#337</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLanguageID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;normalize&nbsp;id<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;remove&nbsp;sub&nbsp;tags<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;((</span><span style="color: #0000BB">$underscorePosition&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$underscorePosition</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts a locale ID to a language ID.
+A language ID consists of only the first group of letters before an underscore or dash.</p>
+
+
+<div class="detailHeader" id="getLocaleDisplayName-detail">
+getLocaleDisplayName()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getLocaleDisplayName</b>(string $id=NULL, string $category='languages')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">array key from an array named by $category.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$category</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">data category. One of 'languages', 'scripts' or 'territories'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the localized name for the id specified. Null if data does not exist.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#410" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#410</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLocaleDisplayName</span><span style="color: #007700">(</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$category&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'languages'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$category&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'languages'</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$id</span><span style="color: #007700">])))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$id</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;((</span><span style="color: #0000BB">$category&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'scripts'</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$val&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getScriptID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">))&nbsp;&amp;&amp;&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$val</span><span style="color: #007700">])))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$val</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;((</span><span style="color: #0000BB">$category&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'territories'</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$val&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTerritoryID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">))&nbsp;&amp;&amp;&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$val</span><span style="color: #007700">])))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$val</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$id</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #0000BB">$category</span><span style="color: #007700">][</span><span style="color: #0000BB">$id</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Gets a localized name from i18n data file (one of framework/i18n/data/ files).</p>
+
+
+<div class="detailHeader" id="getLocaleIDs-detail">
+getLocaleIDs()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static array <b>getLocaleIDs</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">IDs of the locales which the framework can recognize</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#71" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#71</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getLocaleIDs</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;</span><span style="color: #0000BB">$locales</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$locales&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$locales&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__FILE__</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'Data'&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$dataPath</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$folder&nbsp;</span><span style="color: #007700">=&nbsp;@</span><span style="color: #0000BB">opendir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dataPath</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;((</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">=&nbsp;@</span><span style="color: #0000BB">readdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$folder</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fullPath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$dataPath&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;-</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;===&nbsp;</span><span style="color: #DD0000">'.php'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">is_file</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullPath</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$locales</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;-</span><span style="color: #0000BB">4</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">closedir</span><span style="color: #007700">(</span><span style="color: #0000BB">$folder</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">sort</span><span style="color: #007700">(</span><span style="color: #0000BB">$locales</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$locales</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getMonthName-detail">
+getMonthName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getMonthName</b>(integer $month, string $width='wide', boolean $standAlone=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$month</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">month (1-12)</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">month name width. It can be 'wide', 'abbreviated' or 'narrow'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$standAlone</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the month name should be returned in stand-alone format</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the month name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#206" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#206</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getMonthName</span><span style="color: #007700">(</span><span style="color: #0000BB">$month</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'wide'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$standAlone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$standAlone</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$month</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getMonthNames-detail">
+getMonthNames()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getMonthNames</b>(string $width='wide', boolean $standAlone=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">month name width. It can be 'wide', 'abbreviated' or 'narrow'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$standAlone</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the month names should be returned in stand-alone format</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">month names indexed by month values (1-12)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#221" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#221</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getMonthNames</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'wide'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$standAlone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$standAlone</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'monthNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the month names in the specified width.</p>
+
+
+<div class="detailHeader" id="getNumberFormatter-detail">
+getNumberFormatter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public NumberFormatter <b>getNumberFormatter</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">NumberFormatter</td>
+  <td class="paramDescCol">the number formatter for this locale</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#131" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#131</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getNumberFormatter</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_numberFormatter&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_numberFormatter&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">NumberFormatter</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_numberFormatter</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getNumberSymbol-detail">
+getNumberSymbol()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getNumberSymbol</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">symbol name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">symbol</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#163" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#163</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getNumberSymbol</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'numberSymbols'</span><span style="color: #007700">][</span><span style="color: #0000BB">$name</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'numberSymbols'</span><span style="color: #007700">][</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getOrientation-detail">
+getOrientation()
+<span class="detailHeaderTag">
+method
+(available since v1.1.2)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getOrientation</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the character orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#317" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#317</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getOrientation</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'orientation'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'orientation'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #DD0000">'ltr'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getPMName-detail">
+getPMName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getPMName</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the PM name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#282" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#282</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getPMName</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'pmName'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getPercentFormat-detail">
+getPercentFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getPercentFormat</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the percent format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#187" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#187</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getPercentFormat</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'percentFormat'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getPluralRules-detail">
+getPluralRules()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getPluralRules</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">plural forms expressions</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#325" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#325</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getPluralRules</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'pluralRules'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'pluralRules'</span><span style="color: #007700">]&nbsp;:&nbsp;[</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'true'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getScientificFormat-detail">
+getScientificFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getScientificFormat</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the scientific format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#195" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#195</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getScientificFormat</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'scientificFormat'</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getScript-detail">
+getScript()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getScript</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Unicode script identifier from IETF BCP 47. For example, the code "en_US" represents U.S. English and "en_GB" represents British English.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the local display name for the script. Null if the script code does not exist.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#441" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#441</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getScript</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocaleDisplayName</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'scripts'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getScriptID-detail">
+getScriptID()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getScriptID</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID to be converted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the script ID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#355" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#355</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getScriptID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;normalize&nbsp;id<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;find&nbsp;sub&nbsp;tags<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;((</span><span style="color: #0000BB">$underscorePosition&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$subTag&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;script&nbsp;sub&nbsp;tags&nbsp;can&nbsp;be&nbsp;distinguished&nbsp;from&nbsp;territory&nbsp;sub&nbsp;tags&nbsp;by&nbsp;length<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">])&nbsp;===&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts a locale ID to a script ID.
+A script ID consists of only the last four characters after an underscore or dash.</p>
+
+
+<div class="detailHeader" id="getTerritory-detail">
+getTerritory()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getTerritory</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Unicode territory identifier from IETF BCP 47. For example, the code "en_US" represents U.S. English and "en_GB" represents British English.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the local display name for the territory. Null if the territory code does not exist.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#451" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#451</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTerritory</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocaleDisplayName</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'territories'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getTerritoryID-detail">
+getTerritoryID()
+<span class="detailHeaderTag">
+method
+(available since v1.1.9)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getTerritoryID</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the locale ID to be converted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the territory ID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#381" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#381</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTerritoryID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;normalize&nbsp;id<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getCanonicalID</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;find&nbsp;sub&nbsp;tags<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;((</span><span style="color: #0000BB">$underscorePosition&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$subTag&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;territory&nbsp;sub&nbsp;tags&nbsp;can&nbsp;be&nbsp;distinguished&nbsp;from&nbsp;script&nbsp;sub&nbsp;tags&nbsp;by&nbsp;length<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">])&nbsp;&lt;&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">])&nbsp;&lt;&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$subTag</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts a locale ID to a territory ID.
+A territory ID consists of only the last two to three letter or digits after an underscore or dash.</p>
+
+
+<div class="detailHeader" id="getTimeFormat-detail">
+getTimeFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getTimeFormat</b>(string $width='medium')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">time format width. It can be 'full', 'long', 'medium' or 'short'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">date format</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#300" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#300</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTimeFormat</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'medium'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'timeFormats'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getWeekDayName-detail">
+getWeekDayName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getWeekDayName</b>(integer $day, string $width='wide', boolean $standAlone=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$day</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">weekday (0-7, 0 and 7 means Sunday)</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">weekday name width.  It can be 'wide', 'abbreviated' or 'narrow'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$standAlone</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the week day name should be returned in stand-alone format</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the weekday name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#236" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#236</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getWeekDayName</span><span style="color: #007700">(</span><span style="color: #0000BB">$day</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'wide'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$standAlone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$day&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$day&nbsp;</span><span style="color: #007700">%&nbsp;</span><span style="color: #0000BB">7</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$standAlone</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">][</span><span style="color: #0000BB">$day</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getWeekDayNames-detail">
+getWeekDayNames()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getWeekDayNames</b>(string $width='wide', boolean $standAlone=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">weekday name width.  It can be 'wide', 'abbreviated' or 'narrow'.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$standAlone</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the week day name should be returned in stand-alone format</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the weekday names indexed by weekday values (0-6, 0 means Sunday, 1 Monday, etc.)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#252" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/Locale.php#252</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getWeekDayNames</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'wide'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$standAlone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$standAlone</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNames'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_data</span><span style="color: #007700">[</span><span style="color: #DD0000">'weekDayNamesSA'</span><span style="color: #007700">][</span><span style="color: #0000BB">$width</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the week day names in the specified width.</p>
+
+
+<div class="detailHeader" id="hasMethod-detail">
+hasMethod()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasMethod</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasMethod</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a method is defined.
+<br/><br/>
+The default implementation is a call to php function `method_exists()`.
+You may override this method when you implemented the php magic method `__call()`.</p>
+
+
+<div class="detailHeader" id="hasProperty-detail">
+hasProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property is defined.
+A property is defined if:
+<br/><br/>
+- the class has a getter or setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_Locale#canGetProperty">canGetProperty()</a></li>
+	<li><a href="/Mindy_Locale_Locale#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#72" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#72</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initializes the object.
+This method is invoked at the end of the constructor after the object is initialized with the
+given configuration.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

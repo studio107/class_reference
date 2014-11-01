@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Helper\color</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Helper\color</td>
+    </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Sven Wagener <wagener_at_indot_dot_de></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    Class for converting colortypes
+<br/><br/>
+The class includes the following colors formats and types:
+<br/><br/>
+ - CMYK
+ - RGB
+ - Pantone (seperate include file: pantone.color.class.php)
+ - HEX Codes for HTML</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="cmyk">
+  <td><a href="/Mindy_Helper_color#cmyk-detail">cmyk</a></td>
+  <td>array</td>
+  <td>$cmyk</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="hex">
+  <td><a href="/Mindy_Helper_color#hex-detail">hex</a></td>
+  <td>string</td>
+  <td>$hex</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="rgb">
+  <td><a href="/Mindy_Helper_color#rgb-detail">rgb</a></td>
+  <td>array</td>
+  <td>$rgb</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="convert_cmyk_to_rgb">
+  <td><a href="/Mindy_Helper_color#convert_cmyk_to_rgb-detail">convert_cmyk_to_rgb()</a></td>
+  <td>Converts the CMYK colors to RGB colors</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="convert_hex_to_rgb">
+  <td><a href="/Mindy_Helper_color#convert_hex_to_rgb-detail">convert_hex_to_rgb()</a></td>
+  <td>Converts the HTML HEX colors to RGB colors</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="convert_name_to_hex">
+  <td><a href="/Mindy_Helper_color#convert_name_to_hex-detail">convert_name_to_hex()</a></td>
+  <td>Converts HTML color name to 6 digit HEX value.</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="convert_rgb_to_cmyk">
+  <td><a href="/Mindy_Helper_color#convert_rgb_to_cmyk-detail">convert_rgb_to_cmyk()</a></td>
+  <td>Converts the RGB colors to CMYK colors</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="convert_rgb_to_hex">
+  <td><a href="/Mindy_Helper_color#convert_rgb_to_hex-detail">convert_rgb_to_hex()</a></td>
+  <td>Converts the RGB colors to HEX HTML colors</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="get_cmyk">
+  <td><a href="/Mindy_Helper_color#get_cmyk-detail">get_cmyk()</a></td>
+  <td>Returns the CMYK values of a set color</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="get_hex">
+  <td><a href="/Mindy_Helper_color#get_hex-detail">get_hex()</a></td>
+  <td>Returns the HEX HTML color value of a set color</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="get_rgb">
+  <td><a href="/Mindy_Helper_color#get_rgb-detail">get_rgb()</a></td>
+  <td>Returns the RGB values of a set color</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_cmyk">
+  <td><a href="/Mindy_Helper_color#set_cmyk-detail">set_cmyk()</a></td>
+  <td>Sets the CMYK color values</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_hex">
+  <td><a href="/Mindy_Helper_color#set_hex-detail">set_hex()</a></td>
+  <td>Sets the HEX HTML color value</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_name">
+  <td><a href="/Mindy_Helper_color#set_name-detail">set_name()</a></td>
+  <td>Sets the HTML color name, converting it to a 6 digit hex code.</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_pantone">
+  <td><a href="/Mindy_Helper_color#set_pantone-detail">set_pantone()</a></td>
+  <td>Sets the pantone color value</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_pantone_pc">
+  <td><a href="/Mindy_Helper_color#set_pantone_pc-detail">set_pantone_pc()</a></td>
+  <td>Sets the pantone pc color value</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+<tr id="set_rgb">
+  <td><a href="/Mindy_Helper_color#set_rgb-detail">set_rgb()</a></td>
+  <td>Sets the RGB values</td>
+  <td>Mindy\Helper\color</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="cmyk-detail">
+cmyk<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$cmyk</b>;</div>
+
+<p>$cmyk</p>
+
+
+<div class="detailHeader" id="hex-detail">
+hex<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$hex</b>;</div>
+
+<p>$hex</p>
+
+
+<div class="detailHeader" id="rgb-detail">
+rgb<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$rgb</b>;</div>
+
+<p>$rgb</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="convert_cmyk_to_rgb-detail">
+convert_cmyk_to_rgb()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convert_cmyk_to_rgb</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#254" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#254</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convert_cmyk_to_rgb</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'c'</span><span style="color: #007700">]&nbsp;+&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'m'</span><span style="color: #007700">]&nbsp;+&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'y'</span><span style="color: #007700">]&nbsp;+&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">)&nbsp;*&nbsp;(-</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">)&nbsp;*&nbsp;(-</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">)&nbsp;*&nbsp;(-</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">100&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">255</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">100&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">255</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">100&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">255</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'r'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$red</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'g'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$green</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$blue</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts the CMYK colors to RGB colors</p>
+
+
+<div class="detailHeader" id="convert_hex_to_rgb-detail">
+convert_hex_to_rgb()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convert_hex_to_rgb</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#280" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#280</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convert_hex_to_rgb</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$red&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$green&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$blue&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'r'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">hexdec</span><span style="color: #007700">(</span><span style="color: #0000BB">$red</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'g'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">hexdec</span><span style="color: #007700">(</span><span style="color: #0000BB">$green</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">hexdec</span><span style="color: #007700">(</span><span style="color: #0000BB">$blue</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts the HTML HEX colors to RGB colors</p>
+
+
+<div class="detailHeader" id="convert_name_to_hex-detail">
+convert_name_to_hex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convert_name_to_hex</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">One of the offical HTML color names.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#300" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#300</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convert_name_to_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$color_names&nbsp;</span><span style="color: #007700">=&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'aqua'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'00ffff'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cyan'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'00ffff'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'gray'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'808080'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'grey'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'808080'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'navy'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'000080'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'silver'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'C0C0C0'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'black'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'000000'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'green'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'008000'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'olive'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'808000'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'teal'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'008080'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'blue'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'0000FF'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lime'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'00FF00'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'purple'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'800080'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'white'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ffffff'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'fuchsia'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'FF00FF'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'magenta'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'FF00FF'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'maroon'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'800000'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'red'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'FF0000'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yellow'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'FFFF00'<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$color_names</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$color_names</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts HTML color name to 6 digit HEX value.</p>
+
+
+<div class="detailHeader" id="convert_rgb_to_cmyk-detail">
+convert_rgb_to_cmyk()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convert_rgb_to_cmyk</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#234" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#234</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convert_rgb_to_cmyk</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$c&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">255&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'r'</span><span style="color: #007700">])&nbsp;/&nbsp;</span><span style="color: #0000BB">255.0&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$m&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">255&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'g'</span><span style="color: #007700">])&nbsp;/&nbsp;</span><span style="color: #0000BB">255.0&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">255&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">])&nbsp;/&nbsp;</span><span style="color: #0000BB">255.0&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$b&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">min</span><span style="color: #007700">(array(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$m</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$c&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$c&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$m&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$m&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'c'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$c</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'m'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$m</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'y'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'b'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts the RGB colors to CMYK colors</p>
+
+
+<div class="detailHeader" id="convert_rgb_to_hex-detail">
+convert_rgb_to_hex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>convert_rgb_to_hex</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#223" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#223</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">convert_rgb_to_hex</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex_trip</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'r'</span><span style="color: #007700">]]&nbsp;.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex_trip</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'g'</span><span style="color: #007700">]]&nbsp;.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex_trip</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Converts the RGB colors to HEX HTML colors</p>
+
+
+<div class="detailHeader" id="get_cmyk-detail">
+get_cmyk()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>get_cmyk</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">$cmyk color values of c ($cmyk['c']), m ($cmyk['m'), y ($cmyk['blue']) and b ($cmyk['b'])</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#212" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#212</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get_cmyk</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the CMYK values of a set color</p>
+
+
+<div class="detailHeader" id="get_hex-detail">
+get_hex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>get_hex</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">$hex HEX HTML color value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#200" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#200</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get_hex</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the HEX HTML color value of a set color</p>
+
+
+<div class="detailHeader" id="get_rgb-detail">
+get_rgb()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>get_rgb</b>($val)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$val</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">$rgb color values of red ($rgb['r']), green ($rgb['green') and blue ($rgb['b'])</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#184" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#184</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #0000BB">$val</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$val</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #0000BB">$val</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the RGB values of a set color</p>
+
+
+<div class="detailHeader" id="set_cmyk-detail">
+set_cmyk()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_cmyk</b>(int $c, int $m, int $y, int $b)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$c</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-100 for c color value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$m</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-100 for m color value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$y</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-100 for y color value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$b</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-100 for b color value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#124" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#124</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_cmyk</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$m</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'c'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$c</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'m'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$m</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'y'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$b</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_cmyk_to_rgb</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_hex</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the CMYK color values</p>
+
+
+<div class="detailHeader" id="set_hex-detail">
+set_hex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_hex</b>(string $hex)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$hex</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">6,3,2, or 1 characters long.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#73" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#73</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$hex</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$hex&nbsp;=&nbsp;settype($hex,&nbsp;'string');<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$hex</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'/#/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$hex</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Strips&nbsp;out&nbsp;the&nbsp;#&nbsp;character<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hexlength&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$hex</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$hex</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$hexlength</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$hex</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_hex_to_rgb</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_cmyk</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the HEX HTML color value</p>
+
+
+<div class="detailHeader" id="set_name-detail">
+set_name()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_name</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">The name of the color.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#105" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#105</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_name</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hex&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_name_to_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_hex_to_rgb</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_cmyk</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the HTML color name, converting it to a 6 digit hex code.</p>
+
+
+<div class="detailHeader" id="set_pantone-detail">
+set_pantone()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_pantone</b>(string $pantone_name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$pantone_name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">name of the pantone color</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#143" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#143</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_pantone</span><span style="color: #007700">(</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'c'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'c'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'m'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'m'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'y'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'y'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'b'</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_cmyk_to_rgb</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_hex</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the pantone color value</p>
+
+
+<div class="detailHeader" id="set_pantone_pc-detail">
+set_pantone_pc()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_pantone_pc</b>(string $pantone_name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$pantone_name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">name of the pantone pc color</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#163" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#163</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_pantone_pc</span><span style="color: #007700">(</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pc&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'c'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete_pc</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'c'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'m'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete_pc</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'m'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'y'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete_pc</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'y'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cmyk</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pantone_pallete_pc</span><span style="color: #007700">[</span><span style="color: #0000BB">$pantone_name</span><span style="color: #007700">][</span><span style="color: #DD0000">'b'</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_cmyk_to_rgb</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_hex</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the pantone pc color value</p>
+
+
+<div class="detailHeader" id="set_rgb-detail">
+set_rgb()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>set_rgb</b>(int $red, int $green, int $blue)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$red</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-255 for blue color value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$green</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-255 for green color value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$blue</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">number from 0-255 for blue color value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#54" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#54</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">set_rgb</span><span style="color: #007700">(</span><span style="color: #0000BB">$red</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$green</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$blue</span><span style="color: #007700">)<br />{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'r'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$red</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'g'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$green</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgb</span><span style="color: #007700">[</span><span style="color: #DD0000">'b'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$blue</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_cmyk</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">convert_rgb_to_hex</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the RGB values</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

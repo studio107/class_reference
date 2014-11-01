@@ -1,0 +1,1998 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Form\Fields\Field</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>abstract class Mindy\Form\Fields\Field</td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Validation_Interfaces_IValidateField.html">Mindy\Validation\Interfaces\IValidateField</a></td>
+        </tr>
+                <tr>
+            <th>Subclasses</th>
+            <td><a href="/Mindy_Form_Fields_CharField.html">Mindy\Form\Fields\CharField</a>, <a href="/Mindy_Form_Fields_DropDownField.html">Mindy\Form\Fields\DropDownField</a>, <a href="/Mindy_Form_Fields_FileField.html">Mindy\Form\Fields\FileField</a>, <a href="/Mindy_Form_Fields_TextAreaField.html">Mindy\Form\Fields\TextAreaField</a></td>
+        </tr>
+                    <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="choices">
+  <td><a href="/Mindy_Form_Fields_Field#choices-detail">choices</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="delete">
+  <td><a href="/Mindy_Form_Fields_Field#delete-detail">delete</a></td>
+  <td>bool</td>
+  <td>Технические аттрибуты для inline моделей</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="errorClass">
+  <td><a href="/Mindy_Form_Fields_Field#errorClass-detail">errorClass</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hidden">
+  <td><a href="/Mindy_Form_Fields_Field#hidden-detail">hidden</a></td>
+  <td>bool</td>
+  <td>Технические аттрибуты для inline моделей</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hint">
+  <td><a href="/Mindy_Form_Fields_Field#hint-detail">hint</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hintClass">
+  <td><a href="/Mindy_Form_Fields_Field#hintClass-detail">hintClass</a></td>
+  <td>string</td>
+  <td>html class for render hint</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="html">
+  <td><a href="/Mindy_Form_Fields_Field#html-detail">html</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="inputType">
+  <td><a href="/Mindy_Form_Fields_Field#inputType-detail">inputType</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="label">
+  <td><a href="/Mindy_Form_Fields_Field#label-detail">label</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="required">
+  <td><a href="/Mindy_Form_Fields_Field#required-detail">required</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="template">
+  <td><a href="/Mindy_Form_Fields_Field#template-detail">template</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="type">
+  <td><a href="/Mindy_Form_Fields_Field#type-detail">type</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="validators">
+  <td><a href="/Mindy_Form_Fields_Field#validators-detail">validators</a></td>
+  <td>\Mindy\Validation\Validator[]</td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="value">
+  <td><a href="/Mindy_Form_Fields_Field#value-detail">value</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="widget">
+  <td><a href="/Mindy_Form_Fields_Field#widget-detail">widget</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__call">
+  <td><a href="/Mindy_Form_Fields_Field#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__callInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Form_Fields_Field#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__get">
+  <td><a href="/Mindy_Form_Fields_Field#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__getInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__isset">
+  <td><a href="/Mindy_Form_Fields_Field#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__issetInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__set">
+  <td><a href="/Mindy_Form_Fields_Field#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__setInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__toString">
+  <td><a href="/Mindy_Form_Fields_Field#__toString-detail">__toString()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__unset">
+  <td><a href="/Mindy_Form_Fields_Field#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="__unsetInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="addError">
+  <td><a href="/Mindy_Form_Fields_Field#addError-detail">addError()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="addErrors">
+  <td><a href="/Mindy_Form_Fields_Field#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="canGetProperty">
+  <td><a href="/Mindy_Form_Fields_Field#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="canSetProperty">
+  <td><a href="/Mindy_Form_Fields_Field#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="className">
+  <td><a href="/Mindy_Form_Fields_Field#className-detail">className()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="classNameShort">
+  <td><a href="/Mindy_Form_Fields_Field#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="clearErrors">
+  <td><a href="/Mindy_Form_Fields_Field#clearErrors-detail">clearErrors()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getErrors">
+  <td><a href="/Mindy_Form_Fields_Field#getErrors-detail">getErrors()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getFieldSets">
+  <td><a href="/Mindy_Form_Fields_Field#getFieldSets-detail">getFieldSets()</a></td>
+  <td>Format:</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getForm">
+  <td><a href="/Mindy_Form_Fields_Field#getForm-detail">getForm()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getHtmlAttributes">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlAttributes-detail">getHtmlAttributes()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getHtmlId">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlId-detail">getHtmlId()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getHtmlName">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlName-detail">getHtmlName()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getId">
+  <td><a href="/Mindy_Form_Fields_Field#getId-detail">getId()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getName">
+  <td><a href="/Mindy_Form_Fields_Field#getName-detail">getName()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getPrefix">
+  <td><a href="/Mindy_Form_Fields_Field#getPrefix-detail">getPrefix()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="getValue">
+  <td><a href="/Mindy_Form_Fields_Field#getValue-detail">getValue()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hasErrors">
+  <td><a href="/Mindy_Form_Fields_Field#hasErrors-detail">hasErrors()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hasMethod">
+  <td><a href="/Mindy_Form_Fields_Field#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="hasProperty">
+  <td><a href="/Mindy_Form_Fields_Field#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Form_Fields_Field#init-detail">init()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="isValid">
+  <td><a href="/Mindy_Form_Fields_Field#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="render">
+  <td><a href="/Mindy_Form_Fields_Field#render-detail">render()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="renderErrors">
+  <td><a href="/Mindy_Form_Fields_Field#renderErrors-detail">renderErrors()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="renderHint">
+  <td><a href="/Mindy_Form_Fields_Field#renderHint-detail">renderHint()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="renderInput">
+  <td><a href="/Mindy_Form_Fields_Field#renderInput-detail">renderInput()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="renderLabel">
+  <td><a href="/Mindy_Form_Fields_Field#renderLabel-detail">renderLabel()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="setForm">
+  <td><a href="/Mindy_Form_Fields_Field#setForm-detail">setForm()</a></td>
+  <td>Sets </td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="setName">
+  <td><a href="/Mindy_Form_Fields_Field#setName-detail">setName()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="setPrefix">
+  <td><a href="/Mindy_Form_Fields_Field#setPrefix-detail">setPrefix()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+<tr id="setValue">
+  <td><a href="/Mindy_Form_Fields_Field#setValue-detail">setValue()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="configure">
+  <td><a href="/Mindy_Form_Fields_Field#configure-detail">configure()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\Field</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="choices-detail">
+choices<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$choices</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="delete-detail">
+delete<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public bool <b>$delete</b>;</div>
+
+<p>Технические аттрибуты для inline моделей</p>
+
+
+<div class="detailHeader" id="errorClass-detail">
+errorClass<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$errorClass</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="hidden-detail">
+hidden<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public bool <b>$hidden</b>;</div>
+
+<p>Технические аттрибуты для inline моделей</p>
+
+
+<div class="detailHeader" id="hint-detail">
+hint<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$hint</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="hintClass-detail">
+hintClass<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$hintClass</b>;</div>
+
+<p>html class for render hint</p>
+
+
+<div class="detailHeader" id="html-detail">
+html<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$html</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="inputType-detail">
+inputType<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$inputType</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="label-detail">
+label<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$label</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="required-detail">
+required<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$required</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="template-detail">
+template<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$template</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="type-detail">
+type<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$type</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="validators-detail">
+validators<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public \Mindy\Validation\Validator[] <b>$validators</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="value-detail">
+value<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$value</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="widget-detail">
+widget<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$widget</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__call-detail">
+__call()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__call</b>(string $name, array $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the method name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">method parameters</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the method return value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#140</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__call</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Calls the named method which is not a class method.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when an unknown method is being invoked.</p>
+
+
+<div class="detailHeader" id="__callInternal-detail">
+__callInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__callInternal</b>($name, $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#145</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__callInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownMethodException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unknown&nbsp;method:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"::</span><span style="color: #0000BB">$name</span><span style="color: #DD0000">()"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>(array $config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">name-value pairs that will be used to initialize the object properties</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#54" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#54</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Constructor.
+The default implementation does two things:
+<br/><br/>
+- Initializes the object with the given configuration `$config`.
+- Call [[init()]].
+<br/><br/>
+If this method is overridden in a child class, it is recommended that
+<br/><br/>
+- the last parameter of the constructor is a configuration array, like `$config` here.
+- call the parent implementation at the end of the constructor.</p>
+
+
+<div class="detailHeader" id="__get-detail">
+__get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>__get</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__getinternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$value = $object->property;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Form_Fields_Field#__set">__set()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__getInternal-detail">
+__getInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__getInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#39</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__getInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;write-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Getting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__isset-detail">
+__isset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>__isset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the named property is set (not null).</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#89</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__isset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks if the named property is set (not null).
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `isset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, false will be returned.</p>
+
+
+<div class="detailHeader" id="__issetInternal-detail">
+__issetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__issetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#94</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__issetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$getter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$getter</span><span style="color: #007700">()&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__set-detail">
+__set()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__set</b>(string $name, mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name or the event name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the property value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#62</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__set</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets value of an object property.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `$object->property = $value;`.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Form_Fields_Field#__get">__get()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="__setInternal-detail">
+__setInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__setInternal</b>($name, $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#67</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__setInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">UnknownPropertyException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Setting&nbsp;unknown&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__toString-detail">
+__toString()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__toString</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#96" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#96</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__toString</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(string)</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;(string)</span><span style="color: #0000BB">$e</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;die();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="__unset-detail">
+__unset()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unset</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#115</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unset</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets an object property to null.
+<br/><br/>
+Do not call this method directly as it is a PHP magic method that
+will be implicitly called when executing `unset($object->property)`.
+<br/><br/>
+Note that if the property is not defined, this method will do nothing.
+If the property is read-only, it will throw an exception.</p>
+
+
+<div class="detailHeader" id="__unsetInternal-detail">
+__unsetInternal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__unsetInternal</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#120</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__unsetInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$setter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$setter</span><span style="color: #007700">(</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidCallException</span><span style="color: #007700">(</span><span style="color: #DD0000">'Unsetting&nbsp;read-only&nbsp;property:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'::'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="addError-detail">
+addError()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>addError</b>($error)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$error</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#81" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#81</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">addError</span><span style="color: #007700">(</span><span style="color: #0000BB">$error</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="addErrors-detail">
+addErrors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>addErrors</b>($errors)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$errors</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#76" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#76</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">addErrors</span><span style="color: #007700">(</span><span style="color: #0000BB">$errors</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_merge</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$errors</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="canGetProperty-detail">
+canGetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canGetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be read</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#182</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'get'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be read.
+A property is readable if:
+<br/><br/>
+- the class has a getter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Form_Fields_Field#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="canSetProperty-detail">
+canSetProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>canSetProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property can be written</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#200</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'set'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">property_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property can be set.
+A property is writable if:
+<br/><br/>
+- the class has a setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Form_Fields_Field#canGetProperty">canGetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="className-detail">
+className()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>className</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the fully qualified name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#26</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">className</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">get_called_class</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="classNameShort-detail">
+classNameShort()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>classNameShort</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the short name of this class.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#34</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">classNameShort</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$reflect&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$reflect</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getShortName</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="clearErrors-detail">
+clearErrors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>clearErrors</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#31" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#31</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">clearErrors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="configure-detail">
+configure()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>configure</b>($config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Configurator.php#60</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!empty(</span><span style="color: #0000BB">$config</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Creator</span><span style="color: #007700">::</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getErrors-detail">
+getErrors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getErrors</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#66" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#66</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getErrors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">array_unique</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getFieldSets-detail">
+getFieldSets()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getFieldSets</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#287" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#287</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getFieldSets</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Format:
+[
+    "Main" => [
+        "Name", "Url", "Content"
+    ],
+    "Extra" => [ ... ]
+]</p>
+
+
+<div class="detailHeader" id="getForm-detail">
+getForm()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public BaseForm <b>getForm</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">BaseForm</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#119" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#119</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getForm</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_form</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getHtmlAttributes-detail">
+getHtmlAttributes()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getHtmlAttributes</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#192" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#192</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHtmlAttributes</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">html</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$html&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">html&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$html&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #0000BB">is_numeric</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #DD0000">"&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #DD0000">"&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #DD0000">"&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #DD0000">='</span><span style="color: #0000BB">$value</span><span style="color: #DD0000">'"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$html</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">html</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getHtmlId-detail">
+getHtmlId()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getHtmlId</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#292" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#292</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHtmlId</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">rtrim</span><span style="color: #007700">(</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">([</span><span style="color: #DD0000">']['</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'[]'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'['</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">']'</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getPrefix</span><span style="color: #007700">()),&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'_'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getHtmlName-detail">
+getHtmlName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getHtmlName</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#187" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#187</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHtmlName</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getPrefix</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">'['&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">']'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getId-detail">
+getId()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getId</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#143" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#143</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getName-detail">
+getName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>getName</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#151" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#151</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getName</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_name</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getPrefix-detail">
+getPrefix()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getPrefix</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#133" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#133</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getPrefix</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_prefix&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_prefix&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getForm</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getPrefix</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'['&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">']['&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">']'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getForm</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getValue-detail">
+getValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getValue</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#211" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#211</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">ModelForm</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasField</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getField</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="hasErrors-detail">
+hasErrors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>hasErrors</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#71" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#71</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasErrors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;!empty(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_errors</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="hasMethod-detail">
+hasMethod()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasMethod</b>(string $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#213</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasMethod</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a method is defined.
+<br/><br/>
+The default implementation is a call to php function `method_exists()`.
+You may override this method when you implemented the php magic method `__call()`.</p>
+
+
+<div class="detailHeader" id="hasProperty-detail">
+hasProperty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>hasProperty</b>(string $name, boolean $checkVars=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the property name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$checkVars</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to treat member variables as properties</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the property is defined</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Traits/Accessors.php#164</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">hasProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canGetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$checkVars</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">canSetProperty</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns a value indicating whether a property is defined.
+A property is defined if:
+<br/><br/>
+- the class has a getter or setter method associated with the specified name
+  (in this case, property name is case-insensitive);
+- the class has a member variable with the specified name (when `$checkVars` is true);</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Form_Fields_Field#canGetProperty">canGetProperty()</a></li>
+	<li><a href="/Mindy_Form_Fields_Field#canSetProperty">canSetProperty()</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#83" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#83</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">required</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validators</span><span style="color: #007700">[]&nbsp;=&nbsp;new&nbsp;</span><span style="color: #0000BB">RequiredValidator</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validators&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**&nbsp;@var&nbsp;$validator&nbsp;\Mindy\Validation\Validator&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">is_subclass_of</span><span style="color: #007700">(</span><span style="color: #0000BB">$validator</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_validatorClass</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setName</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="isValid-detail">
+isValid()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>isValid</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#36" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/validation/src/Mindy/Validation/Traits/ValidateField.php#36</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clearErrors</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validators&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$validator&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Closure</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$validator&nbsp;Closure&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;@var&nbsp;$this&nbsp;\Mindy\Validation\Interfaces\IValidatorObject&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$valid&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__invoke</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$valid&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$valid</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$valid&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #0000BB">$valid</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addErrors</span><span style="color: #007700">(</span><span style="color: #0000BB">$valid</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(</span><span style="color: #0000BB">$validator&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Validator</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this&nbsp;</span><span style="color: #007700">instanceof&nbsp;\</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">\</span><span style="color: #0000BB">Form</span><span style="color: #007700">\</span><span style="color: #0000BB">Fields</span><span style="color: #007700">\</span><span style="color: #0000BB">Field&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getForm</span><span style="color: #007700">()&nbsp;instanceof&nbsp;\</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">\</span><span style="color: #0000BB">Form</span><span style="color: #007700">\</span><span style="color: #0000BB">ModelForm</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setModel</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clearErrors</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validate</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">())&nbsp;===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addErrors</span><span style="color: #007700">(</span><span style="color: #0000BB">$validator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getErrors</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasErrors</span><span style="color: #007700">()&nbsp;===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="render-detail">
+render()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>render</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#177" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#177</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">render</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderLabel</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderInput</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hint&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hint&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderHint</span><span style="color: #007700">()&nbsp;:&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$errors&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderErrors</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">"\n"</span><span style="color: #007700">,&nbsp;[</span><span style="color: #0000BB">$label</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$hint</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$errors</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renderErrors-detail">
+renderErrors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>renderErrors</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#254" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#254</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renderErrors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$errors&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">""</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getErrors</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$errors&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"&lt;li&gt;</span><span style="color: #007700">{</span><span style="color: #0000BB">$error</span><span style="color: #007700">}</span><span style="color: #DD0000">&lt;/li&gt;"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$html&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">""</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$errors</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$html&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"style='display:none;'"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"&lt;ul&nbsp;class='</span><span style="color: #007700">{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">errorClass</span><span style="color: #007700">}</span><span style="color: #DD0000">'&nbsp;id='</span><span style="color: #007700">{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlId</span><span style="color: #007700">()}</span><span style="color: #DD0000">_errors'&nbsp;</span><span style="color: #007700">{</span><span style="color: #0000BB">$html</span><span style="color: #007700">}</span><span style="color: #DD0000">&gt;</span><span style="color: #007700">{</span><span style="color: #0000BB">$errors</span><span style="color: #007700">}</span><span style="color: #DD0000">&lt;/ul&gt;"</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renderHint-detail">
+renderHint()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>renderHint</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#269" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#269</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renderHint</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #DD0000">'&lt;p&nbsp;class="{class}"&gt;{hint}&lt;/p&gt;'</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{class}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hintClass</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{hint}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hint<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renderInput-detail">
+renderInput()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>renderInput</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#166" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#166</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renderInput</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">template</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{type}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">type</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{id}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlId</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{name}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlName</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{value}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{html}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlAttributes</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renderLabel-detail">
+renderLabel()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>renderLabel</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#224" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#224</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renderLabel</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">ModelForm</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasField</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$verboseName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getField</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">verboseName</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$verboseName</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$verboseName</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!isset(</span><span style="color: #0000BB">$label</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ucfirst</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #DD0000">"&lt;label&nbsp;for='{for}'&gt;{label}&lt;/label&gt;"</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{for}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlId</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{label}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$label<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setForm-detail">
+setForm()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public $this <b>setForm</b>(BaseForm $form)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$form</td>
+  <td class="paramTypeCol">BaseForm</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">$this</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#110" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#110</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setForm</span><span style="color: #007700">(</span><span style="color: #0000BB">BaseForm&nbsp;$form</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_form&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$form</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setName-detail">
+setName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public $this <b>setName</b>($name $name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">$name</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">$this</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#160" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#160</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setName</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setPrefix-detail">
+setPrefix()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setPrefix</b>($value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#124" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#124</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setPrefix</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_prefix&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setValue-detail">
+setValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setValue</b>($value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#205" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/Field.php#205</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\DbCache</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\DbCache &raquo;
+<a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>ArrayAccess</td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    DbCache implements a cache application component by storing cached data in a database.
+<br/><br/>
+By default, DbCache stores session data in a DB table named 'tbl_cache'. This table
+must be pre-created. The table name can be changed by setting [[cacheTable]].
+<br/><br/>
+Please refer to [[Cache]] for common cache operations that are supported by DbCache.
+<br/><br/>
+The following example shows how you can configure the application to use DbCache:
+<br/><br/>
+~~~
+'cache' => [
+    'class' => 'yii\caching\DbCache',
+    // 'db' => 'mydb',
+    // 'cacheTable' => 'my_cache',
+]
+~~~</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="cacheTable">
+  <td><a href="/Mindy_Cache_DbCache#cacheTable-detail">cacheTable</a></td>
+  <td>string</td>
+  <td>name of the DB table to store cache content.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="db">
+  <td><a href="/Mindy_Cache_DbCache#db-detail">db</a></td>
+  <td>Connection|string</td>
+  <td>the DB connection object or the application component ID of the DB connection.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="gcProbability">
+  <td><a href="/Mindy_Cache_DbCache#gcProbability-detail">gcProbability</a></td>
+  <td>integer</td>
+  <td>the probability (parts per million) that garbage collection (GC) should be performed
+when storing a piece of data in the cache.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="keyPrefix">
+  <td><a href="/Mindy_Cache_Cache#keyPrefix-detail">keyPrefix</a></td>
+  <td>string</td>
+  <td>a string prefixed to every cache key so that it is unique.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="serializer">
+  <td><a href="/Mindy_Cache_Cache#serializer-detail">serializer</a></td>
+  <td>array|boolean</td>
+  <td>the functions used to serialize and unserialize cached data.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Cache_Cache#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="add">
+  <td><a href="/Mindy_Cache_Cache#add-detail">add()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Cache_Cache#delete-detail">delete()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="exists">
+  <td><a href="/Mindy_Cache_DbCache#exists-detail">exists()</a></td>
+  <td>Checks whether a specified key exists in the cache.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="flush">
+  <td><a href="/Mindy_Cache_Cache#flush-detail">flush()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="gc">
+  <td><a href="/Mindy_Cache_DbCache#gc-detail">gc()</a></td>
+  <td>Removes the expired data values.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="get">
+  <td><a href="/Mindy_Cache_Cache#get-detail">get()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="getHostname">
+  <td><a href="/Mindy_Cache_Cache#getHostname-detail">getHostname()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Cache_DbCache#init-detail">init()</a></td>
+  <td>Initializes the DbCache component.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="madd">
+  <td><a href="/Mindy_Cache_Cache#madd-detail">madd()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mget">
+  <td><a href="/Mindy_Cache_Cache#mget-detail">mget()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mset">
+  <td><a href="/Mindy_Cache_Cache#mset-detail">mset()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Cache_Cache#offsetExists-detail">offsetExists()</a></td>
+  <td>Returns whether there is a cache entry with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Cache_Cache#offsetGet-detail">offsetGet()</a></td>
+  <td>Retrieves the value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Cache_Cache#offsetSet-detail">offsetSet()</a></td>
+  <td>Stores the value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Cache_Cache#offsetUnset-detail">offsetUnset()</a></td>
+  <td>Deletes the value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="set">
+  <td><a href="/Mindy_Cache_Cache#set-detail">set()</a></td>
+  <td>Stores a value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="addValue">
+  <td><a href="/Mindy_Cache_DbCache#addValue-detail">addValue()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="addValues">
+  <td><a href="/Mindy_Cache_Cache#addValues-detail">addValues()</a></td>
+  <td>Adds multiple key-value pairs to cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="buildKey">
+  <td><a href="/Mindy_Cache_Cache#buildKey-detail">buildKey()</a></td>
+  <td>Builds a normalized cache key from a given key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="deleteValue">
+  <td><a href="/Mindy_Cache_DbCache#deleteValue-detail">deleteValue()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="flushValues">
+  <td><a href="/Mindy_Cache_DbCache#flushValues-detail">flushValues()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="getValue">
+  <td><a href="/Mindy_Cache_DbCache#getValue-detail">getValue()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="getValues">
+  <td><a href="/Mindy_Cache_DbCache#getValues-detail">getValues()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr id="setValue">
+  <td><a href="/Mindy_Cache_DbCache#setValue-detail">setValue()</a></td>
+  <td>Stores a value identified by a key in cache.</td>
+  <td>Mindy\Cache\DbCache</td>
+</tr>
+<tr class="inherited" id="setValues">
+  <td><a href="/Mindy_Cache_Cache#setValues-detail">setValues()</a></td>
+  <td>Stores multiple key-value pairs in cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="cacheTable-detail">
+cacheTable<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$cacheTable</b>;</div>
+
+<p>name of the DB table to store cache content.
+The table should be pre-created as follows:
+<br/><br/>
+~~~
+CREATE TABLE tbl_cache (
+    id char(128) NOT NULL PRIMARY KEY,
+    expire int(11),
+    data BLOB
+);
+~~~
+<br/><br/>
+where 'BLOB' refers to the BLOB-type of your preferred DBMS. Below are the BLOB type
+that can be used for some popular DBMS:
+<br/><br/>
+- MySQL: LONGBLOB
+- PostgreSQL: BYTEA
+- MSSQL: BLOB
+<br/><br/>
+When using DbCache in a production server, we recommend you create a DB index for the 'expire'
+column in the cache table to improve the performance.</p>
+
+
+<div class="detailHeader" id="db-detail">
+db<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public Connection|string <b>$db</b>;</div>
+
+<p>the DB connection object or the application component ID of the DB connection.
+After the DbCache object is created, if you want to change this property, you should only assign it
+with a DB connection object.</p>
+
+
+<div class="detailHeader" id="gcProbability-detail">
+gcProbability<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public integer <b>$gcProbability</b>;</div>
+
+<p>the probability (parts per million) that garbage collection (GC) should be performed
+when storing a piece of data in the cache. Defaults to 100, meaning 0.01% chance.
+This number should be between 0 and 1000000. A value 0 meaning no GC will be performed at all.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="addValue-detail">
+addValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>addValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#206" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#206</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">gc</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">insert</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'expire'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'data'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;\</span><span style="color: #0000BB">PDO</span><span style="color: #007700">::</span><span style="color: #0000BB">PARAM_LOB</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;])-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(\</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key into cache if the cache does not contain this key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="deleteValue-detail">
+deleteValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>deleteValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key of the value to be deleted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">if no error happens during deletion</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#235" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#235</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">deleteValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes a value with the specified key from cache
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="exists-detail">
+exists()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>exists</b>(mixed $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">a key identifying the cached value. This can be a simple string or
+a complex data structure consisting of factors representing the key.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if a value exists in cache, false if the value is not in the cache or expired.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#96" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#96</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">select</span><span style="color: #007700">([</span><span style="color: #DD0000">'COUNT(*)'</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">where</span><span style="color: #007700">(</span><span style="color: #DD0000">'[[id]]&nbsp;=&nbsp;:id&nbsp;AND&nbsp;([[expire]]&nbsp;=&nbsp;0&nbsp;OR&nbsp;[[expire]]&nbsp;&gt;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">')'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">':id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;temporarily&nbsp;disable&nbsp;and&nbsp;re-enable&nbsp;query&nbsp;caching<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks whether a specified key exists in the cache.
+This can be faster than getting the value from the cache if the data is big.
+Note that this method does not check whether the dependency associated
+with the cached data, if there is any, has changed. So a call to [[get]]
+may return false while exists returns true.</p>
+
+
+<div class="detailHeader" id="flushValues-detail">
+flushValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>flushValues</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the flush operation was successful.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#262" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#262</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">flushValues</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes all values from cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="gc-detail">
+gc()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>gc</b>(boolean $force=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$force</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether to enforce the garbage collection regardless of [[gcProbability]].
+Defaults to false, meaning the actual deletion happens with the probability as specified by [[gcProbability]].</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#248" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#248</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">gc</span><span style="color: #007700">(</span><span style="color: #0000BB">$force&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$force&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">mt_rand</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1000000</span><span style="color: #007700">)&nbsp;&lt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">gcProbability</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'[[expire]]&nbsp;&gt;&nbsp;0&nbsp;AND&nbsp;[[expire]]&nbsp;&lt;&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">())<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Removes the expired data values.</p>
+
+
+<div class="detailHeader" id="getValue-detail">
+getValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string|boolean <b>getValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">a unique key identifying the cached value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string|boolean</td>
+  <td class="paramDescCol">the value stored in cache, false if the value is not in the cache or expired.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#121" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#121</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">select</span><span style="color: #007700">([</span><span style="color: #DD0000">'data'</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">where</span><span style="color: #007700">(</span><span style="color: #DD0000">'[[id]]&nbsp;=&nbsp;:id&nbsp;AND&nbsp;([[expire]]&nbsp;=&nbsp;0&nbsp;OR&nbsp;[[expire]]&nbsp;&gt;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">')'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">':id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;temporarily&nbsp;disable&nbsp;and&nbsp;re-enable&nbsp;query&nbsp;caching<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$result</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves a value from cache with a specified key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="getValues-detail">
+getValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>getValues</b>(array $keys)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$keys</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of keys identifying the cached values</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of cached values indexed by the keys</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#143" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#143</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(empty(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">select</span><span style="color: #007700">([</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'data'</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">where</span><span style="color: #007700">([</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$keys</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">andWhere</span><span style="color: #007700">(</span><span style="color: #DD0000">'([[expire]]&nbsp;=&nbsp;0&nbsp;OR&nbsp;[[expire]]&nbsp;&gt;&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">()&nbsp;.&nbsp;</span><span style="color: #DD0000">')'</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$results&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$keys&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$results</span><span style="color: #007700">[</span><span style="color: #0000BB">$key</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$results</span><span style="color: #007700">[</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'id'</span><span style="color: #007700">]]&nbsp;=&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'data'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$results</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves multiple values from cache with the specified keys.</p>
+
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#75" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#75</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getComponent</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Connection</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"DbCache::db&nbsp;must&nbsp;be&nbsp;either&nbsp;a&nbsp;DB&nbsp;connection&nbsp;instance&nbsp;or&nbsp;the&nbsp;application&nbsp;component&nbsp;ID&nbsp;of&nbsp;a&nbsp;DB&nbsp;connection."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initializes the DbCache component.
+This method will initialize the [[db]] property to make sure it refers to a valid DB connection.</p>
+
+
+<div class="detailHeader" id="setValue-detail">
+setValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>setValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#181" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbCache.php#181</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cacheTable</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'expire'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">()&nbsp;:&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'data'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;\</span><span style="color: #0000BB">PDO</span><span style="color: #007700">::</span><span style="color: #0000BB">PARAM_LOB</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],&nbsp;[</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">gc</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key in cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

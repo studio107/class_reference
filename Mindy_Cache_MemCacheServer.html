@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\MemCacheServer</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\MemCacheServer</td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCacheServer.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCacheServer.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    MemCacheServer represents the configuration data for a single memcache or memcached server.
+<br/><br/>
+See [PHP manual](http://www.php.net/manual/en/function.Memcache-addServer.php) for detailed explanation
+of each configuration property.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="failureCallback">
+  <td><a href="/Mindy_Cache_MemCacheServer#failureCallback-detail">failureCallback</a></td>
+  <td>\Closure</td>
+  <td>this callback function will run upon encountering an error.</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="host">
+  <td><a href="/Mindy_Cache_MemCacheServer#host-detail">host</a></td>
+  <td>string</td>
+  <td>memcache server hostname or IP address</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="persistent">
+  <td><a href="/Mindy_Cache_MemCacheServer#persistent-detail">persistent</a></td>
+  <td>boolean</td>
+  <td>whether to use a persistent connection.</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="port">
+  <td><a href="/Mindy_Cache_MemCacheServer#port-detail">port</a></td>
+  <td>integer</td>
+  <td>memcache server port</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="retryInterval">
+  <td><a href="/Mindy_Cache_MemCacheServer#retryInterval-detail">retryInterval</a></td>
+  <td>integer</td>
+  <td>how often a failed server will be retried (in seconds).</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="status">
+  <td><a href="/Mindy_Cache_MemCacheServer#status-detail">status</a></td>
+  <td>boolean</td>
+  <td>if the server should be flagged as online upon a failure.</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="timeout">
+  <td><a href="/Mindy_Cache_MemCacheServer#timeout-detail">timeout</a></td>
+  <td>integer</td>
+  <td>timeout in milliseconds which will be used for connecting to the server.</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+<tr id="weight">
+  <td><a href="/Mindy_Cache_MemCacheServer#weight-detail">weight</a></td>
+  <td>integer</td>
+  <td>probability of using this server among all servers.</td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Cache_MemCacheServer#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>Mindy\Cache\MemCacheServer</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="failureCallback-detail">
+failureCallback<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public \Closure <b>$failureCallback</b>;</div>
+
+<p>this callback function will run upon encountering an error.
+The callback is run before fail over is attempted. The function takes two parameters,
+the [[host]] and the [[port]] of the failed server.
+This is used by memcache only.</p>
+
+
+<div class="detailHeader" id="host-detail">
+host<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$host</b>;</div>
+
+<p>memcache server hostname or IP address</p>
+
+
+<div class="detailHeader" id="persistent-detail">
+persistent<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$persistent</b>;</div>
+
+<p>whether to use a persistent connection. This is used by memcache only.</p>
+
+
+<div class="detailHeader" id="port-detail">
+port<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public integer <b>$port</b>;</div>
+
+<p>memcache server port</p>
+
+
+<div class="detailHeader" id="retryInterval-detail">
+retryInterval<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public integer <b>$retryInterval</b>;</div>
+
+<p>how often a failed server will be retried (in seconds). This is used by memcache only.</p>
+
+
+<div class="detailHeader" id="status-detail">
+status<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$status</b>;</div>
+
+<p>if the server should be flagged as online upon a failure. This is used by memcache only.</p>
+
+
+<div class="detailHeader" id="timeout-detail">
+timeout<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public integer <b>$timeout</b>;</div>
+
+<p>timeout in milliseconds which will be used for connecting to the server.
+This is used by memcache only. For old versions of memcache that only support specifying
+timeout in seconds this will be rounded up to full seconds.</p>
+
+
+<div class="detailHeader" id="weight-detail">
+weight<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public integer <b>$weight</b>;</div>
+
+<p>probability of using this server among all servers.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>($options=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$options</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCacheServer.php#59" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCacheServer.php#59</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(array&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$option</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$option</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Orm\Fields\ManyToManyField</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Orm\Fields\ManyToManyField &raquo;
+<a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a> &raquo;
+<a href="/Mindy_Orm_Fields_IntField.html">Mindy\Orm\Fields\IntField</a> &raquo;
+<a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Validation_Interfaces_IValidateField.html">Mindy\Validation\Interfaces\IValidateField</a></td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="autoFetch">
+  <td><a href="/Mindy_Orm_Fields_Field#autoFetch-detail">autoFetch</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="choices">
+  <td><a href="/Mindy_Orm_Fields_Field#choices-detail">choices</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="default">
+  <td><a href="/Mindy_Orm_Fields_Field#default-detail">default</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="editable">
+  <td><a href="/Mindy_Orm_Fields_Field#editable-detail">editable</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="extra">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#extra-detail">extra</a></td>
+  <td>array</td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="helpText">
+  <td><a href="/Mindy_Orm_Fields_Field#helpText-detail">helpText</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="length">
+  <td><a href="/Mindy_Orm_Fields_IntField#length-detail">length</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_IntField.html">Mindy\Orm\Fields\IntField</a></td>
+</tr>
+<tr id="modelClass">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#modelClass-detail">modelClass</a></td>
+  <td>string</td>
+  <td>Related model class</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="null">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#null-detail">null</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="primary">
+  <td><a href="/Mindy_Orm_Fields_Field#primary-detail">primary</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="relatedName">
+  <td><a href="/Mindy_Orm_Fields_RelatedField#relatedName-detail">relatedName</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a></td>
+</tr>
+<tr class="inherited" id="required">
+  <td><a href="/Mindy_Orm_Fields_Field#required-detail">required</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="through">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#through-detail">through</a></td>
+  <td>null|string</td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="unique">
+  <td><a href="/Mindy_Orm_Fields_Field#unique-detail">unique</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="validators">
+  <td><a href="/Mindy_Orm_Fields_Field#validators-detail">validators</a></td>
+  <td>\Mindy\Validation\Validator[]</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="value">
+  <td><a href="/Mindy_Orm_Fields_Field#value-detail">value</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="verboseName">
+  <td><a href="/Mindy_Orm_Fields_Field#verboseName-detail">verboseName</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="_columns">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_columns-detail">_columns</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_model">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_model-detail">_model</a></td>
+  <td>\Mindy\Orm\Model</td>
+  <td>Main model</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_modelColumn">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_modelColumn-detail">_modelColumn</a></td>
+  <td>string</td>
+  <td>Model column in "link" table</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_modelPk">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_modelPk-detail">_modelPk</a></td>
+  <td>string</td>
+  <td>Primary key name</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_relatedModel">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_relatedModel-detail">_relatedModel</a></td>
+  <td>\Mindy\Orm\Model</td>
+  <td>Related model</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_relatedModelColumn">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_relatedModelColumn-detail">_relatedModelColumn</a></td>
+  <td>string</td>
+  <td>Related model column in "link" table</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="_relatedModelPk">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#_relatedModelPk-detail">_relatedModelPk</a></td>
+  <td>string</td>
+  <td>Primary key name of the related model</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="name">
+  <td><a href="/Mindy_Orm_Fields_Field#name-detail">name</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="ownerClassName">
+  <td><a href="/Mindy_Orm_Fields_Field#ownerClassName-detail">ownerClassName</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Orm_Fields_Field#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Orm_Fields_Field#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Orm_Fields_Field#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Orm_Fields_Field#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Orm_Fields_Field#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Orm_Fields_Field#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="addColumn">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#addColumn-detail">addColumn()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="/Mindy_Orm_Fields_Field#addError-detail">addError()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Orm_Fields_Field#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Orm_Fields_Field#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="cleanTableName">
+  <td><a href="/Mindy_Orm_Fields_RelatedField#cleanTableName-detail">cleanTableName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#clearErrors-detail">clearErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="fetch">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#fetch-detail">fetch()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="getColumns">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getColumns-detail">getColumns()</a></td>
+  <td>Returns "link" table columns</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getDbPrepValue">
+  <td><a href="/Mindy_Orm_Fields_Field#getDbPrepValue-detail">getDbPrepValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#getErrors-detail">getErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraField-detail">getExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraFields">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraFields-detail">getExtraFields()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraFieldsInit">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraFieldsInit-detail">getExtraFieldsInit()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getFormField">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getFormField-detail">getFormField()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getFormValue">
+  <td><a href="/Mindy_Orm_Fields_Field#getFormValue-detail">getFormValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getJoin">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getJoin-detail">getJoin()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="getManager">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getManager-detail">getManager()</a></td>
+  <td>Returns QuerySet of related objects</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getModel">
+  <td><a href="/Mindy_Orm_Fields_Field#getModel-detail">getModel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getModelColumn">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getModelColumn-detail">getModelColumn()</a></td>
+  <td>Returns Model column in "link" table</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="getModelPk">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getModelPk-detail">getModelPk()</a></td>
+  <td>Returns PK name of model</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getName">
+  <td><a href="/Mindy_Orm_Fields_Field#getName-detail">getName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getOptions">
+  <td><a href="/Mindy_Orm_Fields_Field#getOptions-detail">getOptions()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getRelatedModel">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getRelatedModel-detail">getRelatedModel()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="getRelatedModelColumn">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getRelatedModelColumn-detail">getRelatedModelColumn()</a></td>
+  <td>Returns Related model column in "link" table</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr id="getRelatedModelPk">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getRelatedModelPk-detail">getRelatedModelPk()</a></td>
+  <td>Returns PK name of related model</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getRelatedName">
+  <td><a href="/Mindy_Orm_Fields_RelatedField#getRelatedName-detail">getRelatedName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a></td>
+</tr>
+<tr class="inherited" id="getRelatedTable">
+  <td><a href="/Mindy_Orm_Fields_RelatedField#getRelatedTable-detail">getRelatedTable()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a></td>
+</tr>
+<tr class="inherited" id="getTable">
+  <td><a href="/Mindy_Orm_Fields_RelatedField#getTable-detail">getTable()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_RelatedField.html">Mindy\Orm\Fields\RelatedField</a></td>
+</tr>
+<tr id="getTableName">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#getTableName-detail">getTableName()</a></td>
+  <td>Table name of the "link" table</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="getValue">
+  <td><a href="/Mindy_Orm_Fields_IntField#getValue-detail">getValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_IntField.html">Mindy\Orm\Fields\IntField</a></td>
+</tr>
+<tr class="inherited" id="getVerboseName">
+  <td><a href="/Mindy_Orm_Fields_Field#getVerboseName-detail">getVerboseName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#hasErrors-detail">hasErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#hasExtraField-detail">hasExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Orm_Fields_Field#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hash">
+  <td><a href="/Mindy_Orm_Fields_Field#hash-detail">hash()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#init-detail">init()</a></td>
+  <td>Initialization</td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="isRequired">
+  <td><a href="/Mindy_Orm_Fields_Field#isRequired-detail">isRequired()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="isValid">
+  <td><a href="/Mindy_Orm_Fields_Field#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onAfterDelete">
+  <td><a href="/Mindy_Orm_Fields_Field#onAfterDelete-detail">onAfterDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onAfterInsert">
+  <td><a href="/Mindy_Orm_Fields_Field#onAfterInsert-detail">onAfterInsert()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onAfterUpdate">
+  <td><a href="/Mindy_Orm_Fields_Field#onAfterUpdate-detail">onAfterUpdate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeDelete">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeDelete-detail">onBeforeDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeInsert">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeInsert-detail">onBeforeInsert()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeUpdate">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeUpdate-detail">onBeforeUpdate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#setExtraField-detail">setExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setModel">
+  <td><a href="/Mindy_Orm_Fields_Field#setModel-detail">setModel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setModelClass">
+  <td><a href="/Mindy_Orm_Fields_Field#setModelClass-detail">setModelClass()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setName">
+  <td><a href="/Mindy_Orm_Fields_Field#setName-detail">setName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="setValue">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#setValue-detail">setValue()</a></td>
+  <td>Sets </td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+<tr class="inherited" id="sql">
+  <td><a href="/Mindy_Orm_Fields_Field#sql-detail">sql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="sqlDefault">
+  <td><a href="/Mindy_Orm_Fields_Field#sqlDefault-detail">sqlDefault()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="sqlNullable">
+  <td><a href="/Mindy_Orm_Fields_Field#sqlNullable-detail">sqlNullable()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="sqlType">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#sqlType-detail">sqlType()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Orm_Fields_Field#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="preformatValue">
+  <td><a href="/Mindy_Orm_Fields_ManyToManyField#preformatValue-detail">preformatValue()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ManyToManyField</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="_columns-detail">
+_columns<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected  <b>$_columns</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="_model-detail">
+_model<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected \Mindy\Orm\Model <b>$_model</b>;</div>
+
+<p>Main model</p>
+
+
+<div class="detailHeader" id="_modelColumn-detail">
+_modelColumn<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected string <b>$_modelColumn</b>;</div>
+
+<p>Model column in "link" table</p>
+
+
+<div class="detailHeader" id="_modelPk-detail">
+_modelPk<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected string <b>$_modelPk</b>;</div>
+
+<p>Primary key name</p>
+
+
+<div class="detailHeader" id="_relatedModel-detail">
+_relatedModel<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected \Mindy\Orm\Model <b>$_relatedModel</b>;</div>
+
+<p>Related model</p>
+
+
+<div class="detailHeader" id="_relatedModelColumn-detail">
+_relatedModelColumn<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected string <b>$_relatedModelColumn</b>;</div>
+
+<p>Related model column in "link" table</p>
+
+
+<div class="detailHeader" id="_relatedModelPk-detail">
+_relatedModelPk<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected string <b>$_relatedModelPk</b>;</div>
+
+<p>Primary key name of the related model</p>
+
+
+<div class="detailHeader" id="extra-detail">
+extra<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$extra</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="modelClass-detail">
+modelClass<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$modelClass</b>;</div>
+
+<p>Related model class</p>
+
+
+<div class="detailHeader" id="null-detail">
+null<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$null</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="through-detail">
+through<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public null|string <b>$through</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="addColumn-detail">
+addColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>addColumn</b>(string $column, null|string $type=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$column</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Column name in "link" table</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$type</td>
+  <td class="paramTypeCol">null|string</td>
+  <td class="paramDescCol">Type of the column ('int' by default)</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#184" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#184</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">addColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$column</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_columns</span><span style="color: #007700">[</span><span style="color: #0000BB">$column</span><span style="color: #007700">]&nbsp;=&nbsp;(empty(</span><span style="color: #0000BB">$type</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'pk'</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #DD0000">'int'&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="fetch-detail">
+fetch()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>fetch</b>($value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#269" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#269</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">fetch</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;TODO:&nbsp;Implement&nbsp;fetch()&nbsp;method.<br /></span><span style="color: #007700">}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getColumns-detail">
+getColumns()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getColumns</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">"link" table columns</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#192" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#192</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getColumns</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">through</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModel</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModelColumn</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModelPk</span><span style="color: #007700">()]-&gt;</span><span style="color: #0000BB">sqlType</span><span style="color: #007700">());<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">MetaData</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ownerClassName</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ownerClassName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addColumn</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModelColumn</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModelPk</span><span style="color: #007700">()]-&gt;</span><span style="color: #0000BB">sqlType</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_columns</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getFormField-detail">
+getFormField()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getFormField</b>($form, $fieldClass=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$form</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$fieldClass</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#274" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#274</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getFormField</span><span style="color: #007700">(</span><span style="color: #0000BB">$form</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fieldClass&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">getFormField</span><span style="color: #007700">(</span><span style="color: #0000BB">$form</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">DropDownField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">());<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getJoin-detail">
+getJoin()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getJoin</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#251" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#251</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getJoin</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$relatedModel&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModel</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[</span><span style="color: #0000BB">$relatedModel</span><span style="color: #007700">,&nbsp;[[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'table'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;@TODO:&nbsp;chained&nbsp;with&nbsp;Sync&nbsp;-&nbsp;40&nbsp;line<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'from'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModel</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getPkName</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'to'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModelColumn</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'group'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'table'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedTable</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;@TODO:&nbsp;chained&nbsp;with&nbsp;Sync&nbsp;-&nbsp;40&nbsp;line<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'from'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModelColumn</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'to'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$relatedModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getPkName</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;]]];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getManager-detail">
+getManager()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public \Mindy\Orm\ManyToManyManager <b>getManager</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">\Mindy\Orm\ManyToManyManager</td>
+  <td class="paramDescCol">QuerySet of related objects</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#150" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#150</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getManager</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;</span><span style="color: #0000BB">ManyToManyManager</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModel</span><span style="color: #007700">(),&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'modelColumn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModelColumn</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'primaryModelColumn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModelColumn</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'primaryModel'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModel</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'relatedTable'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableName</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'extra'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">extra<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getModelColumn-detail">
+getModelColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getModelColumn</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Model column in "link" table</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#136" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#136</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getModelColumn</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelColumn</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cls&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ownerClassName</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tmp&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'\\'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cls</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$column&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cls</span><span style="color: #007700">::</span><span style="color: #0000BB">normalizeTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">end</span><span style="color: #007700">(</span><span style="color: #0000BB">$tmp</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelColumn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$column&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'_'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModelPk</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelColumn</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getModelPk-detail">
+getModelPk()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getModelPk</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">PK name of model</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#125" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#125</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getModelPk</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelPk</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelPk&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">MetaData</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ownerClassName</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">getPkName</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ownerClassName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_modelPk</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getRelatedModel-detail">
+getRelatedModel()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public \Mindy\Orm\Model <b>getRelatedModel</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">\Mindy\Orm\Model</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#89" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#89</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRelatedModel</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModel</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModel&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">modelClass</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModel</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getRelatedModelColumn-detail">
+getRelatedModelColumn()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getRelatedModelColumn</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">Related model column in "link" table</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#111" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#111</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRelatedModelColumn</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelColumn</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cls&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">modelClass</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tmp&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'\\'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cls</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$column&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cls</span><span style="color: #007700">::</span><span style="color: #0000BB">normalizeTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">end</span><span style="color: #007700">(</span><span style="color: #0000BB">$tmp</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelColumn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$column&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'_'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModelPk</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelColumn</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getRelatedModelPk-detail">
+getRelatedModelPk()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getRelatedModelPk</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">PK name of related model</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#100" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#100</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRelatedModelPk</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelPk</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelPk&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedModel</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getPkName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_relatedModelPk</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getTableName-detail">
+getTableName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getTableName</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#165" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#165</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTableName</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tableName</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">through</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$parts&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTable</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRelatedTable</span><span style="color: #007700">()];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">sort</span><span style="color: #007700">(</span><span style="color: #0000BB">$parts</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tableName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'{{%'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$parts</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'}}'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$through&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">through</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tableName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$through</span><span style="color: #007700">::</span><span style="color: #0000BB">tableName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_tableName</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Table name of the "link" table</p>
+
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#81" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#81</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br /><br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initialization</p>
+
+
+<div class="detailHeader" id="preformatValue-detail">
+preformatValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>preformatValue</b>($value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#212" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#212</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">preformatValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #0000BB">$value</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$value</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;instanceof&nbsp;</span><span style="color: #0000BB">Model</span><span style="color: #007700">)&nbsp;===&nbsp;</span><span style="color: #0000BB">false&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">is_numeric</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"ManyToMany&nbsp;field&nbsp;can&nbsp;set&nbsp;only&nbsp;arrays&nbsp;of&nbsp;Models&nbsp;or&nbsp;existing&nbsp;primary&nbsp;keys"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setValue-detail">
+setValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setValue</b>(array $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#233" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#233</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">preformatValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$class&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">modelClass</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$manager&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getManager</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$manager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clean</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$linkModel</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_a</span><span style="color: #007700">(</span><span style="color: #0000BB">$linkModel</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">modelClass</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$linkModel&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$class</span><span style="color: #007700">::</span><span style="color: #0000BB">objects</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">([</span><span style="color: #DD0000">'pk'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$linkModel</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_a</span><span style="color: #007700">(</span><span style="color: #0000BB">$linkModel</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">modelClass</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$manager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">link</span><span style="color: #007700">(</span><span style="color: #0000BB">$linkModel</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"ManyToMany&nbsp;field&nbsp;can&nbsp;set&nbsp;only&nbsp;arrays&nbsp;of&nbsp;Models&nbsp;or&nbsp;existing&nbsp;primary&nbsp;keys"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="sqlType-detail">
+sqlType()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public bool|string <b>sqlType</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool|string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#207" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ManyToManyField.php#207</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sqlType</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

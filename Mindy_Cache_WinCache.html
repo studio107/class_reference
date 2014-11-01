@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\WinCache</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\WinCache &raquo;
+<a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>ArrayAccess</td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    WinCache provides Windows Cache caching in terms of an application component.
+<br/><br/>
+To use this application component, the [WinCache PHP extension](http://www.iis.net/expand/wincacheforphp)
+must be loaded. Also note that "wincache.ucenabled" should be set to "On" in your php.ini file.
+<br/><br/>
+See [[Cache]] manual for common cache operations that are supported by WinCache.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="keyPrefix">
+  <td><a href="/Mindy_Cache_Cache#keyPrefix-detail">keyPrefix</a></td>
+  <td>string</td>
+  <td>a string prefixed to every cache key so that it is unique.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="serializer">
+  <td><a href="/Mindy_Cache_Cache#serializer-detail">serializer</a></td>
+  <td>array|boolean</td>
+  <td>the functions used to serialize and unserialize cached data.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Cache_Cache#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="add">
+  <td><a href="/Mindy_Cache_Cache#add-detail">add()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Cache_Cache#delete-detail">delete()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="exists">
+  <td><a href="/Mindy_Cache_WinCache#exists-detail">exists()</a></td>
+  <td>Checks whether a specified key exists in the cache.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr class="inherited" id="flush">
+  <td><a href="/Mindy_Cache_Cache#flush-detail">flush()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="get">
+  <td><a href="/Mindy_Cache_Cache#get-detail">get()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="getHostname">
+  <td><a href="/Mindy_Cache_Cache#getHostname-detail">getHostname()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Cache_Cache#init-detail">init()</a></td>
+  <td>Initializes the application component.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="madd">
+  <td><a href="/Mindy_Cache_Cache#madd-detail">madd()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mget">
+  <td><a href="/Mindy_Cache_Cache#mget-detail">mget()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mset">
+  <td><a href="/Mindy_Cache_Cache#mset-detail">mset()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Cache_Cache#offsetExists-detail">offsetExists()</a></td>
+  <td>Returns whether there is a cache entry with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Cache_Cache#offsetGet-detail">offsetGet()</a></td>
+  <td>Retrieves the value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Cache_Cache#offsetSet-detail">offsetSet()</a></td>
+  <td>Stores the value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Cache_Cache#offsetUnset-detail">offsetUnset()</a></td>
+  <td>Deletes the value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="set">
+  <td><a href="/Mindy_Cache_Cache#set-detail">set()</a></td>
+  <td>Stores a value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="addValue">
+  <td><a href="/Mindy_Cache_WinCache#addValue-detail">addValue()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="addValues">
+  <td><a href="/Mindy_Cache_WinCache#addValues-detail">addValues()</a></td>
+  <td>Adds multiple key-value pairs to cache.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr class="inherited" id="buildKey">
+  <td><a href="/Mindy_Cache_Cache#buildKey-detail">buildKey()</a></td>
+  <td>Builds a normalized cache key from a given key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="deleteValue">
+  <td><a href="/Mindy_Cache_WinCache#deleteValue-detail">deleteValue()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="flushValues">
+  <td><a href="/Mindy_Cache_WinCache#flushValues-detail">flushValues()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="getValue">
+  <td><a href="/Mindy_Cache_WinCache#getValue-detail">getValue()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="getValues">
+  <td><a href="/Mindy_Cache_WinCache#getValues-detail">getValues()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="setValue">
+  <td><a href="/Mindy_Cache_WinCache#setValue-detail">setValue()</a></td>
+  <td>Stores a value identified by a key in cache.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+<tr id="setValues">
+  <td><a href="/Mindy_Cache_WinCache#setValues-detail">setValues()</a></td>
+  <td>Stores multiple key-value pairs in cache.</td>
+  <td>Mindy\Cache\WinCache</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="addValue-detail">
+addValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>addValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#94" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#94</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key into cache if the cache does not contain this key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="addValues-detail">
+addValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>addValues</b>(array $data, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array where key corresponds to cache key while value is the value stored</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached values will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array of failed keys</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#107" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#107</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_add</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Adds multiple key-value pairs to cache.
+The default implementation calls [[addValue()]] multiple times add values one by one. If the underlying cache
+storage supports multiadd, this method should be overridden to exploit that feature.</p>
+
+
+<div class="detailHeader" id="deleteValue-detail">
+deleteValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>deleteValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key of the value to be deleted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">if no error happens during deletion</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#118" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#118</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">deleteValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes a value with the specified key from cache
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="exists-detail">
+exists()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>exists</b>(mixed $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">a key identifying the cached value. This can be a simple string or
+a complex data structure consisting of factors representing the key.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if a value exists in cache, false if the value is not in the cache or expired.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#33" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#33</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">buildKey</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Checks whether a specified key exists in the cache.
+This can be faster than getting the value from the cache if the data is big.
+Note that this method does not check whether the dependency associated
+with the cached data, if there is any, has changed. So a call to [[get]]
+may return false while exists returns true.</p>
+
+
+<div class="detailHeader" id="flushValues-detail">
+flushValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>flushValues</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the flush operation was successful.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#128" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#128</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">flushValues</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_clear</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes all values from cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="getValue-detail">
+getValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string|boolean <b>getValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">a unique key identifying the cached value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string|boolean</td>
+  <td class="paramDescCol">the value stored in cache, false if the value is not in the cache or expired.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#45" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#45</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves a value from cache with a specified key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="getValues-detail">
+getValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>getValues</b>(array $keys)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$keys</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of keys identifying the cached values</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of cached values indexed by the keys</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#55" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#55</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_get</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves multiple values from cache with the specified keys.</p>
+
+
+<div class="detailHeader" id="setValue-detail">
+setValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>setValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#69" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#69</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key in cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="setValues-detail">
+setValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>setValues</b>(array $data, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array where key corresponds to cache key while value is the value stored</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached values will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array of failed keys</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#80" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/WinCache.php#80</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">wincache_ucache_set</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores multiple key-value pairs in cache.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

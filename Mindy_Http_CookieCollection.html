@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Http\CookieCollection</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#system.web">system.web</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Http\CookieCollection &raquo;
+<a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a> &raquo;
+ArrayObject</td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>IteratorAggregate, Traversable, ArrayAccess, Serializable, Countable</td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>1.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    CCookieCollection implements a collection class to store cookies.
+<br/><br/>
+You normally access it via CHttpRequest::getCookies().
+<br/><br/>
+Since CCookieCollection extends from CMap, it can be used
+like an associative array as follows:
+<pre>
+$cookies[$name]=new Cookie($name,$value); // sends a cookie
+$value=$cookies[$name]-&gt;value; // reads a cookie value
+unset($cookies[$name]);  // removes a cookie
+</pre></div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="data">
+  <td><a href="/Mindy_Helper_Collection#data-detail">data</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="enableCookieValidation">
+  <td><a href="/Mindy_Http_CookieCollection#enableCookieValidation-detail">enableCookieValidation</a></td>
+  <td>bool</td>
+  <td></td>
+  <td>Mindy\Http\CookieCollection</td>
+</tr>
+<tr class="inherited" id="flags">
+  <td><a href="/Mindy_Helper_Collection#flags-detail">flags</a></td>
+  <td>int</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="iteratorClass">
+  <td><a href="/Mindy_Helper_Collection#iteratorClass-detail">iteratorClass</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr id="securityManager">
+  <td><a href="/Mindy_Http_CookieCollection#securityManager-detail">securityManager</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Http\CookieCollection</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Http_CookieCollection#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td>Mindy\Http\CookieCollection</td>
+</tr>
+<tr id="add">
+  <td><a href="/Mindy_Http_CookieCollection#add-detail">add()</a></td>
+  <td>Adds a cookie with the specified name.</td>
+  <td>Mindy\Http\CookieCollection</td>
+</tr>
+<tr class="inherited" id="all">
+  <td><a href="/Mindy_Helper_Collection#all-detail">all()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="append">
+  <td>append()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="asort">
+  <td>asort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Helper_Collection#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Helper_Collection#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="clear">
+  <td><a href="/Mindy_Helper_Collection#clear-detail">clear()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="count">
+  <td>count()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="exchangeArray">
+  <td>exchangeArray()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="get">
+  <td><a href="/Mindy_Helper_Collection#get-detail">get()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="getArrayCopy">
+  <td>getArrayCopy()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getFlags">
+  <td>getFlags()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getIterator">
+  <td>getIterator()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="getIteratorClass">
+  <td>getIteratorClass()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="has">
+  <td><a href="/Mindy_Helper_Collection#has-detail">has()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Helper_Collection#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="ksort">
+  <td>ksort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="mergeArray">
+  <td><a href="/Mindy_Helper_Collection#mergeArray-detail">mergeArray()</a></td>
+  <td>Merges two or more arrays into one recursively.</td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="natcasesort">
+  <td>natcasesort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="natsort">
+  <td>natsort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td>offsetExists()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td>offsetGet()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td>offsetSet()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td>offsetUnset()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr id="remove">
+  <td><a href="/Mindy_Http_CookieCollection#remove-detail">remove()</a></td>
+  <td>Deletes a cookie.</td>
+  <td>Mindy\Http\CookieCollection</td>
+</tr>
+<tr class="inherited" id="serialize">
+  <td>serialize()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="setFlags">
+  <td>setFlags()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="setIteratorClass">
+  <td>setIteratorClass()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="toJson">
+  <td><a href="/Mindy_Helper_Collection#toJson-detail">toJson()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+<tr class="inherited" id="uasort">
+  <td>uasort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="uksort">
+  <td>uksort()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+<tr class="inherited" id="unserialize">
+  <td>unserialize()</td>
+  <td></td>
+  <td>ArrayObject</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Helper_Collection#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Helper_Collection.html">Mindy\Helper\Collection</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="enableCookieValidation-detail">
+enableCookieValidation<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public bool <b>$enableCookieValidation</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="securityManager-detail">
+securityManager<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$securityManager</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>($config=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#49" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#49</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(array&nbsp;</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!isset(</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'data'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cookies&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableCookieValidation</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$_COOKIE&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">securityManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validateData</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cookies</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;new&nbsp;</span><span style="color: #0000BB">Cookie</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;@</span><span style="color: #0000BB">unserialize</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$_COOKIE&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cookies</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;new&nbsp;</span><span style="color: #0000BB">Cookie</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">exchangeArray</span><span style="color: #007700">(</span><span style="color: #0000BB">$cookies</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Constructor.</p>
+
+
+<div class="detailHeader" id="add-detail">
+add()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>add</b>(mixed $key, Cookie $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">Cookie name.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">Cookie</td>
+  <td class="paramDescCol">Cookie object.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#77" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#77</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cookie&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Cookie&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">:&nbsp;new&nbsp;</span><span style="color: #0000BB">Cookie</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableCookieValidation</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">securityManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hashData</span><span style="color: #007700">(</span><span style="color: #0000BB">serialize</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">setcookie</span><span style="color: #007700">(</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">expire</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">path</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">domain</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">secure</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">httpOnly</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Adds a cookie with the specified name.
+This overrides the parent implementation by performing additional
+operations for each newly added Cookie object.</p>
+
+
+<div class="detailHeader" id="remove-detail">
+remove()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>remove</b>($key $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">$key</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#93" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/http/src/Mindy/Http/CookieCollection.php#93</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Cookie</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">has</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cookie&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">setcookie</span><span style="color: #007700">(</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">path</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">domain</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">secure</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">httpOnly</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">remove</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes a cookie.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

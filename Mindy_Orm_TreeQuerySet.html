@@ -1,0 +1,1319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Orm\TreeQuerySet</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Orm\TreeQuerySet &raquo;
+<a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a> &raquo;
+<a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a> &raquo;
+<a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Query_QueryInterface.html">Mindy\Query\QueryInterface</a>, IteratorAggregate, Traversable, ArrayAccess, Serializable</td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="databases">
+  <td><a href="/Mindy_Query_Query#databases-detail">databases</a></td>
+  <td>array</td>
+  <td>Array with key - name, and value - Connection instance</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="distinct">
+  <td><a href="/Mindy_Query_Query#distinct-detail">distinct</a></td>
+  <td>boolean</td>
+  <td>whether to select distinct rows of data only.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="from">
+  <td><a href="/Mindy_Query_Query#from-detail">from</a></td>
+  <td>array</td>
+  <td>the table(s) to be selected from.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="groupBy">
+  <td><a href="/Mindy_Query_Query#groupBy-detail">groupBy</a></td>
+  <td>array</td>
+  <td>how to group the query results.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="having">
+  <td><a href="/Mindy_Query_Query#having-detail">having</a></td>
+  <td>string|array</td>
+  <td>the condition to be applied in the GROUP BY clause.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="join">
+  <td><a href="/Mindy_Query_Query#join-detail">join</a></td>
+  <td>array</td>
+  <td>how to join with other tables.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="limit">
+  <td><a href="/Mindy_Query_Query#limit-detail">limit</a></td>
+  <td>integer</td>
+  <td>maximum number of records to be returned.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="model">
+  <td><a href="/Mindy_Orm_QuerySet#model-detail">model</a></td>
+  <td>\Mindy\Orm\Model</td>
+  <td>Model receive</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="modelClass">
+  <td><a href="/Mindy_Orm_QuerySetBase#modelClass-detail">modelClass</a></td>
+  <td>string</td>
+  <td>the name of the ActiveRecord class.</td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="offset">
+  <td><a href="/Mindy_Query_Query#offset-detail">offset</a></td>
+  <td>integer</td>
+  <td>zero-based offset from where the records are to be returned.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="orderBy">
+  <td><a href="/Mindy_Query_Query#orderBy-detail">orderBy</a></td>
+  <td>array</td>
+  <td>how to sort the query results.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="params">
+  <td><a href="/Mindy_Query_Query#params-detail">params</a></td>
+  <td>array</td>
+  <td>list of query parameter values indexed by parameter placeholders.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="rawSql">
+  <td><a href="/Mindy_Query_Query#rawSql-detail">rawSql</a></td>
+  <td>string</td>
+  <td>Raw sql generated by createCommand</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="select">
+  <td><a href="/Mindy_Query_Query#select-detail">select</a></td>
+  <td>array</td>
+  <td>the columns being selected.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="selectOption">
+  <td><a href="/Mindy_Query_Query#selectOption-detail">selectOption</a></td>
+  <td>string</td>
+  <td>additional option that should be appended to the 'SELECT' keyword.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="sql">
+  <td><a href="/Mindy_Orm_QuerySet#sql-detail">sql</a></td>
+  <td>string</td>
+  <td>the SQL statement to be executed for retrieving AR records.</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="union">
+  <td><a href="/Mindy_Query_Query#union-detail">union</a></td>
+  <td>array</td>
+  <td>this is used to construct the UNION clause(s) in a SQL statement.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="where">
+  <td><a href="/Mindy_Query_Query#where-detail">where</a></td>
+  <td>string|array</td>
+  <td>query condition.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="with">
+  <td><a href="/Mindy_Orm_QuerySet#with-detail">with</a></td>
+  <td>array</td>
+  <td>a list of relations that this query should be performed with</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="_data">
+  <td><a href="/Mindy_Orm_QuerySet#_data-detail">_data</a></td>
+  <td>null</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="_tableAlias">
+  <td><a href="/Mindy_Orm_QuerySet#_tableAlias-detail">_tableAlias</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="asArray">
+  <td><a href="/Mindy_Orm_QuerySetBase#asArray-detail">asArray</a></td>
+  <td>boolean</td>
+  <td>whether to return each record as an array.</td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="command">
+  <td><a href="/Mindy_Orm_QuerySet#command-detail">command</a></td>
+  <td>\Mindy\Query\Command</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="db">
+  <td><a href="/Mindy_Query_Query#db-detail">db</a></td>
+  <td>string</td>
+  <td>name current database connection</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr id="treeKey">
+  <td><a href="/Mindy_Orm_TreeQuerySet#treeKey-detail">treeKey</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Query_Query#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Query_Query#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Query_Query#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Query_Query#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Query_Query#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Query_Query#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Query_Query#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Query_Query#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Query_Query#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Query_Query#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Query_Query#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="addGroupBy">
+  <td><a href="/Mindy_Query_Query#addGroupBy-detail">addGroupBy()</a></td>
+  <td>Adds additional group-by columns to the existing ones.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="addOrderBy">
+  <td><a href="/Mindy_Query_Query#addOrderBy-detail">addOrderBy()</a></td>
+  <td>Adds additional ORDER BY columns to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="addParams">
+  <td><a href="/Mindy_Query_Query#addParams-detail">addParams()</a></td>
+  <td>Adds additional parameters to be bound to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="addWhere">
+  <td><a href="/Mindy_Query_Query#addWhere-detail">addWhere()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="aliasColumn">
+  <td><a href="/Mindy_Orm_QuerySet#aliasColumn-detail">aliasColumn()</a></td>
+  <td>'id' -> '`t1`.`id`'</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr id="all">
+  <td><a href="/Mindy_Orm_TreeQuerySet#all-detail">all()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="allSql">
+  <td><a href="/Mindy_Orm_QuerySet#allSql-detail">allSql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr id="ancestors">
+  <td><a href="/Mindy_Orm_TreeQuerySet#ancestors-detail">ancestors()</a></td>
+  <td>Named scope. Gets ancestors for node.</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="andHaving">
+  <td><a href="/Mindy_Query_Query#andHaving-detail">andHaving()</a></td>
+  <td>Adds an additional HAVING condition to the existing one.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="andWhere">
+  <td><a href="/Mindy_Query_Query#andWhere-detail">andWhere()</a></td>
+  <td>Adds an additional WHERE condition to the existing one.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="asArray()">
+  <td><a href="/Mindy_Orm_QuerySetBase#asArray()-detail">asArray()</a></td>
+  <td>Sets the [[asArray]] property.</td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr id="asTree">
+  <td><a href="/Mindy_Orm_TreeQuerySet#asTree-detail">asTree()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="average">
+  <td><a href="/Mindy_Orm_QuerySet#average-detail">average()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="buildCondition">
+  <td><a href="/Mindy_Orm_QuerySet#buildCondition-detail">buildCondition()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Query_Query#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Query_Query#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr id="children">
+  <td><a href="/Mindy_Orm_TreeQuerySet#children-detail">children()</a></td>
+  <td>Named scope. Gets children for node (direct descendants only).</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Query_Query#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Query_Query#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="column">
+  <td><a href="/Mindy_Query_Query#column-detail">column()</a></td>
+  <td>Executes the query and returns the first column of the result.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="count">
+  <td><a href="/Mindy_Orm_QuerySet#count-detail">count()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="countSql">
+  <td><a href="/Mindy_Orm_QuerySet#countSql-detail">countSql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="createCommand">
+  <td><a href="/Mindy_Orm_QuerySet#createCommand-detail">createCommand()</a></td>
+  <td>Creates a DB command that can be used to execute this query.</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="createModel">
+  <td><a href="/Mindy_Orm_QuerySetBase#createModel-detail">createModel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="createModels">
+  <td><a href="/Mindy_Orm_QuerySetBase#createModels-detail">createModels()</a></td>
+  <td>Converts found rows into model instances</td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr id="delete">
+  <td><a href="/Mindy_Orm_TreeQuerySet#delete-detail">delete()</a></td>
+  <td>Пересчитываем дерево после удаления моделей через</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="deleteSql">
+  <td><a href="/Mindy_Orm_QuerySet#deleteSql-detail">deleteSql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr id="descendants">
+  <td><a href="/Mindy_Orm_TreeQuerySet#descendants-detail">descendants()</a></td>
+  <td>TODO переписать логику на $includeSelf = true делать gte, lte иначе gt, lt соответственно</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="distinct()">
+  <td><a href="/Mindy_Query_Query#distinct()-detail">distinct()</a></td>
+  <td>Sets the value indicating whether to SELECT DISTINCT or not.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="exclude">
+  <td><a href="/Mindy_Orm_QuerySet#exclude-detail">exclude()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="excludeOrWhere">
+  <td><a href="/Mindy_Orm_QuerySet#excludeOrWhere-detail">excludeOrWhere()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="excludeWhere">
+  <td><a href="/Mindy_Orm_QuerySet#excludeWhere-detail">excludeWhere()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="exists">
+  <td><a href="/Mindy_Query_Query#exists-detail">exists()</a></td>
+  <td>Returns a value indicating whether the query result contains any row of data.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="filter">
+  <td><a href="/Mindy_Orm_QuerySet#filter-detail">filter()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="from()">
+  <td><a href="/Mindy_Query_Query#from()-detail">from()</a></td>
+  <td>Sets the FROM part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="get">
+  <td><a href="/Mindy_Orm_QuerySet#get-detail">get()</a></td>
+  <td>Executes query and returns a single row of result.</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getCache">
+  <td><a href="/Mindy_Orm_QuerySet#getCache-detail">getCache()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getCacheKey">
+  <td><a href="/Mindy_Orm_QuerySet#getCacheKey-detail">getCacheKey()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getData">
+  <td><a href="/Mindy_Orm_QuerySet#getData-detail">getData()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getDb">
+  <td><a href="/Mindy_Query_Query#getDb-detail">getDb()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="getIterator">
+  <td><a href="/Mindy_Orm_QuerySetBase#getIterator-detail">getIterator()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="getOrCreate">
+  <td><a href="/Mindy_Orm_QuerySet#getOrCreate-detail">getOrCreate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getQueryBuilder">
+  <td><a href="/Mindy_Orm_QuerySet#getQueryBuilder-detail">getQueryBuilder()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getSql">
+  <td><a href="/Mindy_Orm_QuerySet#getSql-detail">getSql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getTableAlias">
+  <td><a href="/Mindy_Orm_QuerySet#getTableAlias-detail">getTableAlias()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="groupBy()">
+  <td><a href="/Mindy_Query_Query#groupBy()-detail">groupBy()</a></td>
+  <td>Sets the GROUP BY part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Query_Query#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Query_Query#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="having()">
+  <td><a href="/Mindy_Query_Query#having()-detail">having()</a></td>
+  <td>Sets the HAVING part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Query_Query#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="innerJoin">
+  <td><a href="/Mindy_Query_Query#innerJoin-detail">innerJoin()</a></td>
+  <td>Appends an INNER JOIN part to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="join()">
+  <td><a href="/Mindy_Query_Query#join()-detail">join()</a></td>
+  <td>Appends a JOIN part to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="leftJoin">
+  <td><a href="/Mindy_Query_Query#leftJoin-detail">leftJoin()</a></td>
+  <td>Appends a LEFT OUTER JOIN part to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="limit()">
+  <td><a href="/Mindy_Query_Query#limit()-detail">limit()</a></td>
+  <td>Sets the LIMIT part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="max">
+  <td><a href="/Mindy_Orm_QuerySet#max-detail">max()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="min">
+  <td><a href="/Mindy_Orm_QuerySet#min-detail">min()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr id="next">
+  <td><a href="/Mindy_Orm_TreeQuerySet#next-detail">next()</a></td>
+  <td>Named scope. Gets next sibling of node.</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="numval">
+  <td><a href="/Mindy_Orm_QuerySet#numval-detail">numval()</a></td>
+  <td>Converts string to float or int</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="offset()">
+  <td><a href="/Mindy_Query_Query#offset()-detail">offset()</a></td>
+  <td>Sets the OFFSET part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Orm_QuerySetBase#offsetExists-detail">offsetExists()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Orm_QuerySetBase#offsetGet-detail">offsetGet()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Orm_QuerySetBase#offsetSet-detail">offsetSet()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Orm_QuerySetBase#offsetUnset-detail">offsetUnset()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="one">
+  <td><a href="/Mindy_Query_Query#one-detail">one()</a></td>
+  <td>Executes the query and returns a single row of result.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="orExclude">
+  <td><a href="/Mindy_Orm_QuerySet#orExclude-detail">orExclude()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="orFilter">
+  <td><a href="/Mindy_Orm_QuerySet#orFilter-detail">orFilter()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="orHaving">
+  <td><a href="/Mindy_Query_Query#orHaving-detail">orHaving()</a></td>
+  <td>Adds an additional HAVING condition to the existing one.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="orWhere">
+  <td><a href="/Mindy_Query_Query#orWhere-detail">orWhere()</a></td>
+  <td>Adds an additional WHERE condition to the existing one.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="order">
+  <td><a href="/Mindy_Orm_QuerySet#order-detail">order()</a></td>
+  <td>Order by alias</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="orderBy()">
+  <td><a href="/Mindy_Query_Query#orderBy()-detail">orderBy()</a></td>
+  <td>Sets the ORDER BY part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="paginate">
+  <td><a href="/Mindy_Orm_QuerySet#paginate-detail">paginate()</a></td>
+  <td>Paginate models</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="params()">
+  <td><a href="/Mindy_Query_Query#params()-detail">params()</a></td>
+  <td>Sets the parameters to be bound to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr id="parent">
+  <td><a href="/Mindy_Orm_TreeQuerySet#parent-detail">parent()</a></td>
+  <td>Named scope. Gets parent of node.</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr id="prev">
+  <td><a href="/Mindy_Orm_TreeQuerySet#prev-detail">prev()</a></td>
+  <td>Named scope. Gets previous sibling of node.</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="querySql">
+  <td><a href="/Mindy_Query_Query#querySql-detail">querySql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="quoteColumnName">
+  <td><a href="/Mindy_Orm_QuerySet#quoteColumnName-detail">quoteColumnName()</a></td>
+  <td>Converts name => `name`, user.name => `user`.`name`</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="retreivePrimaryKey">
+  <td><a href="/Mindy_Orm_QuerySet#retreivePrimaryKey-detail">retreivePrimaryKey()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="rightJoin">
+  <td><a href="/Mindy_Query_Query#rightJoin-detail">rightJoin()</a></td>
+  <td>Appends a RIGHT OUTER JOIN part to the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr id="roots">
+  <td><a href="/Mindy_Orm_TreeQuerySet#roots-detail">roots()</a></td>
+  <td>Named scope. Gets root node(s).</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="scalar">
+  <td><a href="/Mindy_Query_Query#scalar-detail">scalar()</a></td>
+  <td>Returns the query result as a scalar value.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="select()">
+  <td><a href="/Mindy_Query_Query#select()-detail">select()</a></td>
+  <td>Sets the SELECT part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="serialize">
+  <td><a href="/Mindy_Orm_QuerySetBase#serialize-detail">serialize()</a></td>
+  <td>(PHP 5 &gt;= 5.1.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="sum">
+  <td><a href="/Mindy_Orm_QuerySet#sum-detail">sum()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr id="toHierarchy">
+  <td><a href="/Mindy_Orm_TreeQuerySet#toHierarchy-detail">toHierarchy()</a></td>
+  <td>Make hierarchy array by level</td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="union()">
+  <td><a href="/Mindy_Query_Query#union()-detail">union()</a></td>
+  <td>Appends a SQL statement using UNION operator.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="unserialize">
+  <td><a href="/Mindy_Orm_QuerySetBase#unserialize-detail">unserialize()</a></td>
+  <td>(PHP 5 &gt;= 5.1.0)<br/></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr class="inherited" id="update">
+  <td><a href="/Mindy_Orm_QuerySet#update-detail">update()</a></td>
+  <td>Update records</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="updateAll">
+  <td><a href="/Mindy_Query_Query#updateAll-detail">updateAll()</a></td>
+  <td>Updates the whole table using the provided attribute values and conditions.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="updateCounters">
+  <td><a href="/Mindy_Orm_QuerySet#updateCounters-detail">updateCounters()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="updateCountersInternal">
+  <td><a href="/Mindy_Query_Query#updateCountersInternal-detail">updateCountersInternal()</a></td>
+  <td>Updates the whole table using the provided counter changes and conditions.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="updateOrCreate">
+  <td><a href="/Mindy_Orm_QuerySet#updateOrCreate-detail">updateOrCreate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="updateSql">
+  <td><a href="/Mindy_Orm_QuerySet#updateSql-detail">updateSql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="using">
+  <td><a href="/Mindy_Query_Query#using-detail">using()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="valuesList">
+  <td><a href="/Mindy_Orm_QuerySet#valuesList-detail">valuesList()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="where()">
+  <td><a href="/Mindy_Query_Query#where()-detail">where()</a></td>
+  <td>Sets the WHERE part of the query.</td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="with()">
+  <td><a href="/Mindy_Orm_QuerySet#with()-detail">with()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="addChain">
+  <td><a href="/Mindy_Orm_QuerySet#addChain-detail">addChain()</a></td>
+  <td>Add chained relation</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Query_Query#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_Query.html">Mindy\Query\Query</a></td>
+</tr>
+<tr class="inherited" id="getChain">
+  <td><a href="/Mindy_Orm_QuerySet#getChain-detail">getChain()</a></td>
+  <td>Returns chain if exists</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getChainAlias">
+  <td><a href="/Mindy_Orm_QuerySet#getChainAlias-detail">getChainAlias()</a></td>
+  <td>Returns chain alias</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="getEventManager">
+  <td><a href="/Mindy_Orm_QuerySetBase#getEventManager-detail">getEventManager()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySetBase.html">Mindy\Orm\QuerySetBase</a></td>
+</tr>
+<tr id="getLastRoot">
+  <td><a href="/Mindy_Orm_TreeQuerySet#getLastRoot-detail">getLastRoot()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeQuerySet</td>
+</tr>
+<tr class="inherited" id="getOrCreateChainAlias">
+  <td><a href="/Mindy_Orm_QuerySet#getOrCreateChainAlias-detail">getOrCreateChainAlias()</a></td>
+  <td>Get or create alias and related model by chain</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="makeAliasAttributes">
+  <td><a href="/Mindy_Orm_QuerySet#makeAliasAttributes-detail">makeAliasAttributes()</a></td>
+  <td>Make aliased attributes</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="makeAliasKey">
+  <td><a href="/Mindy_Orm_QuerySet#makeAliasKey-detail">makeAliasKey()</a></td>
+  <td>Makes alias for joined table</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="makeChain">
+  <td><a href="/Mindy_Orm_QuerySet#makeChain-detail">makeChain()</a></td>
+  <td>Makes connection by chain (creates joins)</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="normalizeOrderBy">
+  <td><a href="/Mindy_Orm_QuerySet#normalizeOrderBy-detail">normalizeOrderBy()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="parseLookup">
+  <td><a href="/Mindy_Orm_QuerySet#parseLookup-detail">parseLookup()</a></td>
+  <td>Example:</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="prefixToKey">
+  <td><a href="/Mindy_Orm_QuerySet#prefixToKey-detail">prefixToKey()</a></td>
+  <td>Converts array prefix to string key</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="prepareCommand">
+  <td><a href="/Mindy_Orm_QuerySet#prepareCommand-detail">prepareCommand()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="prepareConditions">
+  <td><a href="/Mindy_Orm_QuerySet#prepareConditions-detail">prepareConditions()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="searchChain">
+  <td><a href="/Mindy_Orm_QuerySet#searchChain-detail">searchChain()</a></td>
+  <td>Searching closest already connected relation</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+<tr class="inherited" id="setCommand">
+  <td><a href="/Mindy_Orm_QuerySet#setCommand-detail">setCommand()</a></td>
+  <td>Sets \Mindy\Query\Command</td>
+  <td><a href="/Mindy_Orm_QuerySet.html">Mindy\Orm\QuerySet</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="treeKey-detail">
+treeKey<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected <b>$treeKey</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="all-detail">
+all()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>all</b>($db=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$db</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#145" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#145</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">all</span><span style="color: #007700">(</span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">all</span><span style="color: #007700">(</span><span style="color: #0000BB">$db</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toHierarchy</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="ancestors-detail">
+ancestors()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>ancestors</b>(int $depth=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$depth</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">the depth.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#69" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#69</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">ancestors</span><span style="color: #007700">(</span><span style="color: #0000BB">$depth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$qs&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft__lt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt__gt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">])-&gt;</span><span style="color: #0000BB">order</span><span style="color: #007700">([</span><span style="color: #DD0000">'-lft'</span><span style="color: #007700">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$depth&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$qs&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$qs</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([</span><span style="color: #DD0000">'level__gte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">level&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$depth</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$qs</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets ancestors for node.</p>
+
+
+<div class="detailHeader" id="asTree-detail">
+asTree()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>asTree</b>($key='items')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#139" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#139</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">asTree</span><span style="color: #007700">(</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'items'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="children-detail">
+children()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>children</b>(bool $includeSelf=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$includeSelf</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#59" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#59</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">children</span><span style="color: #007700">(</span><span style="color: #0000BB">$includeSelf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">descendants</span><span style="color: #007700">(</span><span style="color: #0000BB">$includeSelf</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets children for node (direct descendants only).</p>
+
+
+<div class="detailHeader" id="delete-detail">
+delete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public int <b>delete</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#156" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#156</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">delete</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;All&nbsp;this&nbsp;needs&nbsp;global&nbsp;refactoring!&nbsp;Not&nbsp;use&nbsp;this!&nbsp;This&nbsp;crashes&nbsp;the&nbsp;tree!<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data&nbsp;=&nbsp;$this-&gt;valuesList(['id',&nbsp;'lft',&nbsp;'rgt',&nbsp;'root'],&nbsp;true);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$deleted&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br /></span><span style="color: #FF8000">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;($deleted&nbsp;&amp;&amp;&nbsp;!empty($data))&nbsp;{<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i&nbsp;=&nbsp;0;<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$count&nbsp;=&nbsp;count($data);<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;($i&nbsp;&lt;&nbsp;$count)&nbsp;{<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$item&nbsp;=&nbsp;$data[$i];<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$data&nbsp;=&nbsp;$this-&gt;shiftLeftRight($item['rgt']&nbsp;+&nbsp;1,&nbsp;$item['lft']&nbsp;-&nbsp;$item['rgt']&nbsp;-&nbsp;1,&nbsp;$item['root'],&nbsp;$data);<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unset($data[$i]);<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$i++;<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$deleted</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Пересчитываем дерево после удаления моделей через
+$modelClass::objects()->filter(['pk__in' => $data])->delete();</p>
+
+
+<div class="detailHeader" id="descendants-detail">
+descendants()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>descendants</b>(bool $includeSelf=false, int $depth=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$includeSelf</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$depth</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol">the depth.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#31" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#31</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">descendants</span><span style="color: #007700">(</span><span style="color: #0000BB">$includeSelf&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$depth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft__gte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt__lte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">])-&gt;</span><span style="color: #0000BB">order</span><span style="color: #007700">([</span><span style="color: #DD0000">'lft'</span><span style="color: #007700">]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$includeSelf&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">exclude</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'pk'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pk<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$depth&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'level__lte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">level&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$depth<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>TODO переписать логику на $includeSelf = true делать gte, lte иначе gt, lt соответственно
+Named scope. Gets descendants for node.</p>
+
+
+<div class="detailHeader" id="getLastRoot-detail">
+getLastRoot()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected int <b>getLastRoot</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#134" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#134</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getLastRoot</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</span><span style="color: #0000BB">$max&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">max</span><span style="color: #007700">(</span><span style="color: #DD0000">'root'</span><span style="color: #007700">))&nbsp;?&nbsp;</span><span style="color: #0000BB">$max&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="next-detail">
+next()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>next</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#123" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#123</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">next</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets next sibling of node.</p>
+
+
+<div class="detailHeader" id="parent-detail">
+parent()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>parent</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#97" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#97</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft__lt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt__gt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'level'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">level&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets parent of node.</p>
+
+
+<div class="detailHeader" id="prev-detail">
+prev()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>prev</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#111" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#111</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">prev</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets previous sibling of node.</p>
+
+
+<div class="detailHeader" id="roots-detail">
+roots()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public QuerySet <b>roots</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">QuerySet</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#88" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#88</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">roots</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([</span><span style="color: #DD0000">'lft'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Named scope. Gets root node(s).</p>
+
+
+<div class="detailHeader" id="toHierarchy-detail">
+toHierarchy()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>toHierarchy</b>($collection $collection)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$collection</td>
+  <td class="paramTypeCol">$collection</td>
+  <td class="paramDescCol">Model[]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#201" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeQuerySet.php#201</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">toHierarchy</span><span style="color: #007700">(</span><span style="color: #0000BB">$collection</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Trees&nbsp;mapped<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$trees&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$collection</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Node&nbsp;Stack.&nbsp;Used&nbsp;to&nbsp;help&nbsp;building&nbsp;the&nbsp;hierarchy<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$collection&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$item&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Arrayable</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$item&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toArray</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">[</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey</span><span style="color: #007700">]&nbsp;=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Number&nbsp;of&nbsp;stack&nbsp;items<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Check&nbsp;if&nbsp;we're&nbsp;dealing&nbsp;with&nbsp;different&nbsp;levels<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">while&nbsp;(</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #DD0000">'level'</span><span style="color: #007700">]&nbsp;&gt;=&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">[</span><span style="color: #DD0000">'level'</span><span style="color: #007700">])&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">array_pop</span><span style="color: #007700">(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$l</span><span style="color: #007700">--;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Stack&nbsp;is&nbsp;empty&nbsp;(we&nbsp;are&nbsp;inspecting&nbsp;the&nbsp;root)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Assigning&nbsp;the&nbsp;root&nbsp;node<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$trees</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$trees</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[]&nbsp;=&nbsp;&amp;&nbsp;</span><span style="color: #0000BB">$trees</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Add&nbsp;node&nbsp;to&nbsp;parent<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey</span><span style="color: #007700">][</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[]&nbsp;=&nbsp;&amp;&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">[</span><span style="color: #0000BB">$l&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">][</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treeKey</span><span style="color: #007700">][</span><span style="color: #0000BB">$i</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$trees</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Make hierarchy array by level</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

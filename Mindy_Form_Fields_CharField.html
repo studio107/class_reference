@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Form\Fields\CharField</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Form\Fields\CharField &raquo;
+<a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Validation_Interfaces_IValidateField.html">Mindy\Validation\Interfaces\IValidateField</a></td>
+        </tr>
+                <tr>
+            <th>Subclasses</th>
+            <td><a href="/Mindy_Form_Fields_CheckboxField.html">Mindy\Form\Fields\CheckboxField</a>, <a href="/Mindy_Form_Fields_DateField.html">Mindy\Form\Fields\DateField</a>, <a href="/Mindy_Form_Fields_DateTimeField.html">Mindy\Form\Fields\DateTimeField</a>, <a href="/Mindy_Form_Fields_EmailField.html">Mindy\Form\Fields\EmailField</a>, <a href="/Mindy_Form_Fields_HiddenField.html">Mindy\Form\Fields\HiddenField</a>, <a href="/Mindy_Form_Fields_PasswordField.html">Mindy\Form\Fields\PasswordField</a>, <a href="/Mindy_Form_Fields_ShortUrlField.html">Mindy\Form\Fields\ShortUrlField</a>, <a href="/Mindy_Form_Fields_TextField.html">Mindy\Form\Fields\TextField</a></td>
+        </tr>
+                    <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="choices">
+  <td><a href="/Mindy_Form_Fields_Field#choices-detail">choices</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Form_Fields_Field#delete-detail">delete</a></td>
+  <td>bool</td>
+  <td>Технические аттрибуты для inline моделей</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="errorClass">
+  <td><a href="/Mindy_Form_Fields_Field#errorClass-detail">errorClass</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hidden">
+  <td><a href="/Mindy_Form_Fields_Field#hidden-detail">hidden</a></td>
+  <td>bool</td>
+  <td>Технические аттрибуты для inline моделей</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hint">
+  <td><a href="/Mindy_Form_Fields_Field#hint-detail">hint</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hintClass">
+  <td><a href="/Mindy_Form_Fields_Field#hintClass-detail">hintClass</a></td>
+  <td>string</td>
+  <td>html class for render hint</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="html">
+  <td><a href="/Mindy_Form_Fields_Field#html-detail">html</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="inputType">
+  <td><a href="/Mindy_Form_Fields_Field#inputType-detail">inputType</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="label">
+  <td><a href="/Mindy_Form_Fields_Field#label-detail">label</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="required">
+  <td><a href="/Mindy_Form_Fields_Field#required-detail">required</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr id="template">
+  <td><a href="/Mindy_Form_Fields_CharField#template-detail">template</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\Fields\CharField</td>
+</tr>
+<tr class="inherited" id="type">
+  <td><a href="/Mindy_Form_Fields_Field#type-detail">type</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="validators">
+  <td><a href="/Mindy_Form_Fields_Field#validators-detail">validators</a></td>
+  <td>\Mindy\Validation\Validator[]</td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="value">
+  <td><a href="/Mindy_Form_Fields_Field#value-detail">value</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="widget">
+  <td><a href="/Mindy_Form_Fields_Field#widget-detail">widget</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Form_Fields_Field#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Form_Fields_Field#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Form_Fields_Field#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Form_Fields_Field#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Form_Fields_Field#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__toString">
+  <td><a href="/Mindy_Form_Fields_Field#__toString-detail">__toString()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Form_Fields_Field#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Form_Fields_Field#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="/Mindy_Form_Fields_Field#addError-detail">addError()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="/Mindy_Form_Fields_Field#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Form_Fields_Field#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Form_Fields_Field#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Form_Fields_Field#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Form_Fields_Field#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="/Mindy_Form_Fields_Field#clearErrors-detail">clearErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="/Mindy_Form_Fields_Field#getErrors-detail">getErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getFieldSets">
+  <td><a href="/Mindy_Form_Fields_Field#getFieldSets-detail">getFieldSets()</a></td>
+  <td>Format:</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getForm">
+  <td><a href="/Mindy_Form_Fields_Field#getForm-detail">getForm()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getHtmlAttributes">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlAttributes-detail">getHtmlAttributes()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getHtmlId">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlId-detail">getHtmlId()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getHtmlName">
+  <td><a href="/Mindy_Form_Fields_Field#getHtmlName-detail">getHtmlName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="/Mindy_Form_Fields_Field#getId-detail">getId()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getName">
+  <td><a href="/Mindy_Form_Fields_Field#getName-detail">getName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getPrefix">
+  <td><a href="/Mindy_Form_Fields_Field#getPrefix-detail">getPrefix()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr id="getValue">
+  <td><a href="/Mindy_Form_Fields_CharField#getValue-detail">getValue()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\CharField</td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="/Mindy_Form_Fields_Field#hasErrors-detail">hasErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Form_Fields_Field#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Form_Fields_Field#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Form_Fields_Field#init-detail">init()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="isValid">
+  <td><a href="/Mindy_Form_Fields_Field#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr id="render">
+  <td><a href="/Mindy_Form_Fields_CharField#render-detail">render()</a></td>
+  <td></td>
+  <td>Mindy\Form\Fields\CharField</td>
+</tr>
+<tr class="inherited" id="renderErrors">
+  <td><a href="/Mindy_Form_Fields_Field#renderErrors-detail">renderErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="renderHint">
+  <td><a href="/Mindy_Form_Fields_Field#renderHint-detail">renderHint()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="renderInput">
+  <td><a href="/Mindy_Form_Fields_Field#renderInput-detail">renderInput()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="renderLabel">
+  <td><a href="/Mindy_Form_Fields_Field#renderLabel-detail">renderLabel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setForm">
+  <td><a href="/Mindy_Form_Fields_Field#setForm-detail">setForm()</a></td>
+  <td>Sets </td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setName">
+  <td><a href="/Mindy_Form_Fields_Field#setName-detail">setName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setPrefix">
+  <td><a href="/Mindy_Form_Fields_Field#setPrefix-detail">setPrefix()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setValue">
+  <td><a href="/Mindy_Form_Fields_Field#setValue-detail">setValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Form_Fields_Field#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_Fields_Field.html">Mindy\Form\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="template-detail">
+template<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$template</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="getValue-detail">
+getValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getValue</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php#39" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php#39</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">getValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value&nbsp;</span><span style="color: #007700">instanceof&nbsp;\</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">\</span><span style="color: #0000BB">Orm</span><span style="color: #007700">\</span><span style="color: #0000BB">Manager</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"Value&nbsp;must&nbsp;be&nbsp;a&nbsp;string,&nbsp;not&nbsp;a&nbsp;manager"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="render-detail">
+render()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>render</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php#23" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/Fields/CharField.php#23</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">render</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderLabel</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$input&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">template</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{type}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">type</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{id}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlId</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{name}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlName</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{value}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'{html}'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHtmlAttributes</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$hint&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hint&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderHint</span><span style="color: #007700">()&nbsp;:&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$errors&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderErrors</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">"\n"</span><span style="color: #007700">,&nbsp;[</span><span style="color: #0000BB">$label</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$input</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$hint</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$errors</span><span style="color: #007700">]);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,1519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Orm\TreeModel</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#Mindy\Orm">Mindy\Orm</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>abstract class Mindy\Orm\TreeModel &raquo;
+<a href="/Mindy_Orm_Model.html">Mindy\Orm\Model</a> &raquo;
+<a href="/Mindy_Orm_Orm.html">Mindy\Orm\Orm</a> &raquo;
+<a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>Serializable, ArrayAccess, <a href="/Mindy_Helper_Interfaces_Arrayable.html">Mindy\Helper\Interfaces\Arrayable</a></td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    Class TreeModel</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="autoField">
+  <td><a href="/Mindy_Orm_Base#autoField-detail">autoField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="cleanedData">
+  <td><a href="/Mindy_Orm_Base#cleanedData-detail">cleanedData</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="fileField">
+  <td><a href="/Mindy_Orm_Base#fileField-detail">fileField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="foreignField">
+  <td><a href="/Mindy_Orm_Base#foreignField-detail">foreignField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="hasManyField">
+  <td><a href="/Mindy_Orm_Base#hasManyField-detail">hasManyField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="manyToManyField">
+  <td><a href="/Mindy_Orm_Base#manyToManyField-detail">manyToManyField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="oneToOneField">
+  <td><a href="/Mindy_Orm_Base#oneToOneField-detail">oneToOneField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="relatedField">
+  <td><a href="/Mindy_Orm_Base#relatedField-detail">relatedField</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Orm_Base#__call-detail">__call()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Orm_Base#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__callStatic">
+  <td><a href="/Mindy_Orm_Base#__callStatic-detail">__callStatic()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Orm_Base#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Orm_Base#__get-detail">__get()</a></td>
+  <td>PHP getter magic method.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Orm_Base#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Orm_Base#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Orm_Base#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Orm_Base#__set-detail">__set()</a></td>
+  <td>PHP setter magic method.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Orm_Base#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__toString">
+  <td><a href="/Mindy_Orm_Base#__toString-detail">__toString()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Orm_Base#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Orm_Base#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="/Mindy_Orm_Base#addError-detail">addError()</a></td>
+  <td>Adds a new error to the specified attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="/Mindy_Orm_Base#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="afterDelete">
+  <td><a href="/Mindy_Orm_Base#afterDelete-detail">afterDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="afterSave">
+  <td><a href="/Mindy_Orm_Base#afterSave-detail">afterSave()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="afterValidate">
+  <td><a href="/Mindy_Orm_Base#afterValidate-detail">afterValidate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="append">
+  <td><a href="/Mindy_Orm_TreeModel#append-detail">append()</a></td>
+  <td>Appends target to node as last child.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="appendTo">
+  <td><a href="/Mindy_Orm_TreeModel#appendTo-detail">appendTo()</a></td>
+  <td>Appends node to target as last child.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="attributes">
+  <td><a href="/Mindy_Orm_Base#attributes-detail">attributes()</a></td>
+  <td>Returns the list of all attribute names of the model.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="beforeDelete">
+  <td><a href="/Mindy_Orm_Base#beforeDelete-detail">beforeDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="beforeSave">
+  <td><a href="/Mindy_Orm_Base#beforeSave-detail">beforeSave()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="beforeValidate">
+  <td><a href="/Mindy_Orm_Base#beforeValidate-detail">beforeValidate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Orm_Base#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Orm_Base#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Orm_Base#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Orm_Base#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="/Mindy_Orm_Base#clearErrors-detail">clearErrors()</a></td>
+  <td>Removes errors for all attributes or a single attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="clearErrorsInternal">
+  <td><a href="/Mindy_Orm_Base#clearErrorsInternal-detail">clearErrorsInternal()</a></td>
+  <td>Removes errors for all attributes or a single attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="create">
+  <td><a href="/Mindy_Orm_Base#create-detail">create()</a></td>
+  <td>TODO move to manager</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="delete">
+  <td><a href="/Mindy_Orm_TreeModel#delete-detail">delete()</a></td>
+  <td>Deletes node and it's descendants.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="getAdminNames">
+  <td><a href="/Mindy_Orm_Model#getAdminNames-detail">getAdminNames()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Model.html">Mindy\Orm\Model</a></td>
+</tr>
+<tr class="inherited" id="getAttribute">
+  <td><a href="/Mindy_Orm_Base#getAttribute-detail">getAttribute()</a></td>
+  <td>Returns the named attribute value.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getCache">
+  <td><a href="/Mindy_Orm_Base#getCache-detail">getCache()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getConnection">
+  <td><a href="/Mindy_Orm_Base#getConnection-detail">getConnection()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getDb">
+  <td><a href="/Mindy_Orm_Base#getDb-detail">getDb()</a></td>
+  <td>Returns the database connection used by this AR class.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getDirtyAttributes">
+  <td><a href="/Mindy_Orm_Base#getDirtyAttributes-detail">getDirtyAttributes()</a></td>
+  <td>Returns the attribute values that have been modified since they are loaded or saved most recently.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="/Mindy_Orm_Base#getErrors-detail">getErrors()</a></td>
+  <td>Returns the errors for all attribute or a single attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getField">
+  <td><a href="/Mindy_Orm_Base#getField-detail">getField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="getFields">
+  <td><a href="/Mindy_Orm_TreeModel#getFields-detail">getFields()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="getFieldsInit">
+  <td><a href="/Mindy_Orm_Base#getFieldsInit-detail">getFieldsInit()</a></td>
+  <td>Return initialized fields</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="getIsDeletedRecord">
+  <td><a href="/Mindy_Orm_TreeModel#getIsDeletedRecord-detail">getIsDeletedRecord()</a></td>
+  <td>Returns if the current node is deleted.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="getIsLeaf">
+  <td><a href="/Mindy_Orm_TreeModel#getIsLeaf-detail">getIsLeaf()</a></td>
+  <td>Determines if node is leaf.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="getIsNewRecord">
+  <td><a href="/Mindy_Orm_Base#getIsNewRecord-detail">getIsNewRecord()</a></td>
+  <td>Returns a value indicating whether the current record is new.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="getIsRoot">
+  <td><a href="/Mindy_Orm_TreeModel#getIsRoot-detail">getIsRoot()</a></td>
+  <td>Determines if node is root.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="getManyFields">
+  <td><a href="/Mindy_Orm_Base#getManyFields-detail">getManyFields()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getMeta">
+  <td><a href="/Mindy_Orm_Base#getMeta-detail">getMeta()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getModule">
+  <td><a href="/Mindy_Orm_Model#getModule-detail">getModule()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Model.html">Mindy\Orm\Model</a></td>
+</tr>
+<tr class="inherited" id="getModuleName">
+  <td><a href="/Mindy_Orm_Base#getModuleName-detail">getModuleName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getOldAttribute">
+  <td><a href="/Mindy_Orm_Base#getOldAttribute-detail">getOldAttribute()</a></td>
+  <td>Returns the old value of the named attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getOldAttributes">
+  <td><a href="/Mindy_Orm_Base#getOldAttributes-detail">getOldAttributes()</a></td>
+  <td>Returns the old attribute values.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getOldPrimaryKey">
+  <td><a href="/Mindy_Orm_Base#getOldPrimaryKey-detail">getOldPrimaryKey()</a></td>
+  <td>Returns the old primary key value(s).</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getPkName">
+  <td><a href="/Mindy_Orm_Base#getPkName-detail">getPkName()</a></td>
+  <td>Get primary key name</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getPrimaryKey">
+  <td><a href="/Mindy_Orm_Base#getPrimaryKey-detail">getPrimaryKey()</a></td>
+  <td>Returns the primary key value(s).</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getTableSchema">
+  <td><a href="/Mindy_Orm_Base#getTableSchema-detail">getTableSchema()</a></td>
+  <td>Returns the schema information of the DB table associated with this AR class.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getVerboseName">
+  <td><a href="/Mindy_Orm_Model#getVerboseName-detail">getVerboseName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Model.html">Mindy\Orm\Model</a></td>
+</tr>
+<tr class="inherited" id="hasAttribute">
+  <td><a href="/Mindy_Orm_Base#hasAttribute-detail">hasAttribute()</a></td>
+  <td>Returns a value indicating whether the model has an attribute with the specified name.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="/Mindy_Orm_Base#hasErrors-detail">hasErrors()</a></td>
+  <td>Returns a value indicating whether there is any validation error.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="hasField">
+  <td><a href="/Mindy_Orm_Base#hasField-detail">hasField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Orm_Base#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Orm_Base#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Orm_Base#init-detail">init()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="insert">
+  <td><a href="/Mindy_Orm_Base#insert-detail">insert()</a></td>
+  <td>Inserts a row into the associated database table using the attribute values of this record.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="insertAfter">
+  <td><a href="/Mindy_Orm_TreeModel#insertAfter-detail">insertAfter()</a></td>
+  <td>Inserts node as next sibling of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="insertBefore">
+  <td><a href="/Mindy_Orm_TreeModel#insertBefore-detail">insertBefore()</a></td>
+  <td>Inserts node as previous sibling of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="isAttributeChanged">
+  <td><a href="/Mindy_Orm_Base#isAttributeChanged-detail">isAttributeChanged()</a></td>
+  <td>Returns a value indicating whether the named attribute has been changed.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="isDescendantOf">
+  <td><a href="/Mindy_Orm_TreeModel#isDescendantOf-detail">isDescendantOf()</a></td>
+  <td>Determines if node is descendant of subject node.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="isLeaf">
+  <td><a href="/Mindy_Orm_TreeModel#isLeaf-detail">isLeaf()</a></td>
+  <td>Determines if node is leaf.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="isPrimaryKey">
+  <td><a href="/Mindy_Orm_Base#isPrimaryKey-detail">isPrimaryKey()</a></td>
+  <td>Returns a value indicating whether the given set of attributes represents the primary key for this model</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="isRoot">
+  <td><a href="/Mindy_Orm_TreeModel#isRoot-detail">isRoot()</a></td>
+  <td>Determines if node is root.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="isValid">
+  <td><a href="/Mindy_Orm_Base#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="isValidInternal">
+  <td><a href="/Mindy_Orm_Base#isValidInternal-detail">isValidInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="markAttributeDirty">
+  <td><a href="/Mindy_Orm_Base#markAttributeDirty-detail">markAttributeDirty()</a></td>
+  <td>Marks an attribute dirty.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="moveAfter">
+  <td><a href="/Mindy_Orm_TreeModel#moveAfter-detail">moveAfter()</a></td>
+  <td>Move node as next sibling of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="moveAsFirst">
+  <td><a href="/Mindy_Orm_TreeModel#moveAsFirst-detail">moveAsFirst()</a></td>
+  <td>Move node as first child of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="moveAsLast">
+  <td><a href="/Mindy_Orm_TreeModel#moveAsLast-detail">moveAsLast()</a></td>
+  <td>Move node as last child of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="moveAsRoot">
+  <td><a href="/Mindy_Orm_TreeModel#moveAsRoot-detail">moveAsRoot()</a></td>
+  <td>Move node as new root.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="moveBefore">
+  <td><a href="/Mindy_Orm_TreeModel#moveBefore-detail">moveBefore()</a></td>
+  <td>Move node as previous sibling of target.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="normalizeTableName">
+  <td><a href="/Mindy_Orm_Base#normalizeTableName-detail">normalizeTableName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="objectsManager">
+  <td><a href="/Mindy_Orm_TreeModel#objectsManager-detail">objectsManager()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Orm_Base#offsetExists-detail">offsetExists()</a></td>
+  <td>Returns whether there is an element at the specified offset.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Orm_Base#offsetGet-detail">offsetGet()</a></td>
+  <td>Returns the element at the specified offset.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Orm_Base#offsetSet-detail">offsetSet()</a></td>
+  <td>Sets the element at the specified offset.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Orm_Base#offsetUnset-detail">offsetUnset()</a></td>
+  <td>Sets the element value at the specified offset to null.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="optimisticLock">
+  <td><a href="/Mindy_Orm_Base#optimisticLock-detail">optimisticLock()</a></td>
+  <td>Returns the name of the column that stores the lock version for implementing optimistic locking.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="prepend">
+  <td><a href="/Mindy_Orm_TreeModel#prepend-detail">prepend()</a></td>
+  <td>Prepends target to node as first child.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr id="prependTo">
+  <td><a href="/Mindy_Orm_TreeModel#prependTo-detail">prependTo()</a></td>
+  <td>Prepends node to target as first child.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="primaryKey">
+  <td><a href="/Mindy_Orm_Base#primaryKey-detail">primaryKey()</a></td>
+  <td>Returns the primary key name(s) for this AR class.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="primaryKeyName">
+  <td><a href="/Mindy_Orm_Base#primaryKeyName-detail">primaryKeyName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="reverse">
+  <td><a href="/Mindy_Orm_Model#reverse-detail">reverse()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Model.html">Mindy\Orm\Model</a></td>
+</tr>
+<tr id="save">
+  <td><a href="/Mindy_Orm_TreeModel#save-detail">save()</a></td>
+  <td>Create root node if multiple-root tree mode. Update node if it's not new.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="serialize">
+  <td><a href="/Mindy_Orm_Base#serialize-detail">serialize()</a></td>
+  <td>(PHP 5 &gt;= 5.1.0)<br/></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="setAttribute">
+  <td><a href="/Mindy_Orm_Base#setAttribute-detail">setAttribute()</a></td>
+  <td>Sets the named attribute value.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="setAttributes">
+  <td><a href="/Mindy_Orm_Base#setAttributes-detail">setAttributes()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="setIsDeletedRecord">
+  <td><a href="/Mindy_Orm_TreeModel#setIsDeletedRecord-detail">setIsDeletedRecord()</a></td>
+  <td>Sets if the current node is deleted.</td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="setIsNewRecord">
+  <td><a href="/Mindy_Orm_Base#setIsNewRecord-detail">setIsNewRecord()</a></td>
+  <td>Sets the value indicating whether the record is new.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="setOldAttribute">
+  <td><a href="/Mindy_Orm_Base#setOldAttribute-detail">setOldAttribute()</a></td>
+  <td>Sets the old value of the named attribute.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="setOldAttributes">
+  <td><a href="/Mindy_Orm_Base#setOldAttributes-detail">setOldAttributes()</a></td>
+  <td>Sets the old attribute values.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="tableName">
+  <td><a href="/Mindy_Orm_Base#tableName-detail">tableName()</a></td>
+  <td>Return table name based on this class name.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="toArray">
+  <td><a href="/Mindy_Orm_Base#toArray-detail">toArray()</a></td>
+  <td>Converts the object into an array.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="toJson">
+  <td><a href="/Mindy_Orm_Base#toJson-detail">toJson()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr id="treeManager">
+  <td><a href="/Mindy_Orm_TreeModel#treeManager-detail">treeManager()</a></td>
+  <td></td>
+  <td>Mindy\Orm\TreeModel</td>
+</tr>
+<tr class="inherited" id="unserialize">
+  <td><a href="/Mindy_Orm_Base#unserialize-detail">unserialize()</a></td>
+  <td>(PHP 5 &gt;= 5.1.0)<br/></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="update">
+  <td><a href="/Mindy_Orm_Base#update-detail">update()</a></td>
+  <td>Saves the changes to this active record into the associated database table.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="updateRelated">
+  <td><a href="/Mindy_Orm_Base#updateRelated-detail">updateRelated()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="validate">
+  <td><a href="/Mindy_Orm_Base#validate-detail">validate()</a></td>
+  <td>TODO</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Orm_Base#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getDbPrepValues">
+  <td><a href="/Mindy_Orm_Base#getDbPrepValues-detail">getDbPrepValues()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="getEventManager">
+  <td><a href="/Mindy_Orm_Base#getEventManager-detail">getEventManager()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="insertInternal">
+  <td><a href="/Mindy_Orm_Base#insertInternal-detail">insertInternal()</a></td>
+  <td>Inserts an ActiveRecord into DB without considering transaction.</td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onAfterDeleteInternal">
+  <td><a href="/Mindy_Orm_Base#onAfterDeleteInternal-detail">onAfterDeleteInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onAfterInsertInternal">
+  <td><a href="/Mindy_Orm_Base#onAfterInsertInternal-detail">onAfterInsertInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onAfterUpdateInternal">
+  <td><a href="/Mindy_Orm_Base#onAfterUpdateInternal-detail">onAfterUpdateInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onBeforeDeleteInternal">
+  <td><a href="/Mindy_Orm_Base#onBeforeDeleteInternal-detail">onBeforeDeleteInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onBeforeInsertInternal">
+  <td><a href="/Mindy_Orm_Base#onBeforeInsertInternal-detail">onBeforeInsertInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="onBeforeUpdateInternal">
+  <td><a href="/Mindy_Orm_Base#onBeforeUpdateInternal-detail">onBeforeUpdateInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+<tr class="inherited" id="updateInternal">
+  <td><a href="/Mindy_Orm_Base#updateInternal-detail">updateInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Base.html">Mindy\Orm\Base</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="append-detail">
+append()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>append</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the appending succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#188" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#188</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">append</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">appendTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">owner</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Appends target to node as last child.</p>
+
+
+<div class="detailHeader" id="appendTo-detail">
+appendTo()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>appendTo</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the appending succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#178" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#178</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">appendTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Appends node to target as last child.</p>
+
+
+<div class="detailHeader" id="delete-detail">
+delete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>delete</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the deletion is successful.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#138" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#138</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">delete</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isLeaf</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">objects</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft__gte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt__lte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">])-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">shiftLeftRight</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(bool)&nbsp;</span><span style="color: #0000BB">$result</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes node and it's descendants.</p>
+
+
+<div class="detailHeader" id="getFields-detail">
+getFields()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>getFields</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#31" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#31</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getFields</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'parent'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">ForeignField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'modelClass'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">get_called_class</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'null'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">IntField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'editable'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">IntField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'editable'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'level'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">IntField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'editable'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">IntField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'null'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'editable'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getIsDeletedRecord-detail">
+getIsDeletedRecord()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>getIsDeletedRecord</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is deleted.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#327" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#327</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getIsDeletedRecord</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_deleted</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns if the current node is deleted.</p>
+
+
+<div class="detailHeader" id="getIsLeaf-detail">
+getIsLeaf()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>getIsLeaf</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is leaf.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#82" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#82</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getIsLeaf</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines if node is leaf.</p>
+
+
+<div class="detailHeader" id="getIsRoot-detail">
+getIsRoot()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>getIsRoot</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is root.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#91" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#91</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getIsRoot</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines if node is root.</p>
+
+
+<div class="detailHeader" id="insertAfter-detail">
+insertAfter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>insertAfter</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the inserting succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#209" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#209</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">insertAfter</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Inserts node as next sibling of target.</p>
+
+
+<div class="detailHeader" id="insertBefore-detail">
+insertBefore()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>insertBefore</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the inserting succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#199" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#199</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">insertBefore</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Inserts node as previous sibling of target.</p>
+
+
+<div class="detailHeader" id="isDescendantOf-detail">
+isDescendantOf()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>isDescendantOf</b>(TreeModel $subj)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$subj</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the subject node.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is descendant of subject node.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#300" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#300</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isDescendantOf</span><span style="color: #007700">(</span><span style="color: #0000BB">$subj</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">$subj</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">$subj</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">$subj</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines if node is descendant of subject node.</p>
+
+
+<div class="detailHeader" id="isLeaf-detail">
+isLeaf()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>isLeaf</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is leaf.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#309" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#309</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isLeaf</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines if node is leaf.</p>
+
+
+<div class="detailHeader" id="isRoot-detail">
+isRoot()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>isRoot</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is root.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#318" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#318</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isRoot</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getIsRoot</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Determines if node is root.</p>
+
+
+<div class="detailHeader" id="moveAfter-detail">
+moveAfter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>moveAfter</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the moving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#229" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#229</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">moveAfter</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Move node as next sibling of target.</p>
+
+
+<div class="detailHeader" id="moveAsFirst-detail">
+moveAsFirst()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>moveAsFirst</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the moving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#239" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#239</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">moveAsFirst</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Move node as first child of target.</p>
+
+
+<div class="detailHeader" id="moveAsLast-detail">
+moveAsLast()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>moveAsLast</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the moving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#249" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#249</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">moveAsLast</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Move node as last child of target.</p>
+
+
+<div class="detailHeader" id="moveAsRoot-detail">
+moveAsRoot()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>moveAsRoot</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the moving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#260" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#260</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">moveAsRoot</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getIsNewRecord</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;node&nbsp;should&nbsp;not&nbsp;be&nbsp;new&nbsp;record.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getIsDeletedRecord</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;node&nbsp;should&nbsp;not&nbsp;be&nbsp;deleted.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isRoot</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;node&nbsp;already&nbsp;is&nbsp;root&nbsp;node.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$left&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$right&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rgt</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$levelDelta&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">level</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$delta&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$left</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">objects</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft__gte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$left</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt__lte'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$right</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">root<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'lft'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;new&nbsp;</span><span style="color: #0000BB">Expression</span><span style="color: #007700">(</span><span style="color: #DD0000">'lft'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span><span style="color: #DD0000">'%+d'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$delta</span><span style="color: #007700">)),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rgt'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;new&nbsp;</span><span style="color: #0000BB">Expression</span><span style="color: #007700">(</span><span style="color: #DD0000">'rgt'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span><span style="color: #DD0000">'%+d'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$delta</span><span style="color: #007700">)),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'level'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;new&nbsp;</span><span style="color: #0000BB">Expression</span><span style="color: #007700">(</span><span style="color: #DD0000">'level'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span><span style="color: #DD0000">'%+d'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$levelDelta</span><span style="color: #007700">)),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'root'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getMaxRoot</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">shiftLeftRight</span><span style="color: #007700">(</span><span style="color: #0000BB">$right&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$left&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$right&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Move node as new root.</p>
+
+
+<div class="detailHeader" id="moveBefore-detail">
+moveBefore()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>moveBefore</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the moving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#219" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#219</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">moveBefore</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Move node as previous sibling of target.</p>
+
+
+<div class="detailHeader" id="objectsManager-detail">
+objectsManager()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static TreeManager <b>objectsManager</b>(null $instance=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$instance</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">TreeManager</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#63" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#63</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">objectsManager</span><span style="color: #007700">(</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$className&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">get_called_class</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;</span><span style="color: #0000BB">TreeManager</span><span style="color: #007700">(</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">:&nbsp;new&nbsp;</span><span style="color: #0000BB">$className</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="prepend-detail">
+prepend()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>prepend</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the prepending succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#168" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#168</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">prepend</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">prependTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">owner</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Prepends target to node as first child.</p>
+
+
+<div class="detailHeader" id="prependTo-detail">
+prependTo()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>prependTo</b>(TreeModel $target)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$target</td>
+  <td class="paramTypeCol">TreeModel</td>
+  <td class="paramDescCol">the target.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the prepending succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#158" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#158</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">prependTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addNode</span><span style="color: #007700">(</span><span style="color: #0000BB">$target</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$target</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lft&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Prepends node to target as first child.</p>
+
+
+<div class="detailHeader" id="save-detail">
+save()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>save</b>(array $fields=array (
+))</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$fields</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the saving succeeds.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#107" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#107</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">(array&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;[])<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getIsNewRecord</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">parent</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">appendTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">parent</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeRoot</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dirtyFields&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getDirtyAttributes</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #DD0000">'parent_id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dirtyFields</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$saved&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">$fields</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">parent</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveAsLast</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">parent</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isRoot</span><span style="color: #007700">()&nbsp;==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">moveAsRoot</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setAttributes</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">objects</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">asArray</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">([</span><span style="color: #DD0000">'pk'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">pk</span><span style="color: #007700">])-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setIsNewRecord</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$saved</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">$fields</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Create root node if multiple-root tree mode. Update node if it's not new.</p>
+
+
+<div class="detailHeader" id="setIsDeletedRecord-detail">
+setIsDeletedRecord()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setIsDeletedRecord</b>(boolean $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the node is deleted.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#336" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#336</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setIsDeletedRecord</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_deleted&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Sets if the current node is deleted.</p>
+
+
+<div class="detailHeader" id="treeManager-detail">
+treeManager()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static TreeManager <b>treeManager</b>(null $instance=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$instance</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">TreeManager</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#73" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/TreeModel.php#73</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">treeManager</span><span style="color: #007700">(</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">objectsManager</span><span style="color: #007700">(</span><span style="color: #0000BB">$instance</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

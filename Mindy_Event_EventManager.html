@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Event\EventManager</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Event\EventManager &raquo;
+Aura\Signal\Manager</td>
+    </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/event/src/Mindy/Event/EventManager.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/event/src/Mindy/Event/EventManager.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="handler_factory">
+  <td>handler_factory</td>
+  <td>HandlerFactory</td>
+  <td>A factory to create Handler objects.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="handlers">
+  <td>handlers</td>
+  <td>array</td>
+  <td>An array of Handler instances that respond to class signals.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="result_collection">
+  <td>result_collection</td>
+  <td>ResultCollection</td>
+  <td>A prototype ResultCollection; this will be cloned by `send()` to retain</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="result_factory">
+  <td>result_factory</td>
+  <td>ResultFactory</td>
+  <td>A factory to create Result objects.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="results">
+  <td>results</td>
+  <td>ResultCollection</td>
+  <td>A ResultCollection from the last signal sent.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="sorted">
+  <td>sorted</td>
+  <td>array</td>
+  <td>Have the handlers for a signal been sorted by position?</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Event_EventManager#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>Mindy\Event\EventManager</td>
+</tr>
+<tr class="inherited" id="getHandlers">
+  <td>getHandlers()</td>
+  <td>Gets Handler instances for the Manager.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="getResults">
+  <td>getResults()</td>
+  <td>Returns the ResultCollection from the last signal processing.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="handler">
+  <td>handler()</td>
+  <td>Adds a Handler to respond to a sender signal.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+<tr class="inherited" id="send">
+  <td>send()</td>
+  <td>Invokes the Handler objects for a sender and signal.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="process">
+  <td>process()</td>
+  <td>Invokes the Handler objects for a sender and signal.</td>
+  <td>Aura\Signal\Manager</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/event/src/Mindy/Event/EventManager.php#24" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/event/src/Mindy/Event/EventManager.php#24</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tmp&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">func_get_args</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$args&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$tmp</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$tmp</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$events&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$args</span><span style="color: #007700">[</span><span style="color: #DD0000">'events'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$args</span><span style="color: #007700">[</span><span style="color: #DD0000">'events'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$events</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$handlers&nbsp;</span><span style="color: #007700">=&nbsp;require_once(</span><span style="color: #0000BB">$events</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$handlers&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">HandlerFactory</span><span style="color: #007700">,&nbsp;new&nbsp;</span><span style="color: #0000BB">ResultFactory</span><span style="color: #007700">,&nbsp;new&nbsp;</span><span style="color: #0000BB">ResultCollection</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$handlers</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Locale\LocalizedFormatter</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#system.utils">system.utils</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Locale\LocalizedFormatter &raquo;
+<a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a> &raquo;
+<a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Base_Interfaces_IApplicationComponent.html">Mindy\Base\Interfaces\IApplicationComponent</a></td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>1.1.14</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Carsten Brandt <mail@cebe.cc></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    CLocalizedFormatter provides a set of commonly used data formatting methods based on the current locale settings.
+<br/><br/>
+It provides the same functionality as CFormatter, but overrides all the settings for
+<a href="/Mindy_Locale_LocalizedFormatter#booleanFormat">booleanFormat</a>, <a href="/Mindy_Locale_LocalizedFormatter#datetimeFormat">datetimeFormat</a> and <a href="/Mindy_Locale_LocalizedFormatter#numberFormat">numberFormat</a> with the values for the
+current locale. Because of this you are not able to configure these properties for CLocalizedFormatter directly.
+Date and time format can be adjusted by setting <a href="/Mindy_Locale_LocalizedFormatter#dateFormat">dateFormat</a> and <a href="/Mindy_Locale_LocalizedFormatter#timeFormat">timeFormat</a>.
+<br/><br/>
+It uses CApplication::locale by default but you can set a custom locale by using <a href="/Mindy_Locale_LocalizedFormatter#setLocale">setLocale</a>-method.
+<br/><br/>
+For a list of recognizable format types, and details on how to call the formatter methods,
+see CFormatter documentation.
+<br/><br/>
+To replace the application component 'format', which is registered by CApplication by default, you can
+put this in your application 'components' config:
+<code>
+'format' => array(
+    'class' => 'CLocalizedFormatter',
+),
+</code></div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="/Mindy_Base_ApplicationComponent#behaviors-detail">behaviors</a></td>
+  <td>array</td>
+  <td>the behaviors that should be attached to the module.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="booleanFormat">
+  <td><a href="/Mindy_Locale_Formatter#booleanFormat-detail">booleanFormat</a></td>
+  <td>array</td>
+  <td>the text to be displayed when formatting a boolean value.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr id="dateFormat">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#dateFormat-detail">dateFormat</a></td>
+  <td>string</td>
+  <td>the width of the date pattern.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr class="inherited" id="datetimeFormat">
+  <td><a href="/Mindy_Locale_Formatter#datetimeFormat-detail">datetimeFormat</a></td>
+  <td>string</td>
+  <td>the format string to be used to format a date and time using PHP date() function.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="htmlPurifierOptions">
+  <td><a href="/Mindy_Locale_Formatter#htmlPurifierOptions-detail">htmlPurifierOptions</a></td>
+  <td>array</td>
+  <td>the options to be passed to CHtmlPurifier instance used in this class.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="numberFormat">
+  <td><a href="/Mindy_Locale_Formatter#numberFormat-detail">numberFormat</a></td>
+  <td>array</td>
+  <td>the format used to format a number with PHP number_format() function.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="sizeFormat">
+  <td><a href="/Mindy_Locale_Formatter#sizeFormat-detail">sizeFormat</a></td>
+  <td>array</td>
+  <td>the format used to format size (bytes).</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr id="timeFormat">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#timeFormat-detail">timeFormat</a></td>
+  <td>string</td>
+  <td>the width of the time pattern.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Locale_Formatter#__call-detail">__call()</a></td>
+  <td>Calls the format method when its shortcut is invoked.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Base_ApplicationComponent#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Base_ApplicationComponent#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Base_ApplicationComponent#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Base_ApplicationComponent#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Base_ApplicationComponent#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Base_ApplicationComponent#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Base_ApplicationComponent#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Base_ApplicationComponent#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Base_ApplicationComponent#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Base_ApplicationComponent#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="/Mindy_Base_ApplicationComponent#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="/Mindy_Base_ApplicationComponent#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="/Mindy_Base_ApplicationComponent#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Base_ApplicationComponent#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Base_ApplicationComponent#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Base_ApplicationComponent#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Base_ApplicationComponent#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="/Mindy_Base_ApplicationComponent#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="/Mindy_Base_ApplicationComponent#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="/Mindy_Base_ApplicationComponent#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="/Mindy_Base_ApplicationComponent#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="/Mindy_Base_ApplicationComponent#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="/Mindy_Base_ApplicationComponent#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="/Mindy_Base_ApplicationComponent#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="format">
+  <td><a href="/Mindy_Locale_Formatter#format-detail">format()</a></td>
+  <td>Formats a value based on the given type.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr id="formatBoolean">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#formatBoolean-detail">formatBoolean()</a></td>
+  <td>Formats the value as a boolean.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr id="formatDate">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#formatDate-detail">formatDate()</a></td>
+  <td>Formats the value as a date using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr id="formatDatetime">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#formatDatetime-detail">formatDatetime()</a></td>
+  <td>Formats the value as a date and time using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr class="inherited" id="formatNtext">
+  <td><a href="/Mindy_Locale_Formatter#formatNtext-detail">formatNtext()</a></td>
+  <td>Formats the value as a HTML-encoded plain text and converts newlines with HTML &lt;br /&gt; or</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr id="formatNumber">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#formatNumber-detail">formatNumber()</a></td>
+  <td>Formats the value as a number using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s number formatter.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr class="inherited" id="formatRaw">
+  <td><a href="/Mindy_Locale_Formatter#formatRaw-detail">formatRaw()</a></td>
+  <td>Formats the value as is without any formatting.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="formatSize">
+  <td><a href="/Mindy_Locale_Formatter#formatSize-detail">formatSize()</a></td>
+  <td>Formats the value in bytes as a size in human readable form.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr class="inherited" id="formatText">
+  <td><a href="/Mindy_Locale_Formatter#formatText-detail">formatText()</a></td>
+  <td>Formats the value as a HTML-encoded plain text.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+<tr id="formatTime">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#formatTime-detail">formatTime()</a></td>
+  <td>Formats the value as a time using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr class="inherited" id="getIsInitialized">
+  <td><a href="/Mindy_Base_ApplicationComponent#getIsInitialized-detail">getIsInitialized()</a></td>
+  <td>Checks if this application component has been initialized.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr id="getLocale">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#getLocale-detail">getLocale()</a></td>
+  <td>Returns $locale the locale currently used for formatting values</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Base_ApplicationComponent#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Base_ApplicationComponent#init-detail">init()</a></td>
+  <td>Initializes the application component.</td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr id="setLocale">
+  <td><a href="/Mindy_Locale_LocalizedFormatter#setLocale-detail">setLocale()</a></td>
+  <td>Set the locale to use for formatting values.</td>
+  <td>Mindy\Locale\LocalizedFormatter</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Base_ApplicationComponent#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Base_ApplicationComponent.html">Mindy\Base\ApplicationComponent</a></td>
+</tr>
+<tr class="inherited" id="normalizeDateValue">
+  <td><a href="/Mindy_Locale_Formatter#normalizeDateValue-detail">normalizeDateValue()</a></td>
+  <td>Normalizes an expression as a timestamp.</td>
+  <td><a href="/Mindy_Locale_Formatter.html">Mindy\Locale\Formatter</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="dateFormat-detail">
+dateFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$dateFormat</b>;</div>
+
+<p>the width of the date pattern. It can be 'full', 'long', 'medium' and 'short'. Defaults to 'medium'.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li>CDateFormatter::formatDateTime()</li>
+</ul>
+</div>
+
+<div class="detailHeader" id="timeFormat-detail">
+timeFormat<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$timeFormat</b>;</div>
+
+<p>the width of the time pattern. It can be 'full', 'long', 'medium' and 'short'. Defaults to 'medium'.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li>CDateFormatter::formatDateTime()</li>
+</ul>
+</div>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="formatBoolean-detail">
+formatBoolean()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>formatBoolean</b>(mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value to be formatted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the formatted result</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#96" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#96</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">formatBoolean</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'base'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Yes'</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'base'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'No'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Formats the value as a boolean.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_LocalizedFormatter#booleanFormat">booleanFormat</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="formatDate-detail">
+formatDate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>formatDate</b>(mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value to be formatted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the formatted result</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#108" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#108</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">formatDate</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocale</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">dateFormatter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">formatDateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">normalizeDateValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dateFormat</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Formats the value as a date using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_LocalizedFormatter#dateFormat">dateFormat</a></li>
+	<li>Locale::getDateFormatter()</li>
+</ul>
+</div>
+
+<div class="detailHeader" id="formatDatetime-detail">
+formatDatetime()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>formatDatetime</b>(mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value to be formatted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the formatted result</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#133" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#133</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">formatDatetime</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocale</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">dateFormatter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">formatDateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">normalizeDateValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dateFormat</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">timeFormat</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Formats the value as a date and time using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_LocalizedFormatter#dateFormat">dateFormat</a></li>
+	<li><a href="/Mindy_Locale_LocalizedFormatter#timeFormat">timeFormat</a></li>
+	<li>Locale::getDateFormatter()</li>
+</ul>
+</div>
+
+<div class="detailHeader" id="formatNumber-detail">
+formatNumber()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>formatNumber</b>(mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value to be formatted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the formatted result</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#144" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#144</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">formatNumber</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocale</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">numberFormatter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">formatDecimal</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Formats the value as a number using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s number formatter.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li>Locale::getNumberFormatter()</li>
+</ul>
+</div>
+
+<div class="detailHeader" id="formatTime-detail">
+formatTime()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>formatTime</b>(mixed $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value to be formatted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the formatted result</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#120" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#120</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">formatTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLocale</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">dateFormatter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">formatDateTime</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">normalizeDateValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">timeFormat</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Formats the value as a time using the <a href="/Mindy_Locale_LocalizedFormatter#locale">locale</a>s date formatter.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="/Mindy_Locale_LocalizedFormatter#timeFormat">timeFormat</a></li>
+	<li>Locale::getDateFormatter()</li>
+</ul>
+</div>
+
+<div class="detailHeader" id="getLocale-detail">
+getLocale()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public Locale <b>getLocale</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Locale</td>
+  <td class="paramDescCol">$locale the locale currently used for formatting values</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#82" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#82</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLocale</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_locale&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setLocale</span><span style="color: #007700">(</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">locale</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_locale</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setLocale-detail">
+setLocale()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setLocale</b>(Locale|string $locale)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$locale</td>
+  <td class="paramTypeCol">Locale|string</td>
+  <td class="paramDescCol">an instance of CLocale or a locale ID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#70" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/locale/src/Mindy/Locale/LocalizedFormatter.php#70</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setLocale</span><span style="color: #007700">(</span><span style="color: #0000BB">$locale</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$locale</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$locale&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Locale</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$locale</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeFormat</span><span style="color: #007700">[</span><span style="color: #DD0000">'decimalSeparator'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$locale</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getNumberSymbol</span><span style="color: #007700">(</span><span style="color: #DD0000">'decimal'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_locale&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$locale</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Set the locale to use for formatting values.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

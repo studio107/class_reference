@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Controller\AccessControlFilter</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+            <tr>
+            <th>Package</th>
+            <td><a href="/#system.web.auth">system.web.auth</a></td>
+        </tr>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Controller\AccessControlFilter &raquo;
+<a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Base_Interfaces_IFilter.html">Mindy\Base\Interfaces\IFilter</a></td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>1.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    CAccessControlFilter performs authorization checks for the specified actions.
+<br/><br/>
+By enabling this filter, controller actions can be checked for access permissions.
+When the user is not denied by one of the security rules or allowed by a rule explicitly,
+he will be able to access the action.
+<br/><br/>
+For maximum security consider adding
+<pre>array('deny')</pre>
+as a last rule in a list so all actions will be denied by default.
+<br/><br/>
+To specify the access rules, set the <a href="/Mindy_Controller_AccessControlFilter#setRules">rules</a> property, which should
+be an array of the rules. Each rule is specified as an array of the following structure:
+<pre>
+array(
+  'allow',  // or 'deny'
+
+  // optional, list of action IDs (case insensitive) that this rule applies to
+  // if not specified or empty, rule applies to all actions
+  'actions'=&gt;array('edit', 'delete'),
+
+  // optional, list of controller IDs (case insensitive) that this rule applies to
+  'controllers'=&gt;array('post', 'admin/user'),
+
+  // optional, list of usernames (case insensitive) that this rule applies to
+  // Use * to represent all users, ? guest users, and @ authenticated users
+  'users'=&gt;array('thomas', 'kevin'),
+
+  // optional, list of roles (case sensitive!) that this rule applies to.
+  'roles'=&gt;array('admin', 'editor'),
+
+  // since version 1.1.11 you can pass parameters for RBAC bizRules
+  'roles'=&gt;array('updateTopic'=&gt;array('topic'=&gt;$topic))
+
+  // optional, list of IP address/patterns that this rule applies to
+  // e.g. 127.0.0.1, 127.0.0.*
+  'ips'=&gt;array('127.0.0.1'),
+
+  // optional, list of request types (case insensitive) that this rule applies to
+  'verbs'=&gt;array('GET', 'POST'),
+
+  // optional, a PHP expression whose value indicates whether this rule applies
+  // The PHP expression will be evaluated using <a href="/Mindy_Controller_AccessControlFilter#evaluateExpression">evaluateExpression</a>.
+  // A PHP expression can be any PHP code that has a value. To learn more about what an expression is,
+  // please refer to the <a href="http://www.php.net/manual/en/language.expressions.php">php manual</a>.
+  'expression'=&gt;'!$user-&gt;isGuest &amp;&amp; $user-&gt;level==2',
+
+  // optional, the customized error message to be displayed
+  // This option is available since version 1.1.1.
+  'message'=&gt;'Access Denied.',
+
+  // optional, the denied method callback name, that will be called once the
+  // access is denied, instead of showing the customized error message. It can also be
+  // a valid PHP callback, including class method name (array(ClassName/Object, MethodName)),
+  // or anonymous function (PHP 5.3.0+). The function/method signature should be as follows:
+  // function foo($user, $rule) { ... }
+  // where $user is the current application user object and $rule is this access rule.
+  // This option is available since version 1.1.11.
+  'deniedCallback'=&gt;'redirectToDeniedMethod',
+)
+</pre></div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="/Mindy_Controller_Filter#behaviors-detail">behaviors</a></td>
+  <td>array</td>
+  <td>the behaviors that should be attached to the module.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr id="message">
+  <td><a href="/Mindy_Controller_AccessControlFilter#message-detail">message</a></td>
+  <td>string</td>
+  <td>the error message to be displayed when authorization fails.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+<tr id="rules">
+  <td><a href="/Mindy_Controller_AccessControlFilter#rules-detail">rules</a></td>
+  <td>array</td>
+  <td>List of access rules.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Controller_Filter#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Controller_Filter#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Controller_Filter#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Controller_Filter#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Controller_Filter#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Controller_Filter#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Controller_Filter#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Controller_Filter#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Controller_Filter#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Controller_Filter#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Controller_Filter#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="/Mindy_Controller_Filter#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="/Mindy_Controller_Filter#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="/Mindy_Controller_Filter#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Controller_Filter#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Controller_Filter#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Controller_Filter#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Controller_Filter#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="/Mindy_Controller_Filter#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="/Mindy_Controller_Filter#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="/Mindy_Controller_Filter#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="/Mindy_Controller_Filter#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="/Mindy_Controller_Filter#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="/Mindy_Controller_Filter#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="/Mindy_Controller_Filter#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="filter">
+  <td><a href="/Mindy_Controller_Filter#filter-detail">filter()</a></td>
+  <td>Performs the filtering.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr id="getRules">
+  <td><a href="/Mindy_Controller_AccessControlFilter#getRules-detail">getRules()</a></td>
+  <td>Returns list of access rules.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Controller_Filter#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Controller_Filter#init-detail">init()</a></td>
+  <td>Initializes the filter.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr id="setRules">
+  <td><a href="/Mindy_Controller_AccessControlFilter#setRules-detail">setRules()</a></td>
+  <td>Sets list of access rules.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="accessDenied">
+  <td><a href="/Mindy_Controller_AccessControlFilter#accessDenied-detail">accessDenied()</a></td>
+  <td>Denies the access of the user.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Controller_Filter#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr class="inherited" id="postFilter">
+  <td><a href="/Mindy_Controller_Filter#postFilter-detail">postFilter()</a></td>
+  <td>Performs the post-action filtering.</td>
+  <td><a href="/Mindy_Controller_Filter.html">Mindy\Controller\Filter</a></td>
+</tr>
+<tr id="preFilter">
+  <td><a href="/Mindy_Controller_AccessControlFilter#preFilter-detail">preFilter()</a></td>
+  <td>Performs the pre-action filtering.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+<tr id="resolveErrorMessage">
+  <td><a href="/Mindy_Controller_AccessControlFilter#resolveErrorMessage-detail">resolveErrorMessage()</a></td>
+  <td>Resolves the error message to be displayed.</td>
+  <td>Mindy\Controller\AccessControlFilter</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="message-detail">
+message<span class="detailHeaderTag">
+property
+ (available since v1.1.1)
+</span>
+</div>
+
+<div class="signature">
+public string <b>$message</b>;</div>
+
+<p>the error message to be displayed when authorization fails.
+This property can be overridden by individual access rule via CAccessRule::message.
+If this property is not set, a default error message will be displayed.</p>
+
+
+<div class="detailHeader" id="rules-detail">
+rules<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+array <b>rules</b>;</div>
+
+<p>List of access rules.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="accessDenied-detail">
+accessDenied()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>accessDenied</b>($user $user, string $message)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">$user</td>
+  <td class="paramDescCol">the current user</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$message</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the error message to be displayed</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#198" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#198</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">accessDenied</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getIsGuest</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">loginRequired</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">HttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">403</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Denies the access of the user.
+This method is invoked when access check fails.</p>
+
+
+<div class="detailHeader" id="getRules-detail">
+getRules()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getRules</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">list of access rules.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#116" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#116</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getRules</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_rules</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="preFilter-detail">
+preFilter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>preFilter</b>(FilterChain $filterChain)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$filterChain</td>
+  <td class="paramTypeCol">FilterChain</td>
+  <td class="paramDescCol">the filter chain that the filter is on.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the filtering process should continue and the action
+should be executed.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#148" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#148</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">preFilter</span><span style="color: #007700">(</span><span style="color: #0000BB">$filterChain</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$app&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$request&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getUser</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$verb&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequestType</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getUserHostAddress</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRules</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$allow&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isUserAllowed</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$filterChain</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">controller</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$filterChain</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">action</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$ip</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$verb</span><span style="color: #007700">))&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{</span><span style="color: #FF8000">//&nbsp;allowed<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$allow&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{&nbsp;</span><span style="color: #FF8000">//&nbsp;denied<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">deniedCallback</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">call_user_func</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">deniedCallback</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">accessDenied</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resolveErrorMessage</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Performs the pre-action filtering.</p>
+
+
+<div class="detailHeader" id="resolveErrorMessage-detail">
+resolveErrorMessage()
+<span class="detailHeaderTag">
+method
+(available since v1.1.1)
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string <b>resolveErrorMessage</b>(AccessRule $rule)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$rule</td>
+  <td class="paramTypeCol">AccessRule</td>
+  <td class="paramDescCol">the access rule</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the error message</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#180" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#180</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">resolveErrorMessage</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">t</span><span style="color: #007700">(</span><span style="color: #DD0000">'base'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'You&nbsp;are&nbsp;not&nbsp;authorized&nbsp;to&nbsp;perform&nbsp;this&nbsp;action.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Resolves the error message to be displayed.
+This method will check <a href="/Mindy_Controller_AccessControlFilter#message">message</a> and CAccessRule::message to see
+what error message should be displayed.</p>
+
+
+<div class="detailHeader" id="setRules-detail">
+setRules()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setRules</b>(array $rules)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$rules</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">list of access rules.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#124" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/controller/src/Mindy/Controller/AccessControlFilter.php#124</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setRules</span><span style="color: #007700">(</span><span style="color: #0000BB">$rules</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$rules&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;isset(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$r&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">AccessRule</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$r</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">allow&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;===&nbsp;</span><span style="color: #DD0000">'allow'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">array_slice</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">)&nbsp;as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'expression'&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'roles'&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'message'&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'deniedCallback'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$r</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$r</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_map</span><span style="color: #007700">(</span><span style="color: #DD0000">'strtolower'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_rules</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$r</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

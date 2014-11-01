@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Di\Instance</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Di\Instance</td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    Instance represents a reference to a named object in a dependency injection (DI) container or a service locator.
+<br/><br/>
+You may use [[get()]] to obtain the actual object referenced by [[id]].
+<br/><br/>
+Instance is mainly used in two places:
+<br/><br/>
+- When configuring a dependency injection container, you use Instance to reference a class name, interface name
+  or alias name. The reference can later be resolved into the actual object by the container.
+- In classes which use service locator to obtain dependent objects.
+<br/><br/>
+The following example shows how to configure a DI container with Instance:
+<br/><br/>
+```php
+$container = new \yii\di\Container;
+$container->set('cache', 'yii\caching\DbCache', Instance::of('db'));
+$container->set('db', [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'sqlite:path/to/file.db',
+]);
+```
+<br/><br/>
+And the following example shows how a class retrieves a component from a service locator:
+<br/><br/>
+```php
+class DbCache extends Cache
+{
+    public $db = 'db';
+<br/><br/>
+    public function init()
+    {
+        parent::init();
+        $this->db = Instance::ensure($this->db, 'yii\db\Connection');
+    }
+}
+```</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="id">
+  <td><a href="/Mindy_Di_Instance#id-detail">id</a></td>
+  <td>string</td>
+  <td>the component ID, class name, interface name or alias name</td>
+  <td>Mindy\Di\Instance</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="ensure">
+  <td><a href="/Mindy_Di_Instance#ensure-detail">ensure()</a></td>
+  <td>Resolves the specified reference into the actual object and makes sure it is of the specified type.</td>
+  <td>Mindy\Di\Instance</td>
+</tr>
+<tr id="get">
+  <td><a href="/Mindy_Di_Instance#get-detail">get()</a></td>
+  <td>Returns the actual object referenced by this Instance object.</td>
+  <td>Mindy\Di\Instance</td>
+</tr>
+<tr id="of">
+  <td><a href="/Mindy_Di_Instance#of-detail">of()</a></td>
+  <td>Creates a new Instance object.</td>
+  <td>Mindy\Di\Instance</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="/Mindy_Di_Instance#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td>Mindy\Di\Instance</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="id-detail">
+id<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$id</b>;</div>
+
+<p>the component ID, class name, interface name or alias name</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>__construct</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the component ID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#64" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#64</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Constructor.</p>
+
+
+<div class="detailHeader" id="ensure-detail">
+ensure()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static object <b>ensure</b>(object|string|static $reference, string $type=NULL, ServiceLocator|Container $container=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$reference</td>
+  <td class="paramTypeCol">object|string|static</td>
+  <td class="paramDescCol">an object or a reference to the desired object.
+You may specify a reference in terms of a component ID or an Instance object.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$type</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the class/interface name to be checked. If null, type check will not be performed.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$container</td>
+  <td class="paramTypeCol">ServiceLocator|Container</td>
+  <td class="paramDescCol">the container. This will be passed to [[get()]].</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">object</td>
+  <td class="paramDescCol">the object referenced by the Instance, or `$reference` itself if it is an object.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#106" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#106</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">ensure</span><span style="color: #007700">(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$container&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$reference&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$reference</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(empty(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;required&nbsp;component&nbsp;is&nbsp;not&nbsp;specified.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$reference&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;static(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$reference&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$component&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$reference</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$container</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$component&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$type&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$component</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">'"'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$reference</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'"&nbsp;refers&nbsp;to&nbsp;a&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$component</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"&nbsp;component.&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #DD0000">&nbsp;is&nbsp;expected."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$valueType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">is_object</span><span style="color: #007700">(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">gettype</span><span style="color: #007700">(</span><span style="color: #0000BB">$reference</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Invalid&nbsp;data&nbsp;type:&nbsp;</span><span style="color: #0000BB">$valueType</span><span style="color: #DD0000">.&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #DD0000">&nbsp;is&nbsp;expected."</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Resolves the specified reference into the actual object and makes sure it is of the specified type.
+<br/><br/>
+The reference may be specified as a string or an Instance object. If the former,
+it will be treated as a component ID, a class/interface name or an alias, depending on the container type.
+<br/><br/>
+If you do not specify a container, the method will first try `Mindy::$app` followed by `Mindy::$container`.
+<br/><br/>
+For example,
+<br/><br/>
+```php
+use yii\db\Connection;
+<br/><br/>
+// returns Mindy::$app->db
+$db = Instance::ensure('db', Connection::className());
+// or
+$instance = Instance::of('db');
+$db = Instance::ensure($instance, Connection::className());
+```</p>
+
+
+<div class="detailHeader" id="get-detail">
+get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public object <b>get</b>(ServiceLocator|Container $container=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$container</td>
+  <td class="paramTypeCol">ServiceLocator|Container</td>
+  <td class="paramDescCol">the container used to locate the referenced object.
+If null, the method will first try `Mindy::$app` then `Mindy::$container`.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">object</td>
+  <td class="paramDescCol">the actual object referenced by this Instance object.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#137" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#137</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$container&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$container</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$container</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">locator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">has</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">locator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the actual object referenced by this Instance object.</p>
+
+
+<div class="detailHeader" id="of-detail">
+of()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static Instance <b>of</b>(string $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the component ID</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Instance</td>
+  <td class="paramDescCol">the new Instance object.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#74" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/di/src/Mindy/Di/Instance.php#74</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">of</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;static(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Creates a new Instance object.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

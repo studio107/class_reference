@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\ChainedDependency</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\ChainedDependency &raquo;
+<a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    ChainedDependency represents a dependency which is composed of a list of other dependencies.
+<br/><br/>
+When [[dependOnAll]] is true, if any of the dependencies has changed, this dependency is
+considered changed; When [[dependOnAll]] is false, if one of the dependencies has NOT changed,
+this dependency is considered NOT changed.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="data">
+  <td><a href="/Mindy_Cache_Dependency#data-detail">data</a></td>
+  <td>mixed</td>
+  <td>the dependency data that is saved in cache and later is compared with the
+latest dependency data.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr id="dependOnAll">
+  <td><a href="/Mindy_Cache_ChainedDependency#dependOnAll-detail">dependOnAll</a></td>
+  <td>boolean</td>
+  <td>whether this dependency is depending on every dependency in [[dependencies]].</td>
+  <td>Mindy\Cache\ChainedDependency</td>
+</tr>
+<tr id="dependencies">
+  <td><a href="/Mindy_Cache_ChainedDependency#dependencies-detail">dependencies</a></td>
+  <td>Dependency[]</td>
+  <td>list of dependencies that this dependency is composed of.</td>
+  <td>Mindy\Cache\ChainedDependency</td>
+</tr>
+<tr class="inherited" id="reusable">
+  <td><a href="/Mindy_Cache_Dependency#reusable-detail">reusable</a></td>
+  <td>boolean</td>
+  <td>whether this dependency is reusable or not.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Cache_Dependency#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr id="evaluateDependency">
+  <td><a href="/Mindy_Cache_ChainedDependency#evaluateDependency-detail">evaluateDependency()</a></td>
+  <td>Evaluates the dependency by generating and saving the data related with dependency.</td>
+  <td>Mindy\Cache\ChainedDependency</td>
+</tr>
+<tr id="getHasChanged">
+  <td><a href="/Mindy_Cache_ChainedDependency#getHasChanged-detail">getHasChanged()</a></td>
+  <td>Performs the actual dependency checking.</td>
+  <td>Mindy\Cache\ChainedDependency</td>
+</tr>
+<tr class="inherited" id="resetReusableData">
+  <td><a href="/Mindy_Cache_Dependency#resetReusableData-detail">resetReusableData()</a></td>
+  <td>Resets all cached data for reusable dependencies.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="generateDependencyData">
+  <td><a href="/Mindy_Cache_ChainedDependency#generateDependencyData-detail">generateDependencyData()</a></td>
+  <td>Generates the data needed to determine if dependency has been changed.</td>
+  <td>Mindy\Cache\ChainedDependency</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="dependOnAll-detail">
+dependOnAll<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$dependOnAll</b>;</div>
+
+<p>whether this dependency is depending on every dependency in [[dependencies]].
+Defaults to true, meaning if any of the dependencies has changed, this dependency is considered changed.
+When it is set false, it means if one of the dependencies has NOT changed, this dependency
+is considered NOT changed.</p>
+
+
+<div class="detailHeader" id="dependencies-detail">
+dependencies<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public Dependency[] <b>$dependencies</b>;</div>
+
+<p>list of dependencies that this dependency is composed of.
+Each array element must be a dependency object.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="evaluateDependency-detail">
+evaluateDependency()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>evaluateDependency</b>(Cache $cache)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$cache</td>
+  <td class="paramTypeCol">Cache</td>
+  <td class="paramDescCol">the cache component that is currently evaluating this dependency</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#39" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#39</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">evaluateDependency</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dependencies&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">evaluateDependency</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Evaluates the dependency by generating and saving the data related with dependency.</p>
+
+
+<div class="detailHeader" id="generateDependencyData-detail">
+generateDependencyData()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected mixed <b>generateDependencyData</b>(Cache $cache)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$cache</td>
+  <td class="paramTypeCol">Cache</td>
+  <td class="paramDescCol">the cache component that is currently evaluating this dependency</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the data needed to determine if dependency has been changed.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#52" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#52</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">generateDependencyData</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Generates the data needed to determine if dependency has been changed.
+This method does nothing in this class.</p>
+
+
+<div class="detailHeader" id="getHasChanged-detail">
+getHasChanged()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>getHasChanged</b>(Cache $cache)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$cache</td>
+  <td class="paramTypeCol">Cache</td>
+  <td class="paramDescCol">the cache component that is currently evaluating this dependency</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the dependency is changed or not.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#64" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/ChainedDependency.php#64</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHasChanged</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dependencies&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dependOnAll&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHasChanged</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dependOnAll&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHasChanged</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dependOnAll</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Performs the actual dependency checking.
+This method returns true if any of the dependency objects
+reports a dependency change.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\MemCache</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\MemCache &raquo;
+<a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td>ArrayAccess</td>
+        </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    MemCache implements a cache application component based on [memcache](http://pecl.php.net/package/memcache)
+and [memcached](http://pecl.php.net/package/memcached).
+<br/><br/>
+MemCache supports both [memcache](http://pecl.php.net/package/memcache) and
+[memcached](http://pecl.php.net/package/memcached). By setting [[useMemcached]] to be true or false,
+one can let MemCache to use either memcached or memcache, respectively.
+<br/><br/>
+MemCache can be configured with a list of memcache servers by settings its [[servers]] property.
+By default, MemCache assumes there is a memcache server running on localhost at port 11211.
+<br/><br/>
+See [[Cache]] for common cache operations that MemCache supports.
+<br/><br/>
+Note, there is no security measure to protected data in memcache.
+All data in memcache can be accessed by any process running in the system.
+<br/><br/>
+To use MemCache as the cache application component, configure the application as follows,
+<br/><br/>
+~~~
+[
+    'components' => [
+        'cache' => [
+            'class' => 'yii\caching\MemCache',
+            'servers' => [
+                [
+                    'host' => 'server1',
+                    'port' => 11211,
+                    'weight' => 60,
+                ],
+                [
+                    'host' => 'server2',
+                    'port' => 11211,
+                    'weight' => 40,
+                ],
+            ],
+        ],
+    ],
+]
+~~~
+<br/><br/>
+In the above, two memcache servers are used: server1 and server2. You can configure more properties of
+each server, such as `persistent`, `weight`, `timeout`. Please see [[MemCacheServer]] for available options.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="keyPrefix">
+  <td><a href="/Mindy_Cache_Cache#keyPrefix-detail">keyPrefix</a></td>
+  <td>string</td>
+  <td>a string prefixed to every cache key so that it is unique.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="memcache">
+  <td><a href="/Mindy_Cache_MemCache#memcache-detail">memcache</a></td>
+  <td>\Memcache|\Memcached</td>
+  <td>The memcache (or memcached) object used by this cache component.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr class="inherited" id="serializer">
+  <td><a href="/Mindy_Cache_Cache#serializer-detail">serializer</a></td>
+  <td>array|boolean</td>
+  <td>the functions used to serialize and unserialize cached data.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="servers">
+  <td><a href="/Mindy_Cache_MemCache#servers-detail">servers</a></td>
+  <td>MemCacheServer[]</td>
+  <td>List of memcache server configurations. Note that the type of this</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="useMemcached">
+  <td><a href="/Mindy_Cache_MemCache#useMemcached-detail">useMemcached</a></td>
+  <td>boolean</td>
+  <td>whether to use memcached or memcache as the underlying caching extension.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Cache_Cache#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="add">
+  <td><a href="/Mindy_Cache_Cache#add-detail">add()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Cache_Cache#delete-detail">delete()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="exists">
+  <td><a href="/Mindy_Cache_Cache#exists-detail">exists()</a></td>
+  <td>Checks whether a specified key exists in the cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="flush">
+  <td><a href="/Mindy_Cache_Cache#flush-detail">flush()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="get">
+  <td><a href="/Mindy_Cache_Cache#get-detail">get()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="getHostname">
+  <td><a href="/Mindy_Cache_Cache#getHostname-detail">getHostname()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="getMemcache">
+  <td><a href="/Mindy_Cache_MemCache#getMemcache-detail">getMemcache()</a></td>
+  <td>Returns the underlying memcache (or memcached) object.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="getServers">
+  <td><a href="/Mindy_Cache_MemCache#getServers-detail">getServers()</a></td>
+  <td>Returns the memcache server configurations.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="init">
+  <td><a href="/Mindy_Cache_MemCache#init-detail">init()</a></td>
+  <td>Initializes this application component.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr class="inherited" id="madd">
+  <td><a href="/Mindy_Cache_Cache#madd-detail">madd()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mget">
+  <td><a href="/Mindy_Cache_Cache#mget-detail">mget()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="mset">
+  <td><a href="/Mindy_Cache_Cache#mset-detail">mset()</a></td>
+  <td>Stores multiple items in cache. Each item contains a value identified by a key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Cache_Cache#offsetExists-detail">offsetExists()</a></td>
+  <td>Returns whether there is a cache entry with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Cache_Cache#offsetGet-detail">offsetGet()</a></td>
+  <td>Retrieves the value from cache with a specified key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Cache_Cache#offsetSet-detail">offsetSet()</a></td>
+  <td>Stores the value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Cache_Cache#offsetUnset-detail">offsetUnset()</a></td>
+  <td>Deletes the value with the specified key from cache</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="set">
+  <td><a href="/Mindy_Cache_Cache#set-detail">set()</a></td>
+  <td>Stores a value identified by a key into cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="setServers">
+  <td><a href="/Mindy_Cache_MemCache#setServers-detail">setServers()</a></td>
+  <td>Sets list of memcache server configurations. Each element must be an array
+with the following keys: host, port, persistent, weight, timeout, retryInterval, status.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="addValue">
+  <td><a href="/Mindy_Cache_MemCache#addValue-detail">addValue()</a></td>
+  <td>Stores a value identified by a key into cache if the cache does not contain this key.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr class="inherited" id="addValues">
+  <td><a href="/Mindy_Cache_Cache#addValues-detail">addValues()</a></td>
+  <td>Adds multiple key-value pairs to cache.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr class="inherited" id="buildKey">
+  <td><a href="/Mindy_Cache_Cache#buildKey-detail">buildKey()</a></td>
+  <td>Builds a normalized cache key from a given key.</td>
+  <td><a href="/Mindy_Cache_Cache.html">Mindy\Cache\Cache</a></td>
+</tr>
+<tr id="deleteValue">
+  <td><a href="/Mindy_Cache_MemCache#deleteValue-detail">deleteValue()</a></td>
+  <td>Deletes a value with the specified key from cache</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="flushValues">
+  <td><a href="/Mindy_Cache_MemCache#flushValues-detail">flushValues()</a></td>
+  <td>Deletes all values from cache.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="getValue">
+  <td><a href="/Mindy_Cache_MemCache#getValue-detail">getValue()</a></td>
+  <td>Retrieves a value from cache with a specified key.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="getValues">
+  <td><a href="/Mindy_Cache_MemCache#getValues-detail">getValues()</a></td>
+  <td>Retrieves multiple values from cache with the specified keys.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="setValue">
+  <td><a href="/Mindy_Cache_MemCache#setValue-detail">setValue()</a></td>
+  <td>Stores a value identified by a key in cache.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+<tr id="setValues">
+  <td><a href="/Mindy_Cache_MemCache#setValues-detail">setValues()</a></td>
+  <td>Stores multiple key-value pairs in cache.</td>
+  <td>Mindy\Cache\MemCache</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="memcache-detail">
+memcache<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+\Memcache|\Memcached <b>memcache</b>;</div>
+
+<p>The memcache (or memcached) object used by this cache component.</p>
+
+
+<div class="detailHeader" id="servers-detail">
+servers<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+MemCacheServer[] <b>servers</b>;</div>
+
+<p>List of memcache server configurations. Note that the type of this</p>
+
+
+<div class="detailHeader" id="useMemcached-detail">
+useMemcached<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public boolean <b>$useMemcached</b>;</div>
+
+<p>whether to use memcached or memcache as the underlying caching extension.
+If true, [memcached](http://pecl.php.net/package/memcached) will be used.
+If false, [memcache](http://pecl.php.net/package/memcache) will be used.
+Defaults to false.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="addValue-detail">
+addValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>addValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#234" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#234</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key into cache if the cache does not contain this key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="deleteValue-detail">
+deleteValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>deleteValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key of the value to be deleted</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">if no error happens during deletion</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#251" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#251</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">deleteValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes a value with the specified key from cache
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="flushValues-detail">
+flushValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>flushValues</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">whether the flush operation was successful.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#261" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#261</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">flushValues</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">flush</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Deletes all values from cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="getMemcache-detail">
+getMemcache()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public \Memcache|\Memcached <b>getMemcache</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">\Memcache|\Memcached</td>
+  <td class="paramDescCol">the memcache (or memcached) object used by this cache component.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#130" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#130</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getMemcache</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$extension&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #DD0000">'memcached'&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #DD0000">'memcache'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">extension_loaded</span><span style="color: #007700">(</span><span style="color: #0000BB">$extension</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidArgumentException</span><span style="color: #007700">(</span><span style="color: #DD0000">"MemCache&nbsp;requires&nbsp;PHP&nbsp;</span><span style="color: #0000BB">$extension</span><span style="color: #DD0000">&nbsp;extension&nbsp;to&nbsp;be&nbsp;loaded."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached&nbsp;</span><span style="color: #007700">?&nbsp;new&nbsp;\</span><span style="color: #0000BB">Memcached&nbsp;</span><span style="color: #007700">:&nbsp;new&nbsp;\</span><span style="color: #0000BB">Memcache</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the underlying memcache (or memcached) object.</p>
+
+
+<div class="detailHeader" id="getServers-detail">
+getServers()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public MemCacheServer[] <b>getServers</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">MemCacheServer[]</td>
+  <td class="paramDescCol">list of memcache server configurations.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#146" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#146</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getServers</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_servers</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the memcache server configurations.</p>
+
+
+<div class="detailHeader" id="getValue-detail">
+getValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string|boolean <b>getValue</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">a unique key identifying the cached value</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string|boolean</td>
+  <td class="paramDescCol">the value stored in cache, false if the value is not in the cache or expired.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#169" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#169</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves a value from cache with a specified key.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="getValues-detail">
+getValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>getValues</b>(array $keys)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$keys</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of keys identifying the cached values</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">a list of cached values indexed by the keys</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#179" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#179</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getMulti</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$keys</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Retrieves multiple values from cache with the specified keys.</p>
+
+
+<div class="detailHeader" id="init-detail">
+init()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>init</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#85" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#85</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$servers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getServers</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getMemCache</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(empty(</span><span style="color: #0000BB">$servers</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addServer</span><span style="color: #007700">(</span><span style="color: #DD0000">'127.0.0.1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">11211</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;different&nbsp;version&nbsp;of&nbsp;memcache&nbsp;may&nbsp;have&nbsp;different&nbsp;number&nbsp;of&nbsp;parameters&nbsp;for&nbsp;the&nbsp;addServer&nbsp;method.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$class&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$paramCount&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$class</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getMethod</span><span style="color: #007700">(</span><span style="color: #DD0000">'addServer'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">getNumberOfParameters</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$servers&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidArgumentException</span><span style="color: #007700">(</span><span style="color: #DD0000">"The&nbsp;'host'&nbsp;property&nbsp;must&nbsp;be&nbsp;specified&nbsp;for&nbsp;every&nbsp;memcache&nbsp;server."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addServer</span><span style="color: #007700">(</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">port</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">weight</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;$timeout&nbsp;is&nbsp;used&nbsp;for&nbsp;memcache&nbsp;versions&nbsp;that&nbsp;do&nbsp;not&nbsp;have&nbsp;timeoutms&nbsp;parameter<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$timeout&nbsp;</span><span style="color: #007700">=&nbsp;(int)(</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">timeout&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">1000</span><span style="color: #007700">)&nbsp;+&nbsp;((</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">timeout&nbsp;</span><span style="color: #007700">%&nbsp;</span><span style="color: #0000BB">1000&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$paramCount&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">9</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addServer</span><span style="color: #007700">(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">port</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">persistent</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">weight</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeout</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">retryInterval</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">status</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">failureCallback</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">timeout<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addServer</span><span style="color: #007700">(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">port</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">persistent</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">weight</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeout</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">retryInterval</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">status</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">failureCallback<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initializes this application component.
+It creates the memcache instance and adds memcache servers.</p>
+
+
+<div class="detailHeader" id="setServers-detail">
+setServers()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setServers</b>(array $config)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$config</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">list of memcache server configurations. Each element must be an array
+with the following keys: host, port, persistent, weight, timeout, retryInterval, status.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#156" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#156</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setServers</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_servers</span><span style="color: #007700">[]&nbsp;=&nbsp;new&nbsp;</span><span style="color: #0000BB">MemCacheServer</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="http://www.php.net/manual/en/function.Memcache-addServer.php">http://www.php.net/manual/en/function.Memcache-addServer.php</a></li>
+</ul>
+</div>
+
+<div class="detailHeader" id="setValue-detail">
+setValue()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected boolean <b>setValue</b>(string $key, string $value, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the key identifying the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the value to be cached</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached value will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol">true if the value is successfully stored into cache, false otherwise</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#193" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#193</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores a value identified by a key in cache.
+This is the implementation of the method declared in the parent class.</p>
+
+
+<div class="detailHeader" id="setValues-detail">
+setValues()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>setValues</b>(array $data, integer $expire)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array where key corresponds to cache key while value is the value stored</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$expire</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">the number of seconds in which the cached values will expire. 0 means never expire.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">array of failed keys. Always empty in case of using memcached.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#210" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/MemCache.php#210</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMemcached</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$expire&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setMulti</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">setValues</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$expire</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Stores multiple key-value pairs in cache.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

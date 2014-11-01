@@ -1,0 +1,1304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Orm\Fields\ImageField</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Orm\Fields\ImageField &raquo;
+<a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a> &raquo;
+<a href="/Mindy_Orm_Fields_CharField.html">Mindy\Orm\Fields\CharField</a> &raquo;
+<a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Validation_Interfaces_IValidateField.html">Mindy\Validation\Interfaces\IValidateField</a></td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="DRIVER_GD2">
+  <td><a href="/Mindy_Orm_Fields_ImageField#DRIVER_GD2-detail">DRIVER_GD2</a></td>
+  <td></td>
+  <td>GD2 driver definition for Imagine implementation using the GD library.</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="DRIVER_GMAGICK">
+  <td><a href="/Mindy_Orm_Fields_ImageField#DRIVER_GMAGICK-detail">DRIVER_GMAGICK</a></td>
+  <td></td>
+  <td>gmagick driver definition.</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="DRIVER_IMAGICK">
+  <td><a href="/Mindy_Orm_Fields_ImageField#DRIVER_IMAGICK-detail">DRIVER_IMAGICK</a></td>
+  <td></td>
+  <td>imagick driver definition.</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="autoFetch">
+  <td><a href="/Mindy_Orm_Fields_Field#autoFetch-detail">autoFetch</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="choices">
+  <td><a href="/Mindy_Orm_Fields_Field#choices-detail">choices</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="cleanValue">
+  <td><a href="/Mindy_Orm_Fields_FileField#cleanValue-detail">cleanValue</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="default">
+  <td><a href="/Mindy_Orm_Fields_Field#default-detail">default</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="defaultResize">
+  <td><a href="/Mindy_Orm_Fields_ImageField#defaultResize-detail">defaultResize</a></td>
+  <td>string</td>
+  <td>Default resize method</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="editable">
+  <td><a href="/Mindy_Orm_Fields_Field#editable-detail">editable</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="force">
+  <td><a href="/Mindy_Orm_Fields_ImageField#force-detail">force</a></td>
+  <td>bool</td>
+  <td>Force resize images</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="hashName">
+  <td><a href="/Mindy_Orm_Fields_FileField#hashName-detail">hashName</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="helpText">
+  <td><a href="/Mindy_Orm_Fields_Field#helpText-detail">helpText</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="length">
+  <td><a href="/Mindy_Orm_Fields_CharField#length-detail">length</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_CharField.html">Mindy\Orm\Fields\CharField</a></td>
+</tr>
+<tr class="inherited" id="null">
+  <td><a href="/Mindy_Orm_Fields_Field#null-detail">null</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="options">
+  <td><a href="/Mindy_Orm_Fields_ImageField#options-detail">options</a></td>
+  <td>array</td>
+  <td>Imagine default options</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="primary">
+  <td><a href="/Mindy_Orm_Fields_Field#primary-detail">primary</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="required">
+  <td><a href="/Mindy_Orm_Fields_Field#required-detail">required</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="sizes">
+  <td><a href="/Mindy_Orm_Fields_ImageField#sizes-detail">sizes</a></td>
+  <td>array</td>
+  <td>Array with image sizes</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="storeOriginal">
+  <td><a href="/Mindy_Orm_Fields_ImageField#storeOriginal-detail">storeOriginal</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="types">
+  <td><a href="/Mindy_Orm_Fields_ImageField#types-detail">types</a></td>
+  <td>array|null</td>
+  <td>All supported image types</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="unique">
+  <td><a href="/Mindy_Orm_Fields_Field#unique-detail">unique</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="uploadTo">
+  <td><a href="/Mindy_Orm_Fields_FileField#uploadTo-detail">uploadTo</a></td>
+  <td>string</td>
+  <td>Upload to template, you can use these variables:</td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="validators">
+  <td><a href="/Mindy_Orm_Fields_Field#validators-detail">validators</a></td>
+  <td>\Mindy\Validation\Validator[]</td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="value">
+  <td><a href="/Mindy_Orm_Fields_Field#value-detail">value</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="verboseName">
+  <td><a href="/Mindy_Orm_Fields_Field#verboseName-detail">verboseName</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="watermark">
+  <td><a href="/Mindy_Orm_Fields_ImageField#watermark-detail">watermark</a></td>
+  <td>array|null</td>
+  <td>example
+[
+ 'file' => 'static.</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+</table>
+</div>
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="name">
+  <td><a href="/Mindy_Orm_Fields_Field#name-detail">name</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="ownerClassName">
+  <td><a href="/Mindy_Orm_Fields_Field#ownerClassName-detail">ownerClassName</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Orm_Fields_Field#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Orm_Fields_FileField#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr id="__get">
+  <td><a href="/Mindy_Orm_Fields_ImageField#__get-detail">__get()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Orm_Fields_Field#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Orm_Fields_Field#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__toString">
+  <td><a href="/Mindy_Orm_Fields_FileField#__toString-detail">__toString()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Orm_Fields_Field#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Orm_Fields_Field#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="/Mindy_Orm_Fields_Field#addError-detail">addError()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="applyWatermark">
+  <td><a href="/Mindy_Orm_Fields_ImageField#applyWatermark-detail">applyWatermark()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Orm_Fields_Field#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Orm_Fields_Field#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#clearErrors-detail">clearErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Orm_Fields_FileField#delete-detail">delete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr id="deleteOld">
+  <td><a href="/Mindy_Orm_Fields_ImageField#deleteOld-detail">deleteOld()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="getDbPrepValue">
+  <td><a href="/Mindy_Orm_Fields_FileField#getDbPrepValue-detail">getDbPrepValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#getErrors-detail">getErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraField-detail">getExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraFields">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraFields-detail">getExtraFields()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getExtraFieldsInit">
+  <td><a href="/Mindy_Orm_Fields_Field#getExtraFieldsInit-detail">getExtraFieldsInit()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getFormField">
+  <td><a href="/Mindy_Orm_Fields_ImageField#getFormField-detail">getFormField()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="getFormValue">
+  <td><a href="/Mindy_Orm_Fields_Field#getFormValue-detail">getFormValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="getImagine">
+  <td><a href="/Mindy_Orm_Fields_ImageField#getImagine-detail">getImagine()</a></td>
+  <td>Returns the `Imagine` object that supports various image manipulations.</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="getModel">
+  <td><a href="/Mindy_Orm_Fields_Field#getModel-detail">getModel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getName">
+  <td><a href="/Mindy_Orm_Fields_Field#getName-detail">getName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getOldValue">
+  <td><a href="/Mindy_Orm_Fields_FileField#getOldValue-detail">getOldValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getOptions">
+  <td><a href="/Mindy_Orm_Fields_Field#getOptions-detail">getOptions()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="getPath">
+  <td><a href="/Mindy_Orm_Fields_FileField#getPath-detail">getPath()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getSize">
+  <td><a href="/Mindy_Orm_Fields_FileField#getSize-detail">getSize()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getStorage">
+  <td><a href="/Mindy_Orm_Fields_FileField#getStorage-detail">getStorage()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getUrl">
+  <td><a href="/Mindy_Orm_Fields_FileField#getUrl-detail">getUrl()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getValue">
+  <td><a href="/Mindy_Orm_Fields_FileField#getValue-detail">getValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="getVerboseName">
+  <td><a href="/Mindy_Orm_Fields_Field#getVerboseName-detail">getVerboseName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="/Mindy_Orm_Fields_Field#hasErrors-detail">hasErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#hasExtraField-detail">hasExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Orm_Fields_Field#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Orm_Fields_Field#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="hash">
+  <td><a href="/Mindy_Orm_Fields_Field#hash-detail">hash()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Orm_Fields_FileField#init-detail">init()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="isRequired">
+  <td><a href="/Mindy_Orm_Fields_Field#isRequired-detail">isRequired()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="isValid">
+  <td><a href="/Mindy_Orm_Fields_FileField#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr class="inherited" id="makeFilePath">
+  <td><a href="/Mindy_Orm_Fields_FileField#makeFilePath-detail">makeFilePath()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr id="onAfterDelete">
+  <td><a href="/Mindy_Orm_Fields_ImageField#onAfterDelete-detail">onAfterDelete()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="onAfterInsert">
+  <td><a href="/Mindy_Orm_Fields_Field#onAfterInsert-detail">onAfterInsert()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onAfterUpdate">
+  <td><a href="/Mindy_Orm_Fields_Field#onAfterUpdate-detail">onAfterUpdate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeDelete">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeDelete-detail">onBeforeDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeInsert">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeInsert-detail">onBeforeInsert()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="onBeforeUpdate">
+  <td><a href="/Mindy_Orm_Fields_Field#onBeforeUpdate-detail">onBeforeUpdate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="processSource">
+  <td><a href="/Mindy_Orm_Fields_ImageField#processSource-detail">processSource()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="resize">
+  <td><a href="/Mindy_Orm_Fields_ImageField#resize-detail">resize()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="setExtraField">
+  <td><a href="/Mindy_Orm_Fields_Field#setExtraField-detail">setExtraField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="setFile">
+  <td><a href="/Mindy_Orm_Fields_ImageField#setFile-detail">setFile()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="setModel">
+  <td><a href="/Mindy_Orm_Fields_Field#setModel-detail">setModel()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setModelClass">
+  <td><a href="/Mindy_Orm_Fields_Field#setModelClass-detail">setModelClass()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setName">
+  <td><a href="/Mindy_Orm_Fields_Field#setName-detail">setName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="setValue">
+  <td><a href="/Mindy_Orm_Fields_FileField#setValue-detail">setValue()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_FileField.html">Mindy\Orm\Fields\FileField</a></td>
+</tr>
+<tr id="sizeStoragePath">
+  <td><a href="/Mindy_Orm_Fields_ImageField#sizeStoragePath-detail">sizeStoragePath()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="sizeUrl">
+  <td><a href="/Mindy_Orm_Fields_ImageField#sizeUrl-detail">sizeUrl()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr class="inherited" id="sql">
+  <td><a href="/Mindy_Orm_Fields_Field#sql-detail">sql()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="sqlDefault">
+  <td><a href="/Mindy_Orm_Fields_CharField#sqlDefault-detail">sqlDefault()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_CharField.html">Mindy\Orm\Fields\CharField</a></td>
+</tr>
+<tr class="inherited" id="sqlNullable">
+  <td><a href="/Mindy_Orm_Fields_Field#sqlNullable-detail">sqlNullable()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr class="inherited" id="sqlType">
+  <td><a href="/Mindy_Orm_Fields_CharField#sqlType-detail">sqlType()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_CharField.html">Mindy\Orm\Fields\CharField</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Orm_Fields_Field#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Orm_Fields_Field.html">Mindy\Orm\Fields\Field</a></td>
+</tr>
+<tr id="createImagine">
+  <td><a href="/Mindy_Orm_Fields_ImageField#createImagine-detail">createImagine()</a></td>
+  <td>Creates an `Imagine` object based on the specified [[driver]].</td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="imageScale">
+  <td><a href="/Mindy_Orm_Fields_ImageField#imageScale-detail">imageScale()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+<tr id="preparePrefix">
+  <td><a href="/Mindy_Orm_Fields_ImageField#preparePrefix-detail">preparePrefix()</a></td>
+  <td></td>
+  <td>Mindy\Orm\Fields\ImageField</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="DRIVER_GD2-detail">
+DRIVER_GD2<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public static <b>$DRIVER_GD2</b>;</div>
+
+<p>GD2 driver definition for Imagine implementation using the GD library.</p>
+
+
+<div class="detailHeader" id="DRIVER_GMAGICK-detail">
+DRIVER_GMAGICK<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public static <b>$DRIVER_GMAGICK</b>;</div>
+
+<p>gmagick driver definition.</p>
+
+
+<div class="detailHeader" id="DRIVER_IMAGICK-detail">
+DRIVER_IMAGICK<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public static <b>$DRIVER_IMAGICK</b>;</div>
+
+<p>imagick driver definition.</p>
+
+
+<div class="detailHeader" id="defaultResize-detail">
+defaultResize<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$defaultResize</b>;</div>
+
+<p>Default resize method</p>
+
+
+<div class="detailHeader" id="force-detail">
+force<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public bool <b>$force</b>;</div>
+
+<p>Force resize images</p>
+
+
+<div class="detailHeader" id="options-detail">
+options<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$options</b>;</div>
+
+<p>Imagine default options</p>
+
+
+<div class="detailHeader" id="sizes-detail">
+sizes<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$sizes</b>;</div>
+
+<p>Array with image sizes
+key 'original' is reserved!
+example:
+[
+     'thumb' => [
+         300,200,
+         'method' => 'adaptiveResize'
+     ]
+]
+<br/><br/>
+There are 3 methods resize(THUMBNAIL_INSET), adaptiveResize(THUMBNAIL_OUTBOUND),
+adaptiveResizeFromTop(THUMBNAIL_OUTBOUND from top)</p>
+
+
+<div class="detailHeader" id="storeOriginal-detail">
+storeOriginal<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$storeOriginal</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="types-detail">
+types<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array|null <b>$types</b>;</div>
+
+<p>All supported image types</p>
+
+
+<div class="detailHeader" id="watermark-detail">
+watermark<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array|null <b>$watermark</b>;</div>
+
+<p>example
+[
+ 'file' => 'static.images.watermark.png',
+ 'position' => [200,100]
+]
+<br/><br/>
+OR
+<br/><br/>
+[
+ 'file' => 'static.images.watermark.png',
+ 'position' => 'top'
+]
+<br/><br/>
+position can be array [x,y] coordinates or
+string with one of available position
+top, top-left, top-right, bottom, bottom-left, bottom-right, left, right, center</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__get-detail">
+__get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__get</b>($name)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#174" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#174</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__get</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'url_'</span><span style="color: #007700">)&nbsp;===&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'url_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__getInternal</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="applyWatermark-detail">
+applyWatermark()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>applyWatermark</b>($source, $options)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$source</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$options</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#134" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#134</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">applyWatermark</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;isset(</span><span style="color: #0000BB">$options</span><span style="color: #007700">[</span><span style="color: #DD0000">'file'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;isset(</span><span style="color: #0000BB">$options</span><span style="color: #007700">[</span><span style="color: #DD0000">'position'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$watermark&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getImagine</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">open</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">[</span><span style="color: #DD0000">'file'</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$position&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$options</span><span style="color: #007700">[</span><span style="color: #DD0000">'position'</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$wSize&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$watermark</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sSize&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$source</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$wWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$wSize</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$wHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$wSize</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sSize</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sSize</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$position</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$x</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">$position</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$position</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'top'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'bottom'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'center'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'left'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'right'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'top-left'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'top-right'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'bottom-left'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'bottom-right'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sWidth&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wWidth</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$sHeight&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$wHeight</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$wWidth&nbsp;</span><span style="color: #007700">&lt;=&nbsp;</span><span style="color: #0000BB">$sWidth</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$wHeight&nbsp;</span><span style="color: #007700">&lt;=&nbsp;</span><span style="color: #0000BB">$sHeight</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$source</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">paste</span><span style="color: #007700">(</span><span style="color: #0000BB">$watermark</span><span style="color: #007700">,&nbsp;new&nbsp;</span><span style="color: #0000BB">Point</span><span style="color: #007700">(</span><span style="color: #0000BB">$x</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$source</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="createImagine-detail">
+createImagine()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected static ImagineInterface <b>createImagine</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">ImagineInterface</td>
+  <td class="paramDescCol">the new `Imagine` object</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#62" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#62</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">createImagine</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$drivers&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_GMAGICK</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_IMAGICK</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_GD2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;((array)</span><span style="color: #0000BB">$drivers&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$driver</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$driver</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_GMAGICK</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">class_exists</span><span style="color: #007700">(</span><span style="color: #DD0000">'Gmagick'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">\</span><span style="color: #0000BB">Gmagick</span><span style="color: #007700">\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_IMAGICK</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">class_exists</span><span style="color: #007700">(</span><span style="color: #DD0000">'Imagick'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">\</span><span style="color: #0000BB">Imagick</span><span style="color: #007700">\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$DRIVER_GD2</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">function_exists</span><span style="color: #007700">(</span><span style="color: #DD0000">'gd_info'</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">\</span><span style="color: #0000BB">Gd</span><span style="color: #007700">\</span><span style="color: #0000BB">Imagine</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"Unknown&nbsp;driver:&nbsp;</span><span style="color: #0000BB">$driver</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"Your&nbsp;system&nbsp;does&nbsp;not&nbsp;support&nbsp;any&nbsp;of&nbsp;these&nbsp;drivers:&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">','</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$drivers</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Creates an `Imagine` object based on the specified [[driver]].</p>
+
+
+<div class="detailHeader" id="deleteOld-detail">
+deleteOld()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>deleteOld</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#115" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#115</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">deleteOld</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getOldValue</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getOldValue</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">array_keys</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizes</span><span style="color: #007700">)&nbsp;as&nbsp;</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeStoragePath</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getOldValue</span><span style="color: #007700">()));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getFormField-detail">
+getFormField()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getFormField</b>($form, $fieldClass=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$form</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$fieldClass</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#218" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#218</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getFormField</span><span style="color: #007700">(</span><span style="color: #0000BB">$form</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fieldClass&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">getFormField</span><span style="color: #007700">(</span><span style="color: #0000BB">$form</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">FormImageField</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">());<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getImagine-detail">
+getImagine()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static ImagineInterface <b>getImagine</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">ImagineInterface</td>
+  <td class="paramDescCol">the `Imagine` object</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#48" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#48</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getImagine</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$_imagine&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$_imagine&nbsp;</span><span style="color: #007700">=&nbsp;static::</span><span style="color: #0000BB">createImagine</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">$_imagine</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Returns the `Imagine` object that supports various image manipulations.</p>
+
+
+<div class="detailHeader" id="imageScale-detail">
+imageScale()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected array <b>imageScale</b>($source $source, null $width=NULL, null $height=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$source</td>
+  <td class="paramTypeCol">$source</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#212" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#212</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">imageScale</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$source</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ratio&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">()&nbsp;/&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">$ratio</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">$ratio</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[(int)</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;(int)</span><span style="color: #0000BB">$height</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="onAfterDelete-detail">
+onAfterDelete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>onAfterDelete</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#213" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#213</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">onAfterDelete</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">deleteOld</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="preparePrefix-detail">
+preparePrefix()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>preparePrefix</b>($prefix)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$prefix</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#183" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#183</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">preparePrefix</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">rtrim</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="processSource-detail">
+processSource()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>processSource</b>($source $source)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$source</td>
+  <td class="paramTypeCol">$source</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#128" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#128</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">processSource</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ext&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">pathinfo</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">PATHINFO_EXTENSION</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizes&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">||&nbsp;!</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">imageScale</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$method&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'method'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'method'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">defaultResize</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'options'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'options'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">options</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$watermark&nbsp;</span><span style="color: #007700">=&nbsp;isset(</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'watermark'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">[</span><span style="color: #DD0000">'watermark'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">watermark</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$method</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$newSource&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resize</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">copy</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$method</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$watermark</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$newSource&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">applyWatermark</span><span style="color: #007700">(</span><span style="color: #0000BB">$newSource</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$watermark</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeStoragePath</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$newSource</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$ext</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">watermark</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$source&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">applyWatermark</span><span style="color: #007700">(</span><span style="color: #0000BB">$source</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">watermark</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$source</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$ext</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">options</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="resize-detail">
+resize()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public null <b>resize</b>($img $img, $width $width, $height $height, $method $method)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$img</td>
+  <td class="paramTypeCol">$img</td>
+  <td class="paramDescCol">\Imagine\Gmagick\Imagine|\Imagine\Imagick\Imagine|\Imagine\Gd\Imagine</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol">$width</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol">$height</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$method</td>
+  <td class="paramTypeCol">$method</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#96" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Traits/ImageProcess.php#96</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">resize</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$method</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$box&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Box</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$imgBox&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;((</span><span style="color: #0000BB">$imgBox</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">()&nbsp;&lt;=&nbsp;</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">()&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$imgBox</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">()&nbsp;&lt;=&nbsp;</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">())&nbsp;||&nbsp;(!</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">()&nbsp;&amp;&amp;&nbsp;!</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">()))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$method&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'resize'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$img&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">thumbnail</span><span style="color: #007700">(</span><span style="color: #0000BB">$box</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">ManipulatorInterface</span><span style="color: #007700">::</span><span style="color: #0000BB">THUMBNAIL_INSET</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$method&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'adaptiveResize'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$img&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">thumbnail</span><span style="color: #007700">(</span><span style="color: #0000BB">$box</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">ManipulatorInterface</span><span style="color: #007700">::</span><span style="color: #0000BB">THUMBNAIL_OUTBOUND</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$method&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'adaptiveResizeFromTop'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fromWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$imgBox</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fromHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$imgBox</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$toWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getWidth</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$toHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$box</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHeight</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fromPercent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$fromWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">$fromHeight</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$toPercent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$toWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">$toHeight</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$toPercent&nbsp;</span><span style="color: #007700">&gt;=&nbsp;</span><span style="color: #0000BB">$fromPercent</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$resizeWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$toWidth</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$resizeHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$toWidth&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">$fromWidth&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">$fromHeight</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$img&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$img<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">resize</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">Box</span><span style="color: #007700">(</span><span style="color: #0000BB">$resizeWidth</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$resizeHeight</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">crop</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">Point</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">),&nbsp;new&nbsp;</span><span style="color: #0000BB">Box</span><span style="color: #007700">(</span><span style="color: #0000BB">$toWidth</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$toHeight</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$img&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">thumbnail</span><span style="color: #007700">(</span><span style="color: #0000BB">$box</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">ManipulatorInterface</span><span style="color: #007700">::</span><span style="color: #0000BB">THUMBNAIL_OUTBOUND</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$img</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setFile-detail">
+setFile()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>setFile</b>($file, $name=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$file</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#91" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#91</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setFile</span><span style="color: #007700">(</span><span style="color: #0000BB">File&nbsp;$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">makeFilePath</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileContent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getContent</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()&nbsp;instanceof&nbsp;</span><span style="color: #0000BB">FileSystemStorage</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;$this-&gt;getStorage()-&gt;save($this-&gt;sizeStoragePath('original'),&nbsp;$fileContent);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getImagine</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">load</span><span style="color: #007700">(</span><span style="color: #0000BB">$fileContent</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileContent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">processSource</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">storeOriginal</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fileContent</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()&nbsp;instanceof&nbsp;</span><span style="color: #0000BB">MimiBoxStorage</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fileContent</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="sizeStoragePath-detail">
+sizeStoragePath()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>sizeStoragePath</b>($prefix $prefix=NULL, null $value=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$prefix</td>
+  <td class="paramTypeCol">$prefix</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">null</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#162" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#162</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sizeStoragePath</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$filename&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">basename</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'x'</span><span style="color: #007700">)&nbsp;!==&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findSizePrefix</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #DD0000">''&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">preparePrefix</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</span><span style="color: #0000BB">$dir&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$dir&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #0000BB">$prefix&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$filename</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="sizeUrl-detail">
+sizeUrl()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public mixed <b>sizeUrl</b>($prefix $prefix)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$prefix</td>
+  <td class="paramTypeCol">$prefix</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#192" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/orm/src/Mindy/Orm/Fields/ImageField.php#192</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sizeUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()&nbsp;instanceof&nbsp;</span><span style="color: #0000BB">MimiBoxStorage</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">'x'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$size</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_pop</span><span style="color: #007700">(</span><span style="color: #0000BB">$size</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeStoragePath</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"?width="&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'&amp;height='&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">force</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">'&amp;force=true'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sizeStoragePath</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">preparePrefix</span><span style="color: #007700">(</span><span style="color: #0000BB">$prefix</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getStorage</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">url</span><span style="color: #007700">(</span><span style="color: #0000BB">$path</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

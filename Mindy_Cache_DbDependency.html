@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Cache\DbDependency</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Cache\DbDependency &raquo;
+<a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbDependency.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbDependency.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Qiang Xue <qiang.xue@gmail.com></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    DbDependency represents a dependency based on the query result of a SQL statement.
+<br/><br/>
+If the query result changes, the dependency is considered as changed.
+The query is specified via the [[sql]] property.</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="data">
+  <td><a href="/Mindy_Cache_Dependency#data-detail">data</a></td>
+  <td>mixed</td>
+  <td>the dependency data that is saved in cache and later is compared with the
+latest dependency data.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr id="db">
+  <td><a href="/Mindy_Cache_DbDependency#db-detail">db</a></td>
+  <td>string</td>
+  <td>the application component ID of the DB connection.</td>
+  <td>Mindy\Cache\DbDependency</td>
+</tr>
+<tr id="params">
+  <td><a href="/Mindy_Cache_DbDependency#params-detail">params</a></td>
+  <td>array</td>
+  <td>the parameters (name => value) to be bound to the SQL statement specified by [[sql]].</td>
+  <td>Mindy\Cache\DbDependency</td>
+</tr>
+<tr class="inherited" id="reusable">
+  <td><a href="/Mindy_Cache_Dependency#reusable-detail">reusable</a></td>
+  <td>boolean</td>
+  <td>whether this dependency is reusable or not.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr id="sql">
+  <td><a href="/Mindy_Cache_DbDependency#sql-detail">sql</a></td>
+  <td>string</td>
+  <td>the SQL query whose result is used to determine if the dependency has been changed.</td>
+  <td>Mindy\Cache\DbDependency</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Cache_Dependency#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr class="inherited" id="evaluateDependency">
+  <td><a href="/Mindy_Cache_Dependency#evaluateDependency-detail">evaluateDependency()</a></td>
+  <td>Evaluates the dependency by generating and saving the data related with dependency.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr class="inherited" id="getHasChanged">
+  <td><a href="/Mindy_Cache_Dependency#getHasChanged-detail">getHasChanged()</a></td>
+  <td>Returns a value indicating whether the dependency has changed.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+<tr class="inherited" id="resetReusableData">
+  <td><a href="/Mindy_Cache_Dependency#resetReusableData-detail">resetReusableData()</a></td>
+  <td>Resets all cached data for reusable dependencies.</td>
+  <td><a href="/Mindy_Cache_Dependency.html">Mindy\Cache\Dependency</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="generateDependencyData">
+  <td><a href="/Mindy_Cache_DbDependency#generateDependencyData-detail">generateDependencyData()</a></td>
+  <td>Generates the data needed to determine if dependency has been changed.</td>
+  <td>Mindy\Cache\DbDependency</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="db-detail">
+db<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$db</b>;</div>
+
+<p>the application component ID of the DB connection.</p>
+
+
+<div class="detailHeader" id="params-detail">
+params<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$params</b>;</div>
+
+<p>the parameters (name => value) to be bound to the SQL statement specified by [[sql]].</p>
+
+
+<div class="detailHeader" id="sql-detail">
+sql<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$sql</b>;</div>
+
+<p>the SQL query whose result is used to determine if the dependency has been changed.
+Only the first row of the query result will be used.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="generateDependencyData-detail">
+generateDependencyData()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected mixed <b>generateDependencyData</b>(Cache $cache)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$cache</td>
+  <td class="paramTypeCol">Cache</td>
+  <td class="paramDescCol">the cache component that is currently evaluating this dependency</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the data needed to determine if dependency has been changed.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbDependency.php#45" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/cache/src/Mindy/Cache/DbDependency.php#45</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">generateDependencyData</span><span style="color: #007700">(</span><span style="color: #0000BB">$cache</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Mindy</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getComponent</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">Connection</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"DbDependency::db&nbsp;must&nbsp;be&nbsp;the&nbsp;application&nbsp;component&nbsp;ID&nbsp;of&nbsp;a&nbsp;DB&nbsp;connection."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sql&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidConfigException</span><span style="color: #007700">(</span><span style="color: #DD0000">"DbDependency::sql&nbsp;must&nbsp;be&nbsp;set."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;temporarily&nbsp;disable&nbsp;and&nbsp;re-enable&nbsp;query&nbsp;caching<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sql</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryOne</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">enableQueryCache&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sql</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryOne</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$result</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Generates the data needed to determine if dependency has been changed.
+This method returns the value of the global state.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

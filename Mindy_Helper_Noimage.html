@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Helper\Noimage</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Helper\Noimage</td>
+    </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="createImage">
+  <td><a href="/Mindy_Helper_Noimage#createImage-detail">createImage()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Noimage</td>
+</tr>
+<tr id="create_diagonal">
+  <td><a href="/Mindy_Helper_Noimage#create_diagonal-detail">create_diagonal()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Noimage</td>
+</tr>
+<tr id="get">
+  <td><a href="/Mindy_Helper_Noimage#get-detail">get()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Noimage</td>
+</tr>
+<tr id="image">
+  <td><a href="/Mindy_Helper_Noimage#image-detail">image()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Noimage</td>
+</tr>
+<tr id="imagettfbbox_t">
+  <td><a href="/Mindy_Helper_Noimage#imagettfbbox_t-detail">imagettfbbox_t()</a></td>
+  <td></td>
+  <td>Mindy\Helper\Noimage</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="createImage-detail">
+createImage()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>createImage</b>($width, $height)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#435" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#435</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">createImage</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//create&nbsp;image&nbsp;with&nbsp;specified&nbsp;sizes<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imagecreatetruecolor</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//saving&nbsp;all&nbsp;full&nbsp;alpha&nbsp;channel&nbsp;information<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagesavealpha</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//setting&nbsp;completely&nbsp;transparent&nbsp;color<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transparent&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imagecolorallocatealpha</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">127</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//filling&nbsp;created&nbsp;image&nbsp;with&nbsp;transparent&nbsp;color<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagefill</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$transparent</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$image</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="create_diagonal-detail">
+create_diagonal()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>create_diagonal</b>($image, $background, $foreground, $width, $height, $diagonal)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$image</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$background</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$foreground</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$diagonal</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#452" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#452</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">create_diagonal</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$diagonal</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$style&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagesetstyle</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$style</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$diagonal</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageline</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">IMG_COLOR_STYLED</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageline</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">IMG_COLOR_STYLED</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$image</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="get-detail">
+get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>get</b>($text, $width=320, $height=200, $background_color='#fff', $foreground_color='#aaa', $format='png')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$text</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$background_color</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$foreground_color</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$format</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#333" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#333</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$text</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">320</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">200</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'#fff'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'#aaa'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$format&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'png'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$background&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">color</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$background_color</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$foreground&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">color</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$foreground_color</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//Let's&nbsp;round&nbsp;the&nbsp;dimensions&nbsp;to&nbsp;3&nbsp;decimal&nbsp;places&nbsp;for&nbsp;aesthetics<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$text_angle&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//I&nbsp;don't&nbsp;use&nbsp;this&nbsp;but&nbsp;if&nbsp;you&nbsp;wanted&nbsp;to&nbsp;angle&nbsp;your&nbsp;text&nbsp;you&nbsp;would&nbsp;change&nbsp;it&nbsp;here.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$font&nbsp;=&nbsp;dirname(__FILE__)&nbsp;.&nbsp;DIRECTORY_SEPARATOR&nbsp;.&nbsp;'image'&nbsp;.&nbsp;DIRECTORY_SEPARATOR&nbsp;.&nbsp;"mplus-1c-medium.ttf";&nbsp;//&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;a&nbsp;different&nbsp;font&nbsp;simply&nbsp;upload&nbsp;the&nbsp;true&nbsp;type&nbsp;font&nbsp;(.ttf)&nbsp;file&nbsp;to&nbsp;the&nbsp;same&nbsp;directory&nbsp;as&nbsp;this&nbsp;PHP&nbsp;file&nbsp;and&nbsp;set&nbsp;the&nbsp;$font&nbsp;variable&nbsp;to&nbsp;the&nbsp;font&nbsp;file&nbsp;name.&nbsp;I'm&nbsp;using&nbsp;the&nbsp;M+&nbsp;font&nbsp;which&nbsp;is&nbsp;free&nbsp;for&nbsp;distribution&nbsp;-&gt;&nbsp;http://www.fontsquirrel.com/fonts/M-1c<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$font&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__FILE__</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'image'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"OpenSans-Regular.ttf"</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//&nbsp;If&nbsp;you&nbsp;want&nbsp;to&nbsp;use&nbsp;a&nbsp;different&nbsp;font&nbsp;simply&nbsp;upload&nbsp;the&nbsp;true&nbsp;type&nbsp;font&nbsp;(.ttf)&nbsp;file&nbsp;to&nbsp;the&nbsp;same&nbsp;directory&nbsp;as&nbsp;this&nbsp;PHP&nbsp;file&nbsp;and&nbsp;set&nbsp;the&nbsp;$font&nbsp;variable&nbsp;to&nbsp;the&nbsp;font&nbsp;file&nbsp;name.&nbsp;I'm&nbsp;using&nbsp;the&nbsp;M+&nbsp;font&nbsp;which&nbsp;is&nbsp;free&nbsp;for&nbsp;distribution&nbsp;-&gt;&nbsp;http://www.fontsquirrel.com/fonts/M-1c<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$img&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imageCreate</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Create&nbsp;an&nbsp;image.<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$bg_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imageColorAllocate</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'r'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'g'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'b'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fg_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imageColorAllocate</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'r'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'g'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'b'</span><span style="color: #007700">));<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$text&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">"#(0x[0-9A-F]{2})#e"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"chr(hexdec('\\1'))"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$lines&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr_count</span><span style="color: #007700">(</span><span style="color: #0000BB">$text</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'|'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$text&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'/\|/i'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"\n"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//Ric&nbsp;Ewing:&nbsp;I&nbsp;modified&nbsp;this&nbsp;to&nbsp;behave&nbsp;better&nbsp;with&nbsp;long&nbsp;or&nbsp;narrow&nbsp;images&nbsp;and&nbsp;condensed&nbsp;the&nbsp;resize&nbsp;code&nbsp;to&nbsp;a&nbsp;single&nbsp;line.<br />&nbsp;&nbsp;&nbsp;&nbsp;//$fontsize&nbsp;=&nbsp;max(min($width/strlen($text),&nbsp;$height/strlen($text)),5);&nbsp;//scale&nbsp;the&nbsp;text&nbsp;size&nbsp;based&nbsp;on&nbsp;the&nbsp;smaller&nbsp;of&nbsp;width/8&nbsp;or&nbsp;hieght/2&nbsp;with&nbsp;a&nbsp;minimum&nbsp;size&nbsp;of&nbsp;5.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fontsize&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">max</span><span style="color: #007700">(</span><span style="color: #0000BB">min</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">/&nbsp;</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$text</span><span style="color: #007700">)&nbsp;*&nbsp;</span><span style="color: #0000BB">2.20</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">0.5</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$textBox&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">imagettfbbox_t</span><span style="color: #007700">(</span><span style="color: #0000BB">$fontsize</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text_angle</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$font</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Pass&nbsp;these&nbsp;variable&nbsp;to&nbsp;a&nbsp;function&nbsp;that&nbsp;calculates&nbsp;the&nbsp;position&nbsp;of&nbsp;the&nbsp;bounding&nbsp;box.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$textWidth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ceil</span><span style="color: #007700">((</span><span style="color: #0000BB">$textBox</span><span style="color: #007700">[</span><span style="color: #0000BB">4</span><span style="color: #007700">]&nbsp;-&nbsp;</span><span style="color: #0000BB">$textBox</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">])&nbsp;*&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Calculates&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;text&nbsp;box&nbsp;by&nbsp;subtracting&nbsp;the&nbsp;Upper&nbsp;Right&nbsp;"X"&nbsp;position&nbsp;with&nbsp;the&nbsp;Lower&nbsp;Left&nbsp;"X"&nbsp;position.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$textHeight&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ceil</span><span style="color: #007700">((</span><span style="color: #0000BB">abs</span><span style="color: #007700">(</span><span style="color: #0000BB">$textBox</span><span style="color: #007700">[</span><span style="color: #0000BB">7</span><span style="color: #007700">])&nbsp;+&nbsp;</span><span style="color: #0000BB">abs</span><span style="color: #007700">(</span><span style="color: #0000BB">$textBox</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]))&nbsp;*&nbsp;</span><span style="color: #0000BB">0.8</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Calculates&nbsp;the&nbsp;height&nbsp;of&nbsp;the&nbsp;text&nbsp;box&nbsp;by&nbsp;adding&nbsp;the&nbsp;absolute&nbsp;value&nbsp;of&nbsp;the&nbsp;Upper&nbsp;Left&nbsp;"Y"&nbsp;position&nbsp;with&nbsp;the&nbsp;Lower&nbsp;Left&nbsp;"Y"&nbsp;position.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$textX&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ceil</span><span style="color: #007700">((</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$textWidth</span><span style="color: #007700">)&nbsp;/&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Determines&nbsp;where&nbsp;to&nbsp;set&nbsp;the&nbsp;X&nbsp;position&nbsp;of&nbsp;the&nbsp;text&nbsp;box&nbsp;so&nbsp;it&nbsp;is&nbsp;centered.<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$textY&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ceil</span><span style="color: #007700">((</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$textHeight</span><span style="color: #007700">)&nbsp;/&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$textHeight</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Determines&nbsp;where&nbsp;to&nbsp;set&nbsp;the&nbsp;Y&nbsp;position&nbsp;of&nbsp;the&nbsp;text&nbsp;box&nbsp;so&nbsp;it&nbsp;is&nbsp;centered.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageFilledRectangle</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$bg_color</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Creates&nbsp;the&nbsp;rectangle&nbsp;with&nbsp;the&nbsp;specified&nbsp;background&nbsp;color.&nbsp;http://us2.php.net/manual/en/function.imagefilledrectangle.php<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagettftext</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fontsize</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text_angle</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$textX</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$textY</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fg_color</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$font</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Create&nbsp;and&nbsp;positions&nbsp;the&nbsp;text&nbsp;http://us2.php.net/manual/en/function.imagettftext.php<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$offset&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">60&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">60&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">24&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">14</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//14&nbsp;Days<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ExpStr&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"Expires:&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">gmdate</span><span style="color: #007700">(</span><span style="color: #DD0000">"D,&nbsp;d&nbsp;M&nbsp;Y&nbsp;H:i:s"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">time</span><span style="color: #007700">()&nbsp;+&nbsp;</span><span style="color: #0000BB">$offset</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"&nbsp;GMT"</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header($ExpStr);&nbsp;//Set&nbsp;a&nbsp;far&nbsp;future&nbsp;expire&nbsp;date.&nbsp;This&nbsp;keeps&nbsp;the&nbsp;image&nbsp;locally&nbsp;cached&nbsp;by&nbsp;the&nbsp;user&nbsp;for&nbsp;less&nbsp;hits&nbsp;to&nbsp;the&nbsp;server.<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header('Cache-Control:&nbsp;&nbsp;&nbsp;&nbsp;max-age=120');<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header("Last-Modified:&nbsp;"&nbsp;.&nbsp;gmdate("D,&nbsp;d&nbsp;M&nbsp;Y&nbsp;H:i:s",&nbsp;time()&nbsp;-&nbsp;$offset)&nbsp;.&nbsp;"&nbsp;GMT");<br />//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header('Content-type:&nbsp;image/'&nbsp;.&nbsp;$format);&nbsp;//Set&nbsp;the&nbsp;header&nbsp;so&nbsp;the&nbsp;browser&nbsp;can&nbsp;interpret&nbsp;it&nbsp;as&nbsp;an&nbsp;image&nbsp;and&nbsp;not&nbsp;a&nbsp;bunch&nbsp;of&nbsp;weird&nbsp;text.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;//Create&nbsp;the&nbsp;final&nbsp;image&nbsp;based&nbsp;on&nbsp;the&nbsp;provided&nbsp;file&nbsp;format.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">getPathOfAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'application.runtime.noimages'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$path</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$path</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$pathToSave&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'_'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$format</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$format</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'gif'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagegif</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'png'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagepng</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'jpg'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagejpeg</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'jpeg'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagejpeg</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageDestroy</span><span style="color: #007700">(</span><span style="color: #0000BB">$img</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Destroy&nbsp;the&nbsp;image&nbsp;to&nbsp;free&nbsp;memory.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;TODO&nbsp;return&nbsp;CHtml::asset($pathToSave);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'TODO&nbsp;return&nbsp;CHtml::asset($pathToSave);'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="image-detail">
+image()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>image</b>($width=150, $height=150, $background_color='#f1f1f1', $foreground_color='#ccc', $format='png')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$width</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$height</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$background_color</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$foreground_color</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$format</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#466" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#466</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">image</span><span style="color: #007700">(</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">150</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">150</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'#f1f1f1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'#ccc'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$format&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'png'</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">createImage</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$background&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">color</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$background_color</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$foreground&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">color</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set_hex</span><span style="color: #007700">(</span><span style="color: #0000BB">$foreground_color</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//Let's&nbsp;round&nbsp;the&nbsp;dimensions&nbsp;to&nbsp;3&nbsp;decimal&nbsp;places&nbsp;for&nbsp;aesthetics<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">3</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$bg_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imageColorAllocate</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'r'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'g'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$background</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'b'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fg_color&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imageColorAllocate</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'r'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'g'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$foreground</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get_rgb</span><span style="color: #007700">(</span><span style="color: #DD0000">'b'</span><span style="color: #007700">));<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageFilledRectangle</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$bg_color</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Creates&nbsp;the&nbsp;rectangle&nbsp;with&nbsp;the&nbsp;specified&nbsp;background&nbsp;color.&nbsp;http://us2.php.net/manual/en/function.imagefilledrectangle.php<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$x&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">create_diagonal</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$bg_color</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fg_color</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$y&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">create_diagonal</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$bg_color</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fg_color</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagecopy</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$x</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagecopy</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$y</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$width</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$height</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">getPathOfAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'application.runtime.noimages'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$path</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$path</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$pathToSave&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">DIRECTORY_SEPARATOR&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$width&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'x'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$height&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$format</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$format</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'gif'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagegif</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'png'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagepng</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'jpg'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagejpeg</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span style="color: #DD0000">'jpeg'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imagejpeg</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">imageDestroy</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Destroy&nbsp;the&nbsp;image&nbsp;to&nbsp;free&nbsp;memory.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">CHtml</span><span style="color: #007700">::</span><span style="color: #0000BB">asset</span><span style="color: #007700">(</span><span style="color: #0000BB">$pathToSave</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="imagettfbbox_t-detail">
+imagettfbbox_t()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>imagettfbbox_t</b>($size, $text_angle, $fontfile, $text)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$size</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$text_angle</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$fontfile</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$text</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#414" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/helper/src/Mindy/Helper/Noimage.php#414</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">imagettfbbox_t</span><span style="color: #007700">(</span><span style="color: #0000BB">$size</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text_angle</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fontfile</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;compute&nbsp;size&nbsp;with&nbsp;a&nbsp;zero&nbsp;angle<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$coords&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">imagettfbbox</span><span style="color: #007700">(</span><span style="color: #0000BB">$size</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fontfile</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$text</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;convert&nbsp;angle&nbsp;to&nbsp;radians<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$a&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">deg2rad</span><span style="color: #007700">(</span><span style="color: #0000BB">$text_angle</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;compute&nbsp;some&nbsp;usefull&nbsp;values<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ca&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">cos</span><span style="color: #007700">(</span><span style="color: #0000BB">$a</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sa&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">sin</span><span style="color: #007700">(</span><span style="color: #0000BB">$a</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ret&nbsp;</span><span style="color: #007700">=&nbsp;array();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;perform&nbsp;transformations<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">for&nbsp;(</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">7</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ret</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$coords</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;*&nbsp;</span><span style="color: #0000BB">$ca&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">$coords</span><span style="color: #007700">[</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;*&nbsp;</span><span style="color: #0000BB">$sa</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ret</span><span style="color: #007700">[</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">round</span><span style="color: #007700">(</span><span style="color: #0000BB">$coords</span><span style="color: #007700">[</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;*&nbsp;</span><span style="color: #0000BB">$ca&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$coords</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]&nbsp;*&nbsp;</span><span style="color: #0000BB">$sa</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$ret</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

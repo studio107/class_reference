@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Form\ModelForm</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Form\ModelForm &raquo;
+<a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+    </tr>
+            <tr>
+            <th>Implements</th>
+            <td><a href="/Mindy_Validation_Interfaces_IValidateObject.html">Mindy\Validation\Interfaces\IValidateObject</a>, ArrayAccess, Countable, Traversable, IteratorAggregate</td>
+        </tr>
+                        <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php</a></td>
+    </tr>
+    </table>
+
+<div id="classDescription">
+    </div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="cleanedData">
+  <td><a href="/Mindy_Form_BaseForm#cleanedData-detail">cleanedData</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="defaultTemplateType">
+  <td><a href="/Mindy_Form_BaseForm#defaultTemplateType-detail">defaultTemplateType</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="ids">
+  <td><a href="/Mindy_Form_BaseForm#ids-detail">ids</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="link">
+  <td><a href="/Mindy_Form_BaseForm#link-detail">link</a></td>
+  <td>string</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="ormClass">
+  <td><a href="/Mindy_Form_ModelForm#ormClass-detail">ormClass</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="templates">
+  <td><a href="/Mindy_Form_BaseForm#templates-detail">templates</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="_fields">
+  <td><a href="/Mindy_Form_BaseForm#_fields-detail">_fields</a></td>
+  <td>\Mindy\Form\Fields\Field[]</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="_renderFields">
+  <td><a href="/Mindy_Form_BaseForm#_renderFields-detail">_renderFields</a></td>
+  <td>array</td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="instance">
+  <td><a href="/Mindy_Form_ModelForm#instance-detail">instance</a></td>
+  <td></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Form_BaseForm#__call-detail">__call()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Form_BaseForm#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__clone">
+  <td><a href="/Mindy_Form_BaseForm#__clone-detail">__clone()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Form_BaseForm#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Form_BaseForm#__get-detail">__get()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Form_BaseForm#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Form_BaseForm#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Form_BaseForm#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Form_BaseForm#__set-detail">__set()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Form_BaseForm#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__toString">
+  <td><a href="/Mindy_Form_BaseForm#__toString-detail">__toString()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Form_BaseForm#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Form_BaseForm#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="addError">
+  <td><a href="/Mindy_Form_BaseForm#addError-detail">addError()</a></td>
+  <td>Adds a new error to the specified attribute.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="addErrors">
+  <td><a href="/Mindy_Form_BaseForm#addErrors-detail">addErrors()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="addExclude">
+  <td><a href="/Mindy_Form_BaseForm#addExclude-detail">addExclude()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="afterValidate">
+  <td><a href="/Mindy_Form_BaseForm#afterValidate-detail">afterValidate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="beforeValidate">
+  <td><a href="/Mindy_Form_BaseForm#beforeValidate-detail">beforeValidate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Form_BaseForm#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Form_BaseForm#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Form_BaseForm#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Form_BaseForm#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="cleanAttributes">
+  <td><a href="/Mindy_Form_BaseForm#cleanAttributes-detail">cleanAttributes()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="clearErrors">
+  <td><a href="/Mindy_Form_BaseForm#clearErrors-detail">clearErrors()</a></td>
+  <td>Removes errors for all attributes or a single attribute.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="clearErrorsInternal">
+  <td><a href="/Mindy_Form_BaseForm#clearErrorsInternal-detail">clearErrorsInternal()</a></td>
+  <td>Removes errors for all attributes or a single attribute.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="count">
+  <td><a href="/Mindy_Form_BaseForm#count-detail">count()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="delete">
+  <td><a href="/Mindy_Form_ModelForm#delete-detail">delete()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="getAttributes">
+  <td><a href="/Mindy_Form_BaseForm#getAttributes-detail">getAttributes()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getErrors">
+  <td><a href="/Mindy_Form_BaseForm#getErrors-detail">getErrors()</a></td>
+  <td>Returns the errors for all attribute or a single attribute.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getExclude">
+  <td><a href="/Mindy_Form_BaseForm#getExclude-detail">getExclude()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getField">
+  <td><a href="/Mindy_Form_BaseForm#getField-detail">getField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getFields">
+  <td><a href="/Mindy_Form_BaseForm#getFields-detail">getFields()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getFieldsInit">
+  <td><a href="/Mindy_Form_BaseForm#getFieldsInit-detail">getFieldsInit()</a></td>
+  <td>Return initialized fields</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getFieldsets">
+  <td><a href="/Mindy_Form_BaseForm#getFieldsets-detail">getFieldsets()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="/Mindy_Form_BaseForm#getId-detail">getId()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getInlines">
+  <td><a href="/Mindy_Form_BaseForm#getInlines-detail">getInlines()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getInlinesCreate">
+  <td><a href="/Mindy_Form_BaseForm#getInlinesCreate-detail">getInlinesCreate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getInlinesDelete">
+  <td><a href="/Mindy_Form_BaseForm#getInlinesDelete-detail">getInlinesDelete()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getInlinesInit">
+  <td><a href="/Mindy_Form_BaseForm#getInlinesInit-detail">getInlinesInit()</a></td>
+  <td>Возвращает инициализированные inline формы</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="getInstance">
+  <td><a href="/Mindy_Form_ModelForm#getInstance-detail">getInstance()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="getIterator">
+  <td><a href="/Mindy_Form_BaseForm#getIterator-detail">getIterator()</a></td>
+  <td>(PHP 5 &gt;= 5.0.0)<br/></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="getLinkModels">
+  <td><a href="/Mindy_Form_ModelForm#getLinkModels-detail">getLinkModels()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr id="getModel">
+  <td><a href="/Mindy_Form_ModelForm#getModel-detail">getModel()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="getName">
+  <td><a href="/Mindy_Form_BaseForm#getName-detail">getName()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getPrefix">
+  <td><a href="/Mindy_Form_BaseForm#getPrefix-detail">getPrefix()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getRenderFields">
+  <td><a href="/Mindy_Form_BaseForm#getRenderFields-detail">getRenderFields()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getTemplateFromType">
+  <td><a href="/Mindy_Form_BaseForm#getTemplateFromType-detail">getTemplateFromType()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="hasErrors">
+  <td><a href="/Mindy_Form_BaseForm#hasErrors-detail">hasErrors()</a></td>
+  <td>Returns a value indicating whether there is any validation error.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="hasField">
+  <td><a href="/Mindy_Form_BaseForm#hasField-detail">hasField()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Form_BaseForm#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Form_BaseForm#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Form_BaseForm#init-detail">init()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="initEvents">
+  <td><a href="/Mindy_Form_BaseForm#initEvents-detail">initEvents()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="initFields">
+  <td><a href="/Mindy_Form_ModelForm#initFields-detail">initFields()</a></td>
+  <td>Initialize fields</td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr id="isValid">
+  <td><a href="/Mindy_Form_ModelForm#isValid-detail">isValid()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="isValidInternal">
+  <td><a href="/Mindy_Form_BaseForm#isValidInternal-detail">isValidInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="offsetExists">
+  <td><a href="/Mindy_Form_BaseForm#offsetExists-detail">offsetExists()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="offsetGet">
+  <td><a href="/Mindy_Form_BaseForm#offsetGet-detail">offsetGet()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="offsetSet">
+  <td><a href="/Mindy_Form_BaseForm#offsetSet-detail">offsetSet()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="offsetUnset">
+  <td><a href="/Mindy_Form_BaseForm#offsetUnset-detail">offsetUnset()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="populate">
+  <td><a href="/Mindy_Form_BaseForm#populate-detail">populate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="prepare">
+  <td><a href="/Mindy_Form_BaseForm#prepare-detail">prepare()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="render">
+  <td><a href="/Mindy_Form_BaseForm#render-detail">render()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="renderInlines">
+  <td><a href="/Mindy_Form_ModelForm#renderInlines-detail">renderInlines()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td><a href="/Mindy_Form_BaseForm#renderInternal-detail">renderInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="renderStatic">
+  <td><a href="/Mindy_Form_BaseForm#renderStatic-detail">renderStatic()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="renderString">
+  <td><a href="/Mindy_Form_BaseForm#renderString-detail">renderString()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="renderTemplate">
+  <td><a href="/Mindy_Form_BaseForm#renderTemplate-detail">renderTemplate()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="save">
+  <td><a href="/Mindy_Form_ModelForm#save-detail">save()</a></td>
+  <td></td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr id="setAttributes">
+  <td><a href="/Mindy_Form_ModelForm#setAttributes-detail">setAttributes()</a></td>
+  <td>Sets </td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="setExclude">
+  <td><a href="/Mindy_Form_BaseForm#setExclude-detail">setExclude()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr id="setInstance">
+  <td><a href="/Mindy_Form_ModelForm#setInstance-detail">setInstance()</a></td>
+  <td>Sets \Mindy\Orm\Model</td>
+  <td>Mindy\Form\ModelForm</td>
+</tr>
+<tr class="inherited" id="setPrefix">
+  <td><a href="/Mindy_Form_BaseForm#setPrefix-detail">setPrefix()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="setRenderFields">
+  <td><a href="/Mindy_Form_BaseForm#setRenderFields-detail">setRenderFields()</a></td>
+  <td>Set fields for render</td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Form_BaseForm#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="getEventManager">
+  <td><a href="/Mindy_Form_BaseForm#getEventManager-detail">getEventManager()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+<tr class="inherited" id="mergeData">
+  <td><a href="/Mindy_Form_BaseForm#mergeData-detail">mergeData()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Form_BaseForm.html">Mindy\Form\BaseForm</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="instance-detail">
+instance<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+protected <b>$instance</b>;</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="ormClass-detail">
+ormClass<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$ormClass</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="delete-detail">
+delete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>delete</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#154" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#154</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">delete</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getInstance-detail">
+getInstance()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public \Mindy\Orm\Model|\Mindy\Orm\TreeModel|\Mindy\Orm\IFormModel <b>getInstance</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">\Mindy\Orm\Model|\Mindy\Orm\TreeModel|\Mindy\Orm\IFormModel</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#144" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#144</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">instance&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$modelClass&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModel</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$modelClass</span><span style="color: #007700">)&nbsp;?&nbsp;new&nbsp;</span><span style="color: #0000BB">$modelClass&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$modelClass</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">instance</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getLinkModels-detail">
+getLinkModels()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getLinkModels</b>($attributes)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$attributes</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#222" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#222</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLinkModels</span><span style="color: #007700">(array&nbsp;</span><span style="color: #0000BB">$attributes</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModel</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">objects</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">filter</span><span style="color: #007700">(</span><span style="color: #0000BB">$attributes</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">all</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getModel-detail">
+getModel()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public \Mindy\Orm\Model <b>getModel</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">\Mindy\Orm\Model</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#178" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#178</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getModel</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">"Not&nbsp;implemented"</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="initFields-detail">
+initFields()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>initFields</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#30" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#30</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">initFields</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">initFields</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">editable&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">is_a</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">Model</span><span style="color: #007700">::</span><span style="color: #0000BB">$autoField</span><span style="color: #007700">)&nbsp;||&nbsp;</span><span style="color: #0000BB">in_array</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">exclude</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$modelField&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getFormField</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$modelField&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!isset(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$modelField</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$name</span><span style="color: #007700">};<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">FileField</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Initialize fields</p>
+
+
+<div class="detailHeader" id="isValid-detail">
+isValid()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public bool <b>isValid</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#55" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#55</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clearErrors</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clearErrors</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$field&nbsp;\Mindy\Form\Fields\Field&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">method_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'clean'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">ucfirst</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">call_user_func</span><span style="color: #007700">([</span><span style="color: #0000BB">$this</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'clean'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">ucfirst</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)],&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cleanedData</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">()&nbsp;===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getErrors</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addError</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cleanedData</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isValid</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getErrors</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$errors</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;@TODO:&nbsp;duplication&nbsp;errors&nbsp;(email&nbsp;validation,&nbsp;for&nbsp;example)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasErrors</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$errors&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fields</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addError</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fields</span><span style="color: #007700">[</span><span style="color: #0000BB">$key</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">addError</span><span style="color: #007700">(</span><span style="color: #0000BB">$error</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasErrors</span><span style="color: #007700">()&nbsp;===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="renderInlines-detail">
+renderInlines()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>renderInlines</b>(null|int $extra=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$extra</td>
+  <td class="paramTypeCol">null|int</td>
+  <td class="paramDescCol">count of the extra inline forms for render</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">of inline forms</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#187" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#187</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">renderInlines</span><span style="color: #007700">(</span><span style="color: #0000BB">$extra&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inlines&nbsp;</span><span style="color: #007700">=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInlinesInit</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$link&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">key</span><span style="color: #007700">(</span><span style="color: #0000BB">$params</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inline&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #0000BB">$link</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$models&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getLinkModels</span><span style="color: #007700">([</span><span style="color: #0000BB">$link&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$models</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inlines</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;[];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$models&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$linkedModel</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$new&nbsp;</span><span style="color: #007700">=&nbsp;clone&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$new</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$linkedModel</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$new</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">exclude&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_merge</span><span style="color: #007700">(</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">exclude</span><span style="color: #007700">,&nbsp;[</span><span style="color: #0000BB">$link</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inlines</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">][]&nbsp;=&nbsp;</span><span style="color: #0000BB">$new</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**&nbsp;@var&nbsp;$inline&nbsp;BaseForm&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$extra&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$extra&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(</span><span style="color: #0000BB">$i&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">$extra&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">$i</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">$i</span><span style="color: #007700">++)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$newClean&nbsp;</span><span style="color: #007700">=&nbsp;clone&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$newClean</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cleanAttributes</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$newClean</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inlines</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">][]&nbsp;=&nbsp;</span><span style="color: #0000BB">$newClean</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$inlines</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="save-detail">
+save()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>save</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#159" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#159</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">save</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$saved&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$instance</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInlinesCreate</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setAttributes</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">link&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$instance<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInlinesDelete</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$inline</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$saved</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setAttributes-detail">
+setAttributes()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public $this <b>setAttributes</b>(array $data)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$data</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">$this</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#104" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#104</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setAttributes</span><span style="color: #007700">(array&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">setAttributes</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInstance</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">setAttributes</span><span style="color: #007700">(</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="setInstance-detail">
+setInstance()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public $this <b>setInstance</b>($model $model)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$model</td>
+  <td class="paramTypeCol">$model</td>
+  <td class="paramDescCol">\Mindy\Orm\Model</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">$this</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#116" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/form/src/Mindy/Form/ModelForm.php#116</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setInstance</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_a</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ormClass</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$model&nbsp;\Mindy\Orm\Model&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">foreach&nbsp;(</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getFieldsInit</span><span style="color: #007700">()&nbsp;as&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_a</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">::</span><span style="color: #0000BB">$autoField</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasField</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;{</span><span style="color: #0000BB">$name</span><span style="color: #007700">};<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">FileField</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getValue</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getField</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">setValue</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">instance&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>

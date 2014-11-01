@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title></title>
+</head>
+
+<body>
+<div id="apiPage">
+
+    <div id="apiHeader">
+        Mindy Class Reference
+    </div>
+    <!-- end of header -->
+
+    <div id="content">
+        <h1>Mindy\Query\Cubrid\QueryBuilder</h1>
+<div id="nav">
+    <a href="/">All Packages</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+        </div>
+
+<table class="summaryTable docClass">
+    <colgroup>
+        <col class="col-name"/>
+        <col class="col-value"/>
+    </colgroup>
+        <tr>
+        <th>Inheritance</th>
+        <td>class Mindy\Query\Cubrid\QueryBuilder &raquo;
+<a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+    </tr>
+                    <tr>
+            <th>Since</th>
+            <td>2.0</td>
+        </tr>
+                <tr>
+        <th>Source Code</th>
+        <td><a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php</a></td>
+    </tr>
+            <tr>
+            <th>Author</th>
+            <td>Carsten Brandt <mail@cebe.cc></td>
+        </tr>
+    </table>
+
+<div id="classDescription">
+    QueryBuilder is the query builder for CUBRID databases (version 9.1.x and higher).</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="db">
+  <td><a href="/Mindy_Query_QueryBuilder#db-detail">db</a></td>
+  <td>Connection</td>
+  <td>the database connection.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="separator">
+  <td><a href="/Mindy_Query_QueryBuilder#separator-detail">separator</a></td>
+  <td>string</td>
+  <td>the separator between different fragments of a SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="typeMap">
+  <td><a href="/Mindy_Query_Cubrid_QueryBuilder#typeMap-detail">typeMap</a></td>
+  <td>array</td>
+  <td>mapping from abstract column types (keys) to physical column types (values).</td>
+  <td>Mindy\Query\Cubrid\QueryBuilder</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="/Mindy_Query_QueryBuilder#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__callInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__callInternal-detail">__callInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="/Mindy_Query_QueryBuilder#__construct-detail">__construct()</a></td>
+  <td>Constructor.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="/Mindy_Query_QueryBuilder#__get-detail">__get()</a></td>
+  <td>Returns the value of an object property.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__getInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__getInternal-detail">__getInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="/Mindy_Query_QueryBuilder#__isset-detail">__isset()</a></td>
+  <td>Checks if the named property is set (not null).</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__issetInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__issetInternal-detail">__issetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="/Mindy_Query_QueryBuilder#__set-detail">__set()</a></td>
+  <td>Sets value of an object property.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__setInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__setInternal-detail">__setInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="/Mindy_Query_QueryBuilder#__unset-detail">__unset()</a></td>
+  <td>Sets an object property to null.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="__unsetInternal">
+  <td><a href="/Mindy_Query_QueryBuilder#__unsetInternal-detail">__unsetInternal()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="addColumn">
+  <td><a href="/Mindy_Query_QueryBuilder#addColumn-detail">addColumn()</a></td>
+  <td>Builds a SQL statement for adding a new DB column.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="addForeignKey">
+  <td><a href="/Mindy_Query_QueryBuilder#addForeignKey-detail">addForeignKey()</a></td>
+  <td>Builds a SQL statement for adding a foreign key constraint to an existing table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="addPrimaryKey">
+  <td><a href="/Mindy_Query_QueryBuilder#addPrimaryKey-detail">addPrimaryKey()</a></td>
+  <td>Builds a SQL statement for adding a primary key constraint to an existing table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="alterColumn">
+  <td><a href="/Mindy_Query_QueryBuilder#alterColumn-detail">alterColumn()</a></td>
+  <td>Builds a SQL statement for changing the definition of a column.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="batchInsert">
+  <td><a href="/Mindy_Query_QueryBuilder#batchInsert-detail">batchInsert()</a></td>
+  <td>Generates a batch INSERT SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="build">
+  <td><a href="/Mindy_Query_QueryBuilder#build-detail">build()</a></td>
+  <td>Generates a SELECT SQL statement from a [[Query]] object.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildAndCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildAndCondition-detail">buildAndCondition()</a></td>
+  <td>Connects two or more SQL expressions with the `AND` or `OR` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildBetweenCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildBetweenCondition-detail">buildBetweenCondition()</a></td>
+  <td>Creates an SQL expressions with the `BETWEEN` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildColumns">
+  <td><a href="/Mindy_Query_QueryBuilder#buildColumns-detail">buildColumns()</a></td>
+  <td>Processes columns and properly quote them if necessary.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildCondition-detail">buildCondition()</a></td>
+  <td>Parses the condition specification and generates the corresponding SQL expression.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildFrom">
+  <td><a href="/Mindy_Query_QueryBuilder#buildFrom-detail">buildFrom()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildGroupBy">
+  <td><a href="/Mindy_Query_QueryBuilder#buildGroupBy-detail">buildGroupBy()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildHashCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildHashCondition-detail">buildHashCondition()</a></td>
+  <td>Creates a condition based on column-value pairs.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildHaving">
+  <td><a href="/Mindy_Query_QueryBuilder#buildHaving-detail">buildHaving()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildInCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildInCondition-detail">buildInCondition()</a></td>
+  <td>Creates an SQL expressions with the `IN` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildJoin">
+  <td><a href="/Mindy_Query_QueryBuilder#buildJoin-detail">buildJoin()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildLikeCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildLikeCondition-detail">buildLikeCondition()</a></td>
+  <td>Creates an SQL expressions with the `LIKE` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="buildLimit">
+  <td><a href="/Mindy_Query_Cubrid_QueryBuilder#buildLimit-detail">buildLimit()</a></td>
+  <td></td>
+  <td>Mindy\Query\Cubrid\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="buildNotCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildNotCondition-detail">buildNotCondition()</a></td>
+  <td>Inverts an SQL expressions with `NOT` operator.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildOrderBy">
+  <td><a href="/Mindy_Query_QueryBuilder#buildOrderBy-detail">buildOrderBy()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildSelect">
+  <td><a href="/Mindy_Query_QueryBuilder#buildSelect-detail">buildSelect()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildUnion">
+  <td><a href="/Mindy_Query_QueryBuilder#buildUnion-detail">buildUnion()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="buildWhere">
+  <td><a href="/Mindy_Query_QueryBuilder#buildWhere-detail">buildWhere()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be read.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Returns a value indicating whether a property can be set.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="checkIntegrity">
+  <td><a href="/Mindy_Query_QueryBuilder#checkIntegrity-detail">checkIntegrity()</a></td>
+  <td>Builds a SQL statement for enabling or disabling integrity check.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="className">
+  <td><a href="/Mindy_Query_QueryBuilder#className-detail">className()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="classNameShort">
+  <td><a href="/Mindy_Query_QueryBuilder#classNameShort-detail">classNameShort()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="createIndex">
+  <td><a href="/Mindy_Query_QueryBuilder#createIndex-detail">createIndex()</a></td>
+  <td>Builds a SQL statement for creating a new index.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="createTable">
+  <td><a href="/Mindy_Query_QueryBuilder#createTable-detail">createTable()</a></td>
+  <td>Builds a SQL statement for creating a new DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="delete">
+  <td><a href="/Mindy_Query_QueryBuilder#delete-detail">delete()</a></td>
+  <td>Creates a DELETE SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="dropColumn">
+  <td><a href="/Mindy_Query_QueryBuilder#dropColumn-detail">dropColumn()</a></td>
+  <td>Builds a SQL statement for dropping a DB column.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="dropForeignKey">
+  <td><a href="/Mindy_Query_QueryBuilder#dropForeignKey-detail">dropForeignKey()</a></td>
+  <td>Builds a SQL statement for dropping a foreign key constraint.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="dropIndex">
+  <td><a href="/Mindy_Query_QueryBuilder#dropIndex-detail">dropIndex()</a></td>
+  <td>Builds a SQL statement for dropping an index.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="dropPrimaryKey">
+  <td><a href="/Mindy_Query_QueryBuilder#dropPrimaryKey-detail">dropPrimaryKey()</a></td>
+  <td>Builds a SQL statement for removing a primary key constraint to an existing table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="dropTable">
+  <td><a href="/Mindy_Query_QueryBuilder#dropTable-detail">dropTable()</a></td>
+  <td>Builds a SQL statement for dropping a DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="getColumnType">
+  <td><a href="/Mindy_Query_QueryBuilder#getColumnType-detail">getColumnType()</a></td>
+  <td>Converts an abstract column type into a physical column type.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="hasMethod">
+  <td><a href="/Mindy_Query_QueryBuilder#hasMethod-detail">hasMethod()</a></td>
+  <td>Returns a value indicating whether a method is defined.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="/Mindy_Query_QueryBuilder#hasProperty-detail">hasProperty()</a></td>
+  <td>Returns a value indicating whether a property is defined.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="/Mindy_Query_QueryBuilder#init-detail">init()</a></td>
+  <td>Initializes the object.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="insert">
+  <td><a href="/Mindy_Query_QueryBuilder#insert-detail">insert()</a></td>
+  <td>Creates an INSERT SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="makeParamKey">
+  <td><a href="/Mindy_Query_QueryBuilder#makeParamKey-detail">makeParamKey()</a></td>
+  <td>Makes key for param</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="renameColumn">
+  <td><a href="/Mindy_Query_QueryBuilder#renameColumn-detail">renameColumn()</a></td>
+  <td>Builds a SQL statement for renaming a column.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="renameTable">
+  <td><a href="/Mindy_Query_QueryBuilder#renameTable-detail">renameTable()</a></td>
+  <td>Builds a SQL statement for renaming a DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr id="resetSequence">
+  <td><a href="/Mindy_Query_Cubrid_QueryBuilder#resetSequence-detail">resetSequence()</a></td>
+  <td>Creates a SQL statement for resetting the sequence value of a table's primary key.</td>
+  <td>Mindy\Query\Cubrid\QueryBuilder</td>
+</tr>
+<tr class="inherited" id="truncateTable">
+  <td><a href="/Mindy_Query_QueryBuilder#truncateTable-detail">truncateTable()</a></td>
+  <td>Builds a SQL statement for truncating a DB table.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="update">
+  <td><a href="/Mindy_Query_QueryBuilder#update-detail">update()</a></td>
+  <td>Creates an UPDATE SQL statement.</td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="buildCompositeInCondition">
+  <td><a href="/Mindy_Query_QueryBuilder#buildCompositeInCondition-detail">buildCompositeInCondition()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+<tr class="inherited" id="configure">
+  <td><a href="/Mindy_Query_QueryBuilder#configure-detail">configure()</a></td>
+  <td></td>
+  <td><a href="/Mindy_Query_QueryBuilder.html">Mindy\Query\QueryBuilder</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="typeMap-detail">
+typeMap<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public array <b>$typeMap</b>;</div>
+
+<p>mapping from abstract column types (keys) to physical column types (values).</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="buildLimit-detail">
+buildLimit()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>buildLimit</b>($limit, $offset)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$limit</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$offset</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php#74" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php#74</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">buildLimit</span><span style="color: #007700">(</span><span style="color: #0000BB">$limit</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$offset</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;limit&nbsp;is&nbsp;not&nbsp;optional&nbsp;in&nbsp;CUBRID<br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;http://www.cubrid.org/manual/90/en/LIMIT%20Clause<br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;"You&nbsp;can&nbsp;specify&nbsp;a&nbsp;very&nbsp;big&nbsp;integer&nbsp;for&nbsp;row_count&nbsp;to&nbsp;display&nbsp;to&nbsp;the&nbsp;last&nbsp;row,&nbsp;starting&nbsp;from&nbsp;a&nbsp;specific&nbsp;row."<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$limit&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$limit&nbsp;</span><span style="color: #007700">&gt;=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'LIMIT&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$limit</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$offset&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">'&nbsp;OFFSET&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$offset</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$offset&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'LIMIT&nbsp;9223372036854775807&nbsp;OFFSET&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;(int)</span><span style="color: #0000BB">$offset</span><span style="color: #007700">;&nbsp;</span><span style="color: #FF8000">//&nbsp;2^63-1<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$sql</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="resetSequence-detail">
+resetSequence()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>resetSequence</b>(string $tableName, mixed $value=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$tableName</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the name of the table whose primary key sequence will be reset</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the value for the primary key of the next new row inserted. If this is not set,
+the next new row's primary key will have a value 1.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the SQL statement for resetting sequence</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a href="http://code.google.com/p/yii/source/browse/tags/0.9/framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php#52" class='sourceLink'>framework/Volumes/mac/Users/max/projects/mindy/app/vendor/mindy/query/src/Mindy/Query/Cubrid/QueryBuilder.php#52</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">resetSequence</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableSchema</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sequenceName&nbsp;</span><span style="color: #007700">!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tableName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">reset</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">primaryKey</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(int)</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"SELECT&nbsp;MAX(`</span><span style="color: #0000BB">$key</span><span style="color: #DD0000">`)&nbsp;FROM&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">schema</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">))-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">()&nbsp;+&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;(int)</span><span style="color: #0000BB">$value</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"ALTER&nbsp;TABLE&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">schema</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$tableName</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"&nbsp;AUTO_INCREMENT=</span><span style="color: #0000BB">$value</span><span style="color: #DD0000">;"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidParamException</span><span style="color: #007700">(</span><span style="color: #DD0000">"Table&nbsp;not&nbsp;found:&nbsp;</span><span style="color: #0000BB">$tableName</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">InvalidParamException</span><span style="color: #007700">(</span><span style="color: #DD0000">"There&nbsp;is&nbsp;not&nbsp;sequence&nbsp;associated&nbsp;with&nbsp;table&nbsp;'</span><span style="color: #0000BB">$tableName</span><span style="color: #DD0000">'."</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Creates a SQL statement for resetting the sequence value of a table's primary key.
+The sequence will be reset such that the primary key of the next new row inserted
+will have the specified value or 1.</p>
+
+
+    </div>
+    <!-- end of content -->
+
+    <div id="apiFooter">
+        Copyright &copy; 2008-2011 by <a href="http://mindy-cms.com">Mindy</a><br/>
+        All Rights Reserved.<br/>
+    </div>
+    <!-- end of footer -->
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        $("a.toggle").toggle(function () {
+            $(this).text($(this).text().replace(/Hide/, 'Show'));
+            $(this).parents(".summary").find(".inherited").hide();
+        }, function () {
+            $(this).text($(this).text().replace(/Show/, 'Hide'));
+            $(this).parents(".summary").find(".inherited").show();
+        });
+        $(".sourceCode a.show").toggle(function () {
+            $(this).text($(this).text().replace(/show/, 'hide'));
+            $(this).parents(".sourceCode").find("div.code").show();
+        }, function () {
+            $(this).text($(this).text().replace(/hide/, 'show'));
+            $(this).parents(".sourceCode").find("div.code").hide();
+        });
+        $("a.sourceLink").click(function () {
+            $(this).attr('target', '_blank');
+        });
+        /*]]>*/
+    </script>
+
+</div>
+<!-- end of page -->
+</body>
+</html>
